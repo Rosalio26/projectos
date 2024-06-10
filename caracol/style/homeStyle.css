@@ -1,0 +1,122 @@
+
+@charset "UTF-8";
+
+*{
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+     Fonts externas
+===========================================
+*/
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat/static/Montserrat-Medium.ttf)
+    format('truetype');
+}
+
+
+body {
+    font-family: montserrat;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: 600;
+    color: #00093a;
+}
+
+/*
+     confing.stickers
+======================================
+*/
+.sticky_1 {
+    display: none;
+    width: 100vw;
+}
+@media (min-width: 1275px) {
+    .sticky_1 {
+        background-color: #0453b7;
+        width: 98vw;
+        height: 80vh;
+        margin: 0;
+        padding: 0vw 1vw 0px 1vw;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cnt-itm {
+    align-items: center;
+    display: block;
+}
+@media (min-width: 680px) {
+    .cnt-itm {
+        background-color: transparent;
+        padding: 50px 0px 0px 0px;
+        width: 70%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+.prl-cfg {
+    width: 350px;
+}
+
+.txt-gnl {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+
+    margin-top: 10px;
+}
+
+.itm-txt-1 {
+    font-size: 30pt;
+    font-weight: 650;
+}
+
+.itm-txt-2 {
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.itm-txt-3 {
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+/*
+    Sticker da div principal
+-----------------------------
+*/
+.sticky_2 {
+    background-color: #fff;
+}
+
+
+/*
+      Confing do navBar
+------------------------------
+*/
+.navBar {}
+
+.btnConfing {
+}
+@media (min-width: 680px) {
+    .btnConfing {
+        display: none;
+    }
+}
