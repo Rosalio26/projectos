@@ -173,3 +173,47 @@ h1 {
         display: none;
     }
 }
+
+.itm-content {
+    background-color: #0008ffce;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+li {
+    background-color: #76b0c0;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 20pt;
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+
+.reg-itm {
+    background-color: #0008ff;
+}
+
+.itm-hdd {
+    background-color: transparent;
+}
+
+.registro {
+    background-color: transparent;
+}
+
+.registro span {
+    display: block;
+}
+
+.registro ul {
+    display: none;
+}
