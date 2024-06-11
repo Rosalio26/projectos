@@ -205,7 +205,7 @@ h1 {
 }
 
 .navBar {
-    background-color: #0008ff18;
+    background-color: blue;
     position: absolute;
     left: 0;
     top: 0;
@@ -221,7 +221,7 @@ h1 {
 }
 
 .itm-content {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 20px;
     height: 400px;
     width: 60%;
@@ -234,16 +234,40 @@ h1 {
 
 .cnt-lk {
     display: flex;
-    background-color: #0008ff;
-    color: #fff;
-    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0008ff00;
+    color: #161616;
+    border-radius: 0px;
+    border-bottom: 1.5px solid rgba(0, 0, 255, 0.764);
+
+    cursor: pointer;
     font-size: 14pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
 
-    width: 70%;
-    margin: 10px auto;
+    width: 90%;
+    height: 30px;
+    margin: 1px auto;
     padding: 10px;
+}
+
+.cnt-lk:hover {
+    background-color: #e9e9e9;
+    border-bottom: 1.5px solid transparent;
+    border-radius: 5px;
+}
+
+.cnt-lk img {
+    width: 20px;
+    height: 15px;
+}
+
+.cnt-lk:hover img.imp-img{
+    rotate: 90deg;
+    width: 15px;
+    height: 15px;
+    transition: all .1s;
 }
 
 .itm-hdd {
@@ -258,10 +282,41 @@ h1 {
     background-color: transparent;
 }
 
+/*
+ Campo de Registro
+--------------------*/
 .registro {
     background-color: transparent;
 }
 
 .btn-reg {
     display: none;
+}
+
+.hd-lgn {
+    color: #fff;
+    background-color: #0008ff;
+    border-radius: 20px;
+    border-bottom: none;
+    margin-top: 20px;
+}
+
+.hd-lgn:hover {
+    color: #0008ff;
+    background-color: transparent;
+    border: 1px solid #0008ff;
+    border-radius: 20px;
+} 
+
+.hd-ins {
+    border: 1px solid #0008ff;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.hd-ins:hover {
+    color: #fff;
+    background-color: #0008ff;
+    border-radius: 20px;
+    border: 1px solid transparent;
 }
