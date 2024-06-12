@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="../style/header.css">
 </head>
 <body>
 
     <header>      
         <div id="sticky_2" class="sticky_2 myHeader">
-            <div class="logo"><span><img style="width: 80px;" src="./midia/img/caracol_inteligente_logo_classroom_2.png"></span><a href="./home.html">CaracoLearn</a></div> 
+            <div>
+                <a class="logo" href="../../index.html">
+                    <img style="width: 80px;" src="../../midia/img/caracol_inteligente_logo_classroom_2.png">
+                    <span class="impert">CaracoLearn</span>
+                </a>
+            </div>
+
             <nav class="navBar menuContent">
                 <div class="btnConfing">
                     <button class="btn-itm-nv nv-gnrl" onclick="btnmenuHamb()"></button>
@@ -22,7 +28,6 @@
                 <ul class="itm-content">
                     <li><a class="cnt-lk cnfg-nv-lk" href="#">Aulas</a></li>
                     <li><a class="cnt-lk cnfg-nv-lk" href="#">Blog</a></li>
-                    <li><a class="cnt-lk cnfg-nv-lk" href="./includes/room/sala.php">Sala</a></li>
                     <li class="itm-glr">
                         <span class="cnt-lk btn-glr">Galeria <img class="imp-img" src="./midia/img/icon/seta-direita (1).png" alt=""></span>
                         <ul class="itm-hdd hidd-nv">
