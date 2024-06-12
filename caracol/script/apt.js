@@ -5,7 +5,7 @@ function btnmenuHamb() {
 
     if(myNav.style.display === "none" || mynavBar.style.backgroundColor === "transparent") {
         myNav.style.display = "block";
-        mynavBar.style.backgroundColor = "blue"
+        mynavBar.style.backgroundColor = "#0008ff76"
     } else {
         myNav.style.display = "none";
         mynavBar.style.backgroundColor = "transparent"
@@ -65,3 +65,4 @@ function sair() {
     login.style.backgroundColor = "transparent"
     login.style.color = "#222"
 }
+
