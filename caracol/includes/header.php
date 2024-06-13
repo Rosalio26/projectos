@@ -14,7 +14,7 @@
             <div>
                 <a class="logo" href="../../index.html">
                     <img style="width: 80px;" src="../../midia/img/caracol_inteligente_logo_classroom_2.png">
-                    <span class="impert">CaracoLearn</span>
+                    <span class="impert" style="font-size: 22pt; color: blue;">CaracoLearn</span>
                 </a>
             </div>
 
@@ -29,7 +29,7 @@
                 <ul class="itm-content">
                     <li><a class="cnt-lk cnfg-nv-lk" href="#">Aulas</a></li>
                     <li><a class="cnt-lk cnfg-nv-lk" href="#">Blog</a></li>
-                    <li class="itm-glr">
+                   <!-- <li class="itm-glr">
                         <span class="cnt-lk btn-glr">Galeria <img class="imp-img" src="./midia/img/icon/seta-direita (1).png" alt=""></span>
                         <ul class="itm-hdd hidd-nv">
                             <div class="frt-hdd">
@@ -44,7 +44,7 @@
                             </div>
                             <script src="./script/apt.js"></script>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="cmp-reg registro">
                         <span class="cnt-lk btn-reg reg-itm">Registrar</span>
                         <ul class="cnfg-reg gnl-reg hidd-nv">

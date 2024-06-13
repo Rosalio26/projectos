@@ -38,121 +38,7 @@ h1 {
     -webkit-background-clip: text;
 }
 
-/*
-     confing.stickers
-======================================
-*/
-.sticky_1 {
-    position: relative;
-    display: none;
-    width: 100vw;
-    overflow: hidden hidden;
-}
-@media (min-width: 1275px) {
-    .sticky_1 {
-        background-color: #0453b7;
-        width: 100vw;
-        height: 80vh;
-        margin: 0;
-        padding: 0vw 1vw 0px 1vw;
-        overflow: hidden;
 
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.cnt-itm {
-    align-items: center;
-    display: block;
-}
-@media (min-width: 680px) {
-    .cnt-itm {
-        background-color: transparent;
-        padding: 50px 0px 0px 0px;
-        width: 70%;
-
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }
-}
-
-.prl-cfg {
-    width: 350px;
-}
-
-.txt-gnl {
-    color: transparent;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: left;
-
-    margin-top: 10px;
-    z-index: 100;
-    position: relative;
-}
-
-.itm-txt-1 {
-    color: transparent;
-    background-image: linear-gradient(90deg, #c823ffeb, #0008ff);
-    /*background-image: linear-gradient(90deg, rgb(255, 119, 204) 0px, rgb(255, 207, 188) 100%);*/
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 28pt;
-    font-weight: 650;
-    text-transform: uppercase;
-}
-
-.itm-txt-2 {
-    color: #8fa8ff;
-    font-size: 20pt;
-    font-weight: 400;
-    text-transform: lowercase;
-}
-
-.itm-txt-3 {
-    color: #9bb1ffc2;
-    font-size: 15pt;
-    font-weight: 200;
-}
-
-.sap-tllg {
-    border-radius: 20px;
-    border: none;
-    /*background-image: linear-gradient(100deg, rgba(36, 0, 198, 0.979), rgba(36, 0, 198, 0.47));*/
-    background-image: repeating-linear-gradient(to right, rgba(36, 0, 198, 0.979), rgba(36, 0, 198, 0.47));
-    /*border: 5px solid rgba(36, 0, 198, 0.475);*/
-    width: 400px;
-    height: 10px;
-    margin: 3px auto;
-    color: #00396167;
-}
-
-.svgs {
-    position: absolute;
-    width: 600px;
-    height: 350px;
-    bottom: 0;
-    right: 0;
-}
-
-.svg-stick_1 {
-    position: absolute;
-    width: 500px;
-    height: 300px;
-
-    bottom: 0;
-    right: 0;
-    z-index: 5;
-}
-
-.svg-tick {
-    z-index: 1;
-}
 
 /*
     Sticker da div principal
@@ -173,13 +59,13 @@ h1 {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-color: #f5f5f5;
     padding: 0px 5px;
     height: 70px;
     z-index: 1000;
 }
 @media (min-width: 680px) {
     .sticky_2 {
+        background-color: #0008ff;
         padding: 0px 30px;
     }
 }
@@ -277,6 +163,7 @@ h1 {
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: nowrap;
+        background-color: transparent;
         width: 100%;
         height: max-content;
         margin: 0;
@@ -317,6 +204,7 @@ h1 {
         width: 600px;
         height: max-content;
         padding: 20px;
+        z-index: 1000;
     }
 }
 
