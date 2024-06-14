@@ -53,6 +53,7 @@
 
                     default: 
                       echo '
+                      <div class="ho-ke-yu">
                         <div class="item-general">
                           <div class="welcm-itm">
                             <div class="text-itm">
@@ -91,6 +92,54 @@
                           ctx.fill();
                           ctx.stroke("none");
                         </script>
+
+                        <div>
+                          <div class="block-itm-col one-col-glr">
+                            <h4> Aula </h4>
+                            <p>Conheça as melhores materias que preparamos para tim! <span><img class="arch-img" src="./midia/img/m-cameron-414.jpg" alt=""> </img></span></p>
+                            <div>
+                              <div class="itm-blck-cng">
+                                <h5>Ciênçias</h5>
+                                <div class="block-scie">
+                                  <div class="itm-scie">
+                                    <img src="midia/img/" alt=""></img>
+                                  </div>
+                                  <!--<div class="itm-scie"></div>
+                                  <div class="itm-scie"></div>
+                                  <div class="itm-scie"></div>
+                                  <div class="itm-scie"></div>
+                                  <div class="itm-scie"></div>-->
+                                </div>
+                              </div>
+
+                              <div class="itm-blck-cng>
+                                <h5>Literatura</h5>
+
+                                <div class="block-lyr">
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                  <div class="itm-lyr"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--<div>
+                            <h4>Disciplinas</div>
+                          </div>
+                          <div>
+                            <h4>Actividades</h4>
+                          </div>
+                          <div>
+                            <h4>Galeria</h4>
+                          </div>-->
+                        </div>
                       ';
                       echo '
                       <div class="add-less-ar">
