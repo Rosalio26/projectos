@@ -318,25 +318,38 @@ h2 {
     position: relative;
 }
 
-.img-cnt-blck {
+.img-prp {
+    background-image: linear-gradient(to bottom, rgb(255, 89, 0) 12%, transparent 5%);
+    padding: 1px;
+    position: relative;
+    width: 50%;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.img-prp img.img-cnt-blck {
     border-radius: 20px 20px 0px 0px;
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 90%;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
 }
 
 .block-scie {
     background-color: transparent;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 93%;
+    margin: 0 auto;
 }
 
 .itm-scie {
-    background-color: #dae7f5;
+    background-color: #ffffff;
     border-radius: 20px;
+    border: 1px solid rgb(255, 214, 137);
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.103), 1px 1px 10px 1px rgba(0, 0, 0, 0.093);
     width: 250px;
     height: 300px;

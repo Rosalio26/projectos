@@ -107,28 +107,36 @@
                                 <h5 class="tem-prc">Ciênçias</h5>
                                 <div class="block-scie">
                                   <div class="itm-scie blck-int-cnt">
-                                    <a href="#"><img class="img-cnt-blck" src="midia/img/m-olly-376.jpg" alt="..."></a>
+                                    <div class="img-prp">
+                                      <img class="img-cnt-blck" src="category/aula/ciencias/matematica/img/formula.png" alt="...">
+                                    </div>
                                     <h5 class="temas">Matematica</h5>
                                     <span></span>
                                     <a class="btn-clas" href="#">Ver</a>
                                   </div>
 
                                   <div class="itm-scie blck-int-cnt">
-                                    <img class="img-cnt-blck" src="" alt="...">
+                                    <div class="img-prp">
+                                      <img class="img-cnt-blck" src="category/aula/ciencias/quimica/img/flask-og.png" alt="...">
+                                    </div>
                                     <h5 class="temas">Quimica</h5>
                                     <span></span>
                                     <a class="btn-clas" href="#">Ver</a>
                                   </div>
 
                                   <div class="itm-scie blck-int-cnt">
-                                    <img class="img-cnt-blck" src="" alt="...">
+                                    <div class="img-prp">
+                                      <img class="img-cnt-blck" src="category/aula/ciencias/fisica/img/atom.png" alt="...">
+                                    </div>
                                     <h5 class="temas">Fisica</h5>
                                     <span></span>
                                     <a class="btn-clas" href="#">Ver</a>
                                   </div>
 
                                   <div class="itm-scie blck-int-cnt">
-                                    <img class="img-cnt-blck" src="" alt="...">
+                                    <div class="img-prp">
+                                      <img class="img-cnt-blck" src="category/aula/ciencias/biologia/img/dna.png" alt="...">
+                                    </div>
                                     <h5 class="temas">Biologia</h5>
                                     <span></span>
                                     <a class="btn-clas" href="#">Ver</a>
