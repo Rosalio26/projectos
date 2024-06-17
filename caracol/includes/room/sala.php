@@ -93,10 +93,10 @@
                           ctx.stroke("none");
                         </script>
 
-                        <div>
+                        <div class="block-content-section bcn-stn">
                           <div class="block-itm-col one-col-glr">
                             <h4> Aula </h4>
-                            <p>Conheça as melhores materias que preparamos para tim! <span><img class="arch-img" src="./midia/img/m-cameron-414.jpg" alt=""> </img></span></p>
+                            <p>Conheça as melhores materias que preparamos para tim!</p>
                             <div>
                               <div class="itm-blck-cng">
                                 <h5>Ciênçias</h5>

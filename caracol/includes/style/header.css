@@ -54,7 +54,8 @@ h1 {
     padding-top: 102px;
 }
 
-.sticky_2 {
+/*.sticky_2 {
+    background-color: red;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -68,7 +69,7 @@ h1 {
         background-color:#ff3c00;
         padding: 0px 30px;
     }
-}
+}*/
 
 .logo {
     display: flex;
@@ -94,7 +95,7 @@ h1 {
 .btn-itm-nv {
     cursor: pointer;
     display: block;
-    background-color: #0048e3;
+    /*background-color: #0048e3;*/
     border: none;
     outline: none;
     border-top: 7px solid #ff4000;

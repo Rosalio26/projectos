@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/sala.css">
 </head>
 <body>
