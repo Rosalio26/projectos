@@ -95,23 +95,53 @@
 
                         <div class="block-content-section bcn-stn">
                           <div class="block-itm-col one-col-glr">
-                            <h4> Aula </h4>
-                            <p>Conheça as melhores materias que preparamos para tim!</p>
-                            <div>
+                            <div class="wel-itm-clas">
+                              <h4> Aula </h4>
+                              <p>Conheça as melhores materias que preparamos para tim!</p>
+                            </div>
+                            <div class="blck-itm-clas">
+                              <!--
+                              DEFININDO OS BLOCOS DAS CIÊNÇIAS
+                              ================================-->
                               <div class="itm-blck-cng">
-                                <h5>Ciênçias</h5>
+                                <h5 class="tem-prc">Ciênçias</h5>
                                 <div class="block-scie">
-                                  <div class="itm-scie">
-                                    <img src="midia/img/" alt=""></img>
+                                  <div class="itm-scie blck-int-cnt">
+                                    <a href="#"><img class="img-cnt-blck" src="midia/img/m-olly-376.jpg" alt="..."></a>
+                                    <h5 class="temas">Matematica</h5>
+                                    <span></span>
+                                    <a class="btn-clas" href="#">Ver</a>
                                   </div>
-                                  <!--<div class="itm-scie"></div>
-                                  <div class="itm-scie"></div>
-                                  <div class="itm-scie"></div>
-                                  <div class="itm-scie"></div>
-                                  <div class="itm-scie"></div>-->
+
+                                  <div class="itm-scie blck-int-cnt">
+                                    <img class="img-cnt-blck" src="" alt="...">
+                                    <h5 class="temas">Quimica</h5>
+                                    <span></span>
+                                    <a class="btn-clas" href="#">Ver</a>
+                                  </div>
+
+                                  <div class="itm-scie blck-int-cnt">
+                                    <img class="img-cnt-blck" src="" alt="...">
+                                    <h5 class="temas">Fisica</h5>
+                                    <span></span>
+                                    <a class="btn-clas" href="#">Ver</a>
+                                  </div>
+
+                                  <div class="itm-scie blck-int-cnt">
+                                    <img class="img-cnt-blck" src="" alt="...">
+                                    <h5 class="temas">Biologia</h5>
+                                    <span></span>
+                                    <a class="btn-clas" href="#">Ver</a>
+                                  </div>
+
+                                  <!--<div class="itm-scie blck-int-cnt"></div>
+                                  <div class="itm-scie blck-int-cnt"></div>-->
                                 </div>
                               </div>
 
+                              <!--
+                              DEFININDO OS BLOCOS DAS LETRAS
+                              ===================================-->
                               <div class="itm-blck-cng>
                                 <h5>Literatura</h5>
 
