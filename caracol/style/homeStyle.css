@@ -165,7 +165,7 @@ h1 {
 }
 
 .sticky + .main {
-    padding-top: 102px;
+    padding-top: 0px;
 }
 
 .sticky_2 {
@@ -502,4 +502,74 @@ h1 {
     background-color: #0008ff;
     border-radius: 20px;
     border: 1px solid #0008ff;
+}
+
+
+/*
+    CONFIGURAÇÕES DO MAIN
+-------------------------------*/
+.main {
+    height: 680px;
+}
+
+.row-grl {
+    margin-top: 25vh;
+}
+
+@media (min-width: 980px) {
+    .one-main-itm {
+        background-color: rgb(255, 250, 241);
+        width: 85%;
+        height: 45vh;
+        margin: 0 auto;
+        padding: 20px 10px;
+
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lema-zr {
+        color: #0062ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24pt;
+        font-weight: bold;
+        text-transform: none;
+        margin-bottom: 15px;
+    }
+
+    .lema {
+        color: #2c3c46;
+        font-size: 12pt;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        text-transform: lowercase;
+        margin: 10px 0px;
+    }
+
+    .btn-lm {
+        color: #f0f7ff;
+        cursor: pointer;
+        background-color: #0048e3;
+        font-size: 13pt;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+        border-radius: 20px;
+        border: 1px solid rgb(183, 183, 183);
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .img-txt-mn {
+        border-left: 10px solid #ff8000;
+        height: 100%;
+    }
+
+    .itn-img {
+        width: 500px;
+        height: 100%;
+    }
 }
