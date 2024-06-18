@@ -96,7 +96,6 @@
                         <div class="block-content-section bcn-stn">
                           <div class="block-itm-col one-col-glr">
                             <div class="wel-itm-clas">
-                              <h4> Aula </h4>
                               <p>Conheça as melhores materias que preparamos para tim!</p>
                             </div>
                             <div class="blck-itm-clas">
@@ -110,36 +109,44 @@
                                     <div class="img-prp">
                                       <img class="img-cnt-blck" src="category/aula/ciencias/matematica/img/formula.png" alt="...">
                                     </div>
-                                    <h5 class="temas">Matematica</h5>
-                                    <span></span>
-                                    <a class="btn-clas" href="#">Ver</a>
+                                    <div class="tms-txt-lk">
+                                      <h5 class="temas">Matemática</h5>
+                                      <span class="txt-itn-scn">Ciênçia de teoria dos números, álgebra, geometria, análise e símbolos</span>
+                                      <a class="btn-clas" href="#">Ver</a>
+                                    </div>
                                   </div>
 
                                   <div class="itm-scie blck-int-cnt">
                                     <div class="img-prp">
                                       <img class="img-cnt-blck" src="category/aula/ciencias/quimica/img/flask-og.png" alt="...">
                                     </div>
-                                    <h5 class="temas">Quimica</h5>
-                                    <span></span>
-                                    <a class="btn-clas" href="#">Ver</a>
+                                    <div class="tms-txt-lk">
+                                      <h5 class="temas">Quimica</h5>
+                                      <span class="txt-itn-scn">Ciênçia do estudo da matéria (substânçias, Composição e suas propiedades)</span>
+                                      <a class="btn-clas" href="#">Ver</a>
+                                    </div>
                                   </div>
 
                                   <div class="itm-scie blck-int-cnt">
                                     <div class="img-prp">
                                       <img class="img-cnt-blck" src="category/aula/ciencias/fisica/img/atom.png" alt="...">
                                     </div>
-                                    <h5 class="temas">Fisica</h5>
-                                    <span></span>
-                                    <a class="btn-clas" href="#">Ver</a>
+                                    <div class="tms-txt-lk">
+                                      <h5 class="temas">Fisica</h5>
+                                      <span class="txt-itn-scn">Ciênçia do estudo dos fenomenos da natureza (energia, força, gravidade)</span>
+                                      <a class="btn-clas" href="#">Ver</a>
+                                    </div>
                                   </div>
 
                                   <div class="itm-scie blck-int-cnt">
                                     <div class="img-prp">
                                       <img class="img-cnt-blck" src="category/aula/ciencias/biologia/img/dna.png" alt="...">
                                     </div>
-                                    <h5 class="temas">Biologia</h5>
-                                    <span></span>
-                                    <a class="btn-clas" href="#">Ver</a>
+                                    <div class="tms-txt-lk">
+                                      <h5 class="temas">Biologia</h5>
+                                      <span class="txt-itn-scn">Ciênçia que estuda os seres vivos, sua origem evolução e propiedades</span>
+                                      <a class="btn-clas" href="#">Ver</a>
+                                    </div>
                                   </div>
 
                                   <!--<div class="itm-scie blck-int-cnt"></div>
@@ -168,15 +175,6 @@
                               </div>
                             </div>
                           </div>
-                          <!--<div>
-                            <h4>Disciplinas</div>
-                          </div>
-                          <div>
-                            <h4>Actividades</h4>
-                          </div>
-                          <div>
-                            <h4>Galeria</h4>
-                          </div>-->
                         </div>
                       ';
                       echo '
