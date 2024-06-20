@@ -8,7 +8,42 @@
 </head>
 <body>
     <main class="main-reg reg-log-main">
-
+        <form action="../formaction/inscricao.php" method="post">
+            <div>
+                <div>
+                    <label for="nome-area">Nome</label>
+                    <input type="text" name="nome" id="nome-area">
+                </div>
+                <div>
+                    <label for="sobrenome-area">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome-area">
+                </div>
+                <div>
+                    <label for="profissao-area">Profissão</label>
+                    <select name="profissao" id="profissao-area">
+                        <option value="">Professor</option>
+                        <option value="">Estudante</option>
+                        <option value="">Aluno</option>
+                        <option value="">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email-area">Email</label>
+                    <input type="email" name="email" id="email-area">
+                </div>
+                <div>
+                    <label for="password-area">Palavra-Passe</label>
+                    <input type="password" name="password" id="password-area">
+                </div>
+                <div>
+                    <label for="confirm-password-area">Confirmar Palavra-Passe</label>
+                    <input type="password" name="confirm-password" id="confirm-password-area">
+                </div>
+                <div>
+                    <input type="submit" id="btn-send" name="send-btn" value="Enviar">
+                </div>
+            </div>
+        </form>
     </main>
 </body>
 </html>
