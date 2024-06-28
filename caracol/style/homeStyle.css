@@ -44,8 +44,16 @@ body {
 ======================================
 */
 .sticky_1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+
+    padding: 0px;
     position: relative;
     width: 100vw;
+    height: 90vh;
     overflow: hidden hidden;
 }
 @media (min-width: 1275px) {
@@ -68,6 +76,19 @@ body {
 }
 
 h1.conor {
+    color: transparent;
+    background-image: linear-gradient(rgb(0, 26, 255), rgb(245, 37, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-size: 22pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+h1.conor {
     font-size: 30pt;
     font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -81,12 +102,22 @@ h1.conor {
     margin-top: 50px;
     
 }
+}
 
 .conor-1 {
     color: #ffe6e6;
     font-size: 15pt;
     font-weight: 500;
     margin-top: 20px;
+    z-index: 110;
+    position: relative;
+}
+
+@media (max-width: 680px) {
+    .conor-1 {
+        color: #7691a7;
+        margin-bottom: -500%;
+    }
 }
 
 .cnt-itm {
@@ -113,12 +144,18 @@ h1.conor {
 }
 
 .prl-cfg {
+    display: none;
+}
+
+@media (min-width: 900px) {
+.prl-cfg {
     animation: animaImg 2s linear 1s infinite alternate;
     border-radius: 50px;
     display: block;
     position: relative;
     width: 350px;
     z-index: 100;
+}
 }
 
 @keyframes animaImg {
@@ -176,7 +213,16 @@ h1.conor {
     height: 7px;
     margin: 3px auto;
     color: #00396167;
+    z-index: 100;
 }
+
+@media (max-width: 680px) {
+    .sap-tllg {
+        position: absolute;
+        bottom: 12%;
+    }
+}
+
 
 .svgs {
     position: absolute;
@@ -215,7 +261,6 @@ h1.conor {
 }
 
 .sticky_2 {
-    opacity: 1;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -572,6 +617,18 @@ h1.conor {
 
 .row-grl {
     margin-top: 5vh;
+}
+
+.one-main-itm {
+    background-color: red;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.itn-img {
+    display: none;
 }
 
 @media (min-width: 980px) {
