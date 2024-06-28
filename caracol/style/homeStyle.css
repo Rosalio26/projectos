@@ -276,6 +276,7 @@ h1.conor {
 }
 
 .sticky_2 {
+    opacity: 0;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
