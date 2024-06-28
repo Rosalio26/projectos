@@ -23,8 +23,13 @@ var sticky = header.offsetTop;
 function  mySctiker() {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
+        header.style.backgroundColor = "#11161f";
+        header.style.opacity = "1";
+        header.style.transition = ".5s";
     } else {
         header.classList.remove("sticky");
+        header.style.backgroundColor = "#fff";
+        header.style.opacity = "0";
     }
 }
 
@@ -32,7 +37,7 @@ function  mySctiker() {
 /*
    BOTTOES CONFING.
 --------------------------------------------------------------------*/
-var login = document.querySelector('.hdd-js-lgn');
+/*var login = document.querySelector('.hdd-js-lgn');
 var registro = document.querySelector('.hdd-js-ins');
 
 login.addEventListener('mouseenter', entro);
@@ -64,5 +69,4 @@ function sair() {
     registro.style.color = "#fff"
     login.style.backgroundColor = "transparent"
     login.style.color = "#222"
-}
-
+}*/
