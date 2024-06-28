@@ -20,7 +20,7 @@ window.onscroll = function() {mySctiker()};
 var header = document.getElementById("sticky_2");
 var sticky = header.offsetTop;
 
-function  mySctiker() {
+function  mySctiker(x) {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
         header.style.backgroundColor = "#11161f";
@@ -32,6 +32,7 @@ function  mySctiker() {
         header.style.opacity = "0";
     }
 }
+
 
 
 /*

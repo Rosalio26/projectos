@@ -45,7 +45,6 @@ body {
 */
 .sticky_1 {
     position: relative;
-    display: none;
     width: 100vw;
     overflow: hidden hidden;
 }
@@ -119,6 +118,7 @@ h1.conor {
     display: block;
     position: relative;
     width: 350px;
+    z-index: 100;
 }
 
 @keyframes animaImg {
@@ -180,7 +180,7 @@ h1.conor {
 
 .svgs {
     position: absolute;
-    width: 600px;
+    width: 350px;
     height: 350px;
     bottom: 0;
     right: 0;
@@ -197,7 +197,7 @@ h1.conor {
 }
 
 .svg-tick {
-    z-index: 1;
+    z-index: 10;
 }
 
 /*
@@ -215,7 +215,7 @@ h1.conor {
 }
 
 .sticky_2 {
-    opacity: 0;
+    opacity: 1;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -225,8 +225,9 @@ h1.conor {
     height: 70px;
     z-index: 1000;
 }
-@media (min-width: 680px) {
+@media (min-width: 900px) {
     .sticky_2 {
+        opacity: 0;
         padding: 0px 50px;
     }
 }
