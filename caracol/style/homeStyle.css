@@ -658,11 +658,12 @@ h1.conor {
 .txt-itm-mn {
     
     /*background-color: #121d37;*/
-    background-image: linear-gradient(#00051188 70%, #121d37 20%);
+    background-image: linear-gradient(#00053367 2%, #1d2c4e);
     width: 100%;
     
     margin: 0 auto;
     padding: 10px;
+    padding-left: 50px;
     padding-bottom: 20px;
     position: absolute;
     top: 0;
