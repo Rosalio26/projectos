@@ -809,13 +809,21 @@ h1.conor {
 /*
  COFING.NEW DESIGN
 -------------------------------*/
-.blast-itm {
-    background-image: linear-gradient(#131a29, #111825);
-    height: max-content;
-    width: 100%;
-    position: relative;
 
-    margin-top: 100px;
+.blast-itm {
+    display: none;
+}
+
+@media (min-width: 900px) {
+.blast-itm {
+    display: block;
+        background-image: linear-gradient(#131a29, #111825);
+        height: max-content;
+        width: 100%;
+        position: relative;
+
+        margin-top: 100px;
+    }
 }
 
 .arm-blst {
