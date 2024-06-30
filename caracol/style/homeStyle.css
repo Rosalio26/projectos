@@ -82,7 +82,7 @@ h1.conor {
     background-clip: text;
     -webkit-background-clip: text;
 
-    font-size: 20pt;
+    font-size: 12pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     text-wrap: wrap;
@@ -108,9 +108,9 @@ h1.conor {
 
 .conor-1 {
     color: #ffe6e6;
-    font-size: 15pt;
+    font-size: 10pt;
     font-weight: 500;
-    border-top: 5px solid rgb(85, 85, 255);
+    border-top: 2px solid rgb(85, 85, 255);
 
     margin-top: 20px;
     z-index: 110;
@@ -185,12 +185,12 @@ h1.conor {
 
 .itm-txt-1 {
     color: #fff;
-    font-size: 22pt;
+    font-size: 15pt;
 }
 
 .itm-txt-2 {
     color: rgb(108, 108, 255);
-    font-size: 18pt;
+    font-size: 13pt;
 }
 
 @media (min-width: 900px) {
@@ -215,8 +215,16 @@ h1.conor {
 
 .itm-txt-3 {
     color: #9bb1ffc2;
-    font-size: 15pt;
-    font-weight: 200;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+@media (min-width: 700px) {
+    .itm-txt-3 {
+        color: #9bb1ffc2;
+        font-size: 15pt;
+        font-weight: 200;
+    }
 }
 
 .sap-tllg {
