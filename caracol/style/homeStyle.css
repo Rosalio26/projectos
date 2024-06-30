@@ -689,6 +689,7 @@ h1.conor {
     width: 100vw;
     height: 100vh;
 
+    overflow-x: hidden;
     padding: 0px;
     position: relative;
 }
