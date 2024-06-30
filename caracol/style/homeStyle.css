@@ -692,7 +692,7 @@ h1.conor {
 .lema-zr {
     color: #ffd0a4;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -701,7 +701,7 @@ h1.conor {
 
 .lema {
     color: #aed1ff;
-    font-size: 13pt;
+    font-size: 10pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     text-align: left;
