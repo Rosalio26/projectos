@@ -764,6 +764,8 @@ h1.conor {
     height: 10px;
 }
 
+
+
 @media (min-width: 980px) {
     .one-main-itm {
         background-color: transparent;
@@ -777,6 +779,7 @@ h1.conor {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
+        overflow-y: hidden;
     }
 
     .txt-itm-mn {
