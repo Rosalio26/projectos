@@ -67,6 +67,10 @@ header {
     background-color: transparent;
 }
 
+header > .sticky_1 > .conor, header > .sticky_1 > .cnt-itm, header > .sticky_1 > .lg-nm {
+    z-index: 100;
+}
+
 header > .sticky_1 {
     background-color: var(--cor007);
     width: 100vw;
@@ -80,15 +84,49 @@ header > .sticky_1 {
 
     overflow-x: hidden;
     position: relative;
-    padding: 0px;
+    padding: 0px 10px;
 }
 
-header > .sticky_1 > .conor, header > .sticky_1 > .cnt-itm, header > .sticky_1 > .lg-nm {
-    z-index: 100;
+header > .sticky_1 > .conor {
+    color: rgb(0, 76, 176);
+    font-size: 22pt;
+    font-family: kanit;
+    font-weight: 600;
 }
 
 header > .sticky_1 > .cnt-itm > .img-itm > .cnt-img {
     display: none;
+}
+
+header > .sticky_1 > .cnt-itm > .cnt-img > .txt-gnl {
+    color: var(--cor008);
+    font-size: 13pt;
+}
+
+header > .sticky_1 > .cnt-itm > .cnt-img > .itm-txt-1 {
+    color: #4e66ff;
+    font-size: 15pt;
+    font-weight: 900;
+}
+
+header > .sticky_1 > .cnt-itm > .cnt-img > .itm-txt-2 {
+    color: rgb(125, 145, 209);
+    font-size: 17pt;
+    margin: 12px 0px;
+    font-weight: 900;
+}
+
+header > .sticky_1 > .cnt-itm > .cnt-img > .itm-txt-3 {
+    color: rgb(92, 97, 148);
+    font-size: 13pt;
+    text-transform: lowercase;
+}
+
+header > .sticky_1 > .lg-nm > .conor-1 {
+    color: rgb(67, 82, 107);
+    font-size: 10pt;
+    border-bottom: 1px solid rgb(143, 143, 143);
+    padding: 1px 2px;
 }
 
 header > .sticky_1 > .svgs {
