@@ -4,6 +4,9 @@
 ====================== CONFIG-GLOBAIS =======================
 =============================================================*/
 * {
+    font-family: roboto-light;
+    font-style: none;
+
     outline: none;
     text-decoration: none;
     list-style-type: none;
@@ -15,12 +18,90 @@
     -moz-box-sizing: border-box;
 }
 
-
 /*===========================================================
 ======================= CONFIG-CORES ========================
 =============================================================*/
-
+:root {
+    --cor001: #0000ff;
+    --cor002: #ffffff;
+    --cor003: #000000;
+    --cor004: #222222;
+    --cor005: #060e1f;
+    --cor006: #00030d;
+    --cor007: #0c172f;
+    --cor008: #9bb1ffc2;
+}
 
 /*===========================================================
 ======================= CONFIG-FONTE ========================
 =============================================================*/
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat/static/Montserrat-Medium.ttf)
+    format('truetype');
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../ownless/style/font/roboto-light.ttf) 
+    format('truetype');
+}
+
+@font-face {
+    font-family: kanit;
+    src: url(../ownless/style/font/kanit-regular.ttf) 
+    format('truetype');
+}
+
+/*===========================================================
+===================== CONFIG-HTML PAGES =====================
+=============================================================*/
+body {
+    text-align: center;
+    color: var(--cor002);
+    background-color: var(--cor006);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: transparent;
+}
+
+header > .sticky_1 {
+    background-color: var(--cor007);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow-x: hidden;
+    position: relative;
+    padding: 0px;
+}
+
+header > .sticky_1 > .conor, header > .sticky_1 > .cnt-itm, header > .sticky_1 > .lg-nm {
+    z-index: 100;
+}
+
+header > .sticky_1 > .cnt-itm > .img-itm > .cnt-img {
+    display: none;
+}
+
+header > .sticky_1 > .svgs {
+    position: absolute;
+    width: 900px;
+    height: 250px;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+header > .sticky_1 > .svgs > .svg-stick_1 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+}
