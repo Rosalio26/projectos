@@ -4,15 +4,20 @@
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = $_POST["name"];
   $surname = $_POST["surname"];
+  $usuario = $_POST["usuario"];
   $email = $_POST["email"];
   $password = $_POST["password"];
 
-  $insertdados = "INSERT INTO usuarios(name, surname, email, password) VALUES ('$name, $surname, $email, $password')";
+  $insertD = "INSERT INTO usuarios (name, surname, usuario, email, password) VALUES ('{$name}', '{$surname}', '{$usuario}', '{$email}', '{$password}')";
 
-  $connection->query($insertdados);
+  $res =  $conn->query($insertD);
+
+  if($res==true) {
+    print "<p>Redericionando</p>";
+    print "<script>location.href='../../ownless/home-less.php';</script>";
+  } else{
+    print "<p>Dados incopletos  </p>";
+  }
 }
 
-$url = "../../ownless/home-less.php";
-
-$connection->close();
 ?>
