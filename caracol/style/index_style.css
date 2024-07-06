@@ -358,9 +358,16 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     width: 100vw;
 }
 
+.col-main {
+    background-color: red;
+    
+    height: 70vh;
+    width: 100vw;
+}
 
+.one-main-itm {}
 
-
+.img-txt-mn {}
 
 
 /*TEMPORARIO*/
