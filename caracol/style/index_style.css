@@ -359,7 +359,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 
 .col-main {
-    background-color: red;
+    background-color: transparent;
     background-image: url("../midia/img/wel-img-003.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,7 +371,19 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     background-color: #000524b4;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
+}
+
+.txt-itm-mn {
+    background-color: transparent;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
 
 .txt-lmz {
@@ -379,8 +391,46 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     text-wrap: wrap;
 }
 
+.lema-zr {
+    color: #fff6cd;
+    font-size: 13pt;
+    font-family: kanit;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.lema {
+    color: #aed1ff;
+    font-size: 17pt;
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+
 .img-txt-mn {
     display: none;
+}
+
+.btn-lm {
+    color: var(--cor002);
+    font-size: 11pt;
+    font-family: kanit;
+    font-weight: 550;
+    text-transform: lowercase;
+
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 0px 20px 0px;
+    width: 100px;
+    padding: 3px 0px;
+}
+
+.btn-lm:hover {
+    color: var(--cor004);
+    background-color: lightgray;
+    border-color: var(--cor004);
+}
+
+.btn-lm::after {
+    content: "->";
 }
 
 
