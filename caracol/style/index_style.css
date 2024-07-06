@@ -410,6 +410,11 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
         margin: 0;
     }
 }
+@media (min-width: 1080px) {
+    .one-main-itm {
+        width: 80vw;
+    }
+}
 
 .txt-lmz {
     text-align: left;
