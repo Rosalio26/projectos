@@ -218,6 +218,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     justify-content: space-between;
     width: 100vw;
     padding: 10px 50px 10px 30px;
+    z-index: 1000;
 }
 @media (min-width: 900px) {
     .myHeader {
@@ -256,7 +257,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     border-top: 3px solid var(--cor002);
     width: 30px;
     padding: 0px;
-    z-index: 1000;
+    z-index: 1010;
 }
 .btn-nv::before,
 .btn-nv::after {
@@ -365,24 +366,40 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     background-size: cover;
     height: 70vh;
     width: 100vw;
+    position: relative;
 }
 @media (min-width: 900px) {
     .col-main {
-        background-image: linear-gradient(transparent, transparent);
+        background-image: none;
+        width: 75vw;
+        margin: 0 auto;
     }
 }
 
 .one-main-itm {
     display: block;
     background-color: #000524b4;
+    border: none;
     height: 100%;
     width: 100%;
     padding: 0px;
 }
+@media (min-width: 900px) {
+    .one-main-itm {
+        background-color: #26272a;
+        border-radius: 20px;
+        border: 1px solid #3b3b3b00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        z-index: 1;
+    }
+}
 
 .txt-itm-mn {
     background-color: transparent;
-    width: 80%;
+    width: 80vw;
     height: 90%;
     margin: auto;
 
@@ -392,27 +409,8 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     justify-content: center;
 }
 @media (min-width: 900px) {
-    .one-main-itm {
-        background-color: var(--cor004);
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-
-        width: 90vw;
-        padding: 0px 20px;
-        margin: 0 auto;
-    }
-
     .txt-itm-mn {
-        width: 40vw;
-        margin: 0;
-    }
-}
-@media (min-width: 1080px) {
-    .one-main-itm {
-        width: 80vw;
+        width: 25vw;
     }
 }
 
@@ -442,11 +440,16 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 @media (min-width: 900px) {
     .img-txt-mn {
         background-color: transparent;
-        display: block;
+        display: flex;
+        width: 32vw;
+        height: 300px;
+        margin: 0 auto;
     }
 
     .itn-img {
-        width: 450px;
+        border-radius: 50px 0px 0px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
