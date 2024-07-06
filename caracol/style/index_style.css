@@ -492,7 +492,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     padding: 0;
     width: 100vw;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     .arm-blst {
         padding: 0px 0px;
         width: 86vw;
@@ -511,7 +511,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     flex-direction: column;
     margin: 50px auto;
 }
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     .itm-blst-blck {
         border-radius: 10px;
         width: 280px;
@@ -532,7 +532,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     width: 65%;
     margin: 0px auto;
 }
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     .sp-cnt-txt {
         width: 90%;
     }
@@ -545,7 +545,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     font-family: kanit;
     font-weight: 400;
 }
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     #tli-elm-pry, #tli-elm-scd, #tli-elm-trd, #tli-elm-frd {
         font-size: 15pt;
     }
