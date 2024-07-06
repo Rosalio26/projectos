@@ -360,14 +360,28 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 .col-main {
     background-color: red;
-    
+    background-image: url("../midia/img/wel-img-003.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 70vh;
     width: 100vw;
 }
 
-.one-main-itm {}
+.one-main-itm {
+    background-color: #000524b4;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
 
-.img-txt-mn {}
+.txt-lmz {
+    text-align: left;
+    text-wrap: wrap;
+}
+
+.img-txt-mn {
+    display: none;
+}
 
 
 /*TEMPORARIO*/
