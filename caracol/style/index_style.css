@@ -193,3 +193,181 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     width: 500px;
     height: 300px;
 }
+
+/*
+=======================================================
+================== HEADER STICKER 2 ===================*/
+#sticky_2, .logo, .itm-content, .cnfg-reg {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/*====== STICKER "ADD" NO JS ======*/
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky + .main {
+    padding-top: 0px;
+}
+
+.myHeader/*or STICKER_2*/ {
+    background-color: var(--cor004);
+    justify-content: space-between;
+    width: 100vw;
+    padding: 10px 50px 10px 30px;
+}
+@media (min-width: 900px) {
+    .myHeader {
+        padding: 10px 100px;
+    }
+}
+
+.logo {
+    gap: 5px;
+    padding: 0px 5px;
+}
+
+.img-logo {
+    width: 45px;
+}
+@media (min-width: 700px) {
+    .img-logo {
+        width: 50px;
+    }
+}
+
+.txt-logo {
+    color: var(--cor002);
+    font-size: 20pt;
+    font-family: kanit;
+    font-weight: 550;
+}   
+
+.btn-nv {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    border-top: 3px solid var(--cor002);
+    width: 30px;
+    padding: 0px;
+    z-index: 1000;
+}
+.btn-nv::before,
+.btn-nv::after {
+    background-color: var(--cor002);
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 6px;
+}
+@media (min-width: 900px) {
+    .btn-nv {
+        display: none;
+    }
+}
+
+
+.itm-content {
+    display: none;
+}
+@media (min-width: 900px) {
+    .itm-content {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.cnt-lk {
+    cursor: pointer;
+    display: block;
+    border: 1px solid var(--cor001);
+    border-radius: 20px 20px 0px 0px;
+
+    width: 90px;
+    padding: 4px 0px;
+}
+
+.nv-lk {
+    color: var(--cor002);
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.btn-reg {
+    display: none;
+}
+@media (min-width: 900px) {
+    .btn-reg {
+        background-color: var(--cor001);
+        border-radius: 50px;
+        display: block;
+        font-size: 14pt;
+        font-family: montserrat;
+        font-weight: 900;
+
+        padding: 5px 15px;
+    }
+}
+@media (min-width: 1100px) {
+    .btn-reg {
+        display: none;
+    }
+}
+
+.gnl-reg {
+    display: block;
+}
+@media (min-width: 900px) {
+    .gnl-reg {
+        display: none;
+    }
+}
+@media (min-width: 1100px) {
+    .gnl-reg {
+        border: 1px solid var(--cor001);
+        border-radius: 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .gnl-reg:hover {
+        background-color: var(--cor001);
+    }
+}
+
+.hd-lgn {
+    background-color: var(--cor001);
+}
+
+.lgn-ins {
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+
+/*==================================
+============== MAIN ================*/
+.main {
+    width: 100vw;
+}
+
+
+
+
+
+
+/*TEMPORARIO*/
+.itm-hdd {
+    display: none;
+}
+
+img {
+    width: 30px;
+}
