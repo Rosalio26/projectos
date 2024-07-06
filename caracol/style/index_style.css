@@ -366,8 +366,14 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     height: 70vh;
     width: 100vw;
 }
+@media (min-width: 900px) {
+    .col-main {
+        background-image: linear-gradient(transparent, transparent);
+    }
+}
 
 .one-main-itm {
+    display: block;
     background-color: #000524b4;
     height: 100%;
     width: 100%;
@@ -384,6 +390,25 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+}
+@media (min-width: 900px) {
+    .one-main-itm {
+        background-color: var(--cor004);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        width: 90vw;
+        padding: 0px 20px;
+        margin: 0 auto;
+    }
+
+    .txt-itm-mn {
+        width: 40vw;
+        margin: 0;
+    }
 }
 
 .txt-lmz {
@@ -408,6 +433,16 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 .img-txt-mn {
     display: none;
+}
+@media (min-width: 900px) {
+    .img-txt-mn {
+        background-color: transparent;
+        display: block;
+    }
+
+    .itn-img {
+        width: 450px;
+    }
 }
 
 .btn-lm {
