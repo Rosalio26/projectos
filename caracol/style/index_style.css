@@ -611,22 +611,65 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     width: 80vw;
     margin: 0 auto;
 }
+@media (min-width: 1100px) {
+    .end-itm .end-itm-blst {
+        width: 85vw;
+    }
+}
 
 .end-itm .end-itm-blst .end-blast {
-    background-color: orangered;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 100px;
     padding: 0px;
 }
 
 #blast001 {
     background-image: url("../ownless/midia/objectivos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+#blast002 {
+    background-image: url("../ownless/midia/potos-frt-frc.jpg");
+}
+
+#blast003 {
+    background-image: url("../ownless/midia/grupo-est.webp");
+}
+
+#blast004 {
+    background-image: url("../ownless/midia/share-int.jpg");
+}
+@media (min-width: 1100px) {
+    #blast001, #blast002, #blast003, #blast004 {
+        background-image: none;
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        
+        height: 330px;
+        margin-top: 130px;
+    }
+}
+
+.conteiner-end-bls {
+    width: 100%;
+}
+@media (min-width: 1100px) {
+    .conteiner-end-bls {
+        width: 45%;
+    }
 }
 
 .cnt-hdd-blst {
     background-color: #000718ec;
     padding: 30px 10px;
+}
+@media (min-width: 1100px) {
+    .cnt-hdd-blst {
+        background-color: transparent;
+    }
 }
 
 .end-itm .end-itm-blst .end-blast .txt-end-cnt {
@@ -638,14 +681,39 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     text-transform: uppercase;
     padding: 5px;
 }
+@media (min-width: 1100px) {
+    .end-itm .end-itm-blst .end-blast .txt-end-cnt {
+        font-size: 17pt;
+    }
+}
 
 .rsm-cnt-txt {
     color: rgb(186, 189, 226);
     margin: 20px 0px;
 }
+@media (min-width: 1100px) {
+    .rsm-cnt-txt {
+        color: rgb(186, 189, 226);
+        font-size: 13pt;
+        margin: 30px 0px;
+    }
+}
+
+.img-cnt-bl {
+    background-color: #0000ff;
+    width: 50%;
+    height: 100%;
+}
 
 .cnt-img-blst {
     display: none;
+}
+@media (min-width: 1100px) {
+    .cnt-img-blst {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .btn-imp-itm {
@@ -653,6 +721,12 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     font-size: 11pt;
     border: 1px solid #fff;
     padding: 5px;
+}
+
+.btn-imp-itm::after {
+    content: "->";
+    font-size: large;
+    padding-left: 5px;
 }
 
 
