@@ -599,8 +599,63 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 
 .end-itm {
-    
+    text-align: left;
+    text-wrap: wrap;
+    position: relative;
+    width: 100vw;
+    margin: 0;
 }
+
+.end-itm .end-itm-blst {
+    background-color: transparent;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.end-itm .end-itm-blst .end-blast {
+    background-color: orangered;
+    margin-top: 100px;
+    padding: 0px;
+}
+
+#blast001 {
+    background-image: url("../ownless/midia/objectivos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cnt-hdd-blst {
+    background-color: #000718ec;
+    padding: 30px 10px;
+}
+
+.end-itm .end-itm-blst .end-blast .txt-end-cnt {
+    color: rgb(157, 183, 245);
+    text-align: left;
+    font-size: 15pt;
+    font-family: kanit;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.rsm-cnt-txt {
+    color: rgb(186, 189, 226);
+    margin: 20px 0px;
+}
+
+.cnt-img-blst {
+    display: none;
+}
+
+.btn-imp-itm {
+    color: #fff;
+    font-size: 11pt;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+
 /*TEMPORARIO*/
 .itm-hdd {
     display: none;
