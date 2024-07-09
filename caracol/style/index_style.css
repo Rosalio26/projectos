@@ -801,6 +801,11 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     transform-style: preserve-3d;
 }
 
+.img-col-wn {
+    width: 100%;
+    height: 100%;
+}
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
