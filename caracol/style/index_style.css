@@ -265,8 +265,8 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     content: " ";
     display: block;
     width: 100%;
-    height: 2px;
-    margin-top: 6px;
+    height: 2.2px;
+    margin-top: 5px;
 }
 @media (min-width: 900px) {
     .btn-nv {
@@ -276,29 +276,63 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 
 .itm-content {
+    background-image: linear-gradient(to bottom, #000012cd 20%, #2d2d3bf9 50%);
     display: none;
+    position: absolute;
+    height: 100vh;
+    top: 7vh;
+    right: 0;
+    left: 0;
+    z-index: 500;
+
+    padding: 100px 50px;
 }
 @media (min-width: 900px) {
     .itm-content {
+        background-color: transparent;
+        position: relative;
         display: flex;
         gap: 20px;
+        top: 0;
+        height: max-content;
+
+        padding: 0;
     }
 }
 
 .cnt-lk {
-    cursor: pointer;
+    color: #222;
+    background-color: #e8e9f0;
+    font-size: 15pt;
+    text-align: left;
     display: block;
-    border: 1px solid var(--cor004);
-    border-radius: 20px 20px 0px 0px;
 
-    width: 90px;
-    padding: 4px 0px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 15px;
+}
+@media (min-width: 700px) {
+    .cnt-lk {
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        font-size: 12pt;
+        background-color: transparent;
+        border: 1px solid var(--cor004);
+        border-radius: 20px 20px 0px 0px;
+    
+        width: 90px;
+        margin: 0px;
+        padding: 4px 0px;
+    }    
 }
 
-.nv-lk {
-    color: var(--cor002);
-    font-weight: 500;
-    text-transform: lowercase;
+@media (min-width: 700px) {
+    .nv-lk {
+        color: var(--cor002);
+        font-weight: 500;
+        text-transform: lowercase;
+    }    
 }
 
 .btn-reg {
@@ -364,7 +398,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     background-image: url("../midia/img/wel-img-003.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
     width: 100vw;
     position: relative;
     margin-bottom: 100px;
@@ -418,6 +452,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 .txt-lmz {
     text-align: left;
     text-wrap: wrap;
+    line-height: 35px;
 }
 
 .lema-zr {
@@ -426,13 +461,14 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     font-family: kanit;
     font-weight: 400;
     text-transform: lowercase;
+    line-height: 30px;
 }
 
 .lema {
     color: #aed1ff;
     font-size: 17pt;
     text-transform: uppercase;
-    margin: 15px 0px;
+    margin: 40px 0px;
 }
 
 .img-txt-mn {
@@ -612,7 +648,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 .end-itm .end-itm-blst {
     background-color: transparent;
     width: 80vw;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 @media (min-width: 1100px) {
     .end-itm .end-itm-blst {
@@ -624,8 +660,9 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
+    margin-top: 130px;
     padding: 0px;
+    height: 100%;
 }
 
 #blast001 {
