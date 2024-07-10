@@ -781,11 +781,23 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
     display: block;
 }
+@media (min-width: 700px) {
+    .windows {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .col-wn {
     width: 90%;
     height: 35vh;
     margin: auto auto;
+}
+@media (min-width: 700px) {
+    .col-wn {
+        width: 40%;
+        height: 50vh;
+    }
 }
 
 .flip-card {
@@ -843,6 +855,11 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 @media (max-width: 450px) {
     .cl-wn {
         width: 35%;
+    }
+}
+@media (min-width: 700px) {
+    .cl-wn {
+        height: 30vh;
     }
 }
 

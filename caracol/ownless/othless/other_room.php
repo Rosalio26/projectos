@@ -8,7 +8,7 @@
 <body>
     <section>
         <div>
-            <p>Está pagina não se encotra a desposição de conteudos ditos. <br> Nossas siceras desculpes.</p>
+            <p>Esta pagina não se encotra a desposição de conteudos ditos. <br> Nossas sinceras desculpas.</p>
             <p>Estamos a trabalhar para poder restaurar o mesmo.</p>
         </div>
     </section>
