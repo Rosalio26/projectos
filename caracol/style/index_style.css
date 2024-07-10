@@ -836,7 +836,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 
 .back {
-    background-color: rgb(120, 127, 146);
+    background-color: #e6e6e6;
     transform: rotateY(180deg);
 }
 
