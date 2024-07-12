@@ -1,0 +1,42 @@
+* {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: transparent;
+    border-bottom: 1px solid #666;
+    height: 10vh;
+    width: 100%;
+}
+
+.home-less {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden hidden;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cntet-rgh-bd {
+    background-color: transparent;
+    width: 80%;
+}
+
+.main {
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.fotr-min-bdy {
+    background-color: transparent;
+    border-right: 1px solid #666;
+    width: 25%;
+}
+
+.bdy-cnt-inc {
+    height: 100%;
+}
