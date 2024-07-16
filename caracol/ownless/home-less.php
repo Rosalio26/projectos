@@ -54,77 +54,77 @@
                             default:
                             print '
                             <div class="block-less-info welcm-info-less">
-                            <div class="welcm-info-cnt info-welcm-program">
-                                <div class="img-back-less">
-                                    <h1>Programação</h1>
-                                </div>
-                                <div class="cmp-btn-ctxt-less">
-                                    <div class="ctxt-block">
-                                        <p>
-                                            Começe Sua imaginação desenvolvendo e criando a sua imaginação. <br>
-                                            Começe a criar um novo caminho para o mundo <br>  
-                                            Conheça e desevolva com os novos meios de ensino. 
-                                        </p>
+                                <div id="info-welcm-program" class="welcm-info-cnt info-welcm-program">
+                                    <div class="img-back-less">
+                                        <h1>Programação</h1>
                                     </div>
-                                    <div class="btn-welc">
-                                        <a href="?page=programacao">Estudar</a>
+                                    <div class="cmp-btn-ctxt-less">
+                                        <div class="ctxt-block">
+                                            <p>
+                                                Começe Sua imaginação desenvolvendo e criando a sua imaginação. <br>
+                                                Começe a criar um novo caminho para o mundo <br>  
+                                                Conheça e desevolva com os novos meios de ensino. 
+                                            </p>
+                                        </div>
+                                        <div class="btn-welc">
+                                            <a href="?page=programacao">Estudar</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="welcm-info-cnt info-welcm-eletron">
-                                <div class="img-back-less">
-                                    <h1>Electrônica</h1>
-                                </div>
-                                <div class="cmp-btn-ctxt-less">
-                                    <div class="ctxt-block">
-                                        <p>
-                                            A grande inovação que caracteriza o mundo, é um conheçimento que podes criar. <br>
-                                            Crie uma nova jornada de inteligênçia capaz de responer suas necessidades
-                                        </p>
+                                <div class="welcm-info-cnt info-welcm-eletron">
+                                    <div class="img-back-less">
+                                        <h1>Electrônica</h1>
                                     </div>
-                                    <div class="btn-welc">
-                                        <a href="?page=eletronic">Estudar</a>
+                                    <div class="cmp-btn-ctxt-less">
+                                        <div class="ctxt-block">
+                                            <p>
+                                                A grande inovação que caracteriza o mundo, é um conheçimento que podes criar. <br>
+                                                Crie uma nova jornada de inteligênçia capaz de responer suas necessidades
+                                            </p>
+                                        </div>
+                                        <div class="btn-welc">
+                                            <a href="?page=eletronic">Estudar</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="welcm-info-cnt info-welcm-devweb">
-                                <div class="img-back-less">
-                                    <h1>Desevolvimento Web</h1>
-                                </div>
-                                <div class="cmp-btn-ctxt-less">
-                                    <div class="ctxt-block">
-                                        <p>
-                                            Crie seu propio futuro com tecnologias. <br>
-                                            As primeiras etapas para poder apreender o funcionamento da internet. <br>
-                                            Começe a criar uma nova rede para desfrutar dos seus interesses.
-                                        </p>
+                                <div class="welcm-info-cnt info-welcm-devweb">
+                                    <div class="img-back-less">
+                                        <h1>Desevolvimento Web</h1>
                                     </div>
-                                    <div class="btn-welc">
-                                        <a href="?page=devweb">Estudar</a>
+                                    <div class="cmp-btn-ctxt-less">
+                                        <div class="ctxt-block">
+                                            <p>
+                                                Crie seu propio futuro com tecnologias. <br>
+                                                As primeiras etapas para poder apreender o funcionamento da internet. <br>
+                                                Começe a criar uma nova rede para desfrutar dos seus interesses.
+                                            </p>
+                                        </div>
+                                        <div class="btn-welc">
+                                            <a href="?page=devweb">Estudar</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="welcm-info-cnt info-welcm-math">
-                                <div class="img-back-less">
-                                    <h1>Matematica</h1>
-                                </div>
-                                <div class="cmp-btn-ctxt-less">
-                                    <div class="ctxt-block">
-                                        <p>
-                                            Grandes Maquinas começão com simples números criados pelo homem <br>
-                                            Começe a criar codigos para suas maquinas <br>
-                                            desevolva seu ambiente de grandes redes capasis de satisfazer suas necessiades.
-                                        </p>
+                                <div class="welcm-info-cnt info-welcm-math">
+                                    <div class="img-back-less">
+                                        <h1>Matematica</h1>
                                     </div>
-                                    <div class="btn-welc">
-                                        <a href="?page=mathematic">Estudar</a>
+                                    <div class="cmp-btn-ctxt-less">
+                                        <div class="ctxt-block">
+                                            <p>
+                                                Grandes Maquinas começão com simples números criados pelo homem <br>
+                                                Começe a criar codigos para suas maquinas <br>
+                                                desevolva seu ambiente de grandes redes capasis de satisfazer suas necessiades.
+                                            </p>
+                                        </div>
+                                        <div class="btn-welc">
+                                            <a href="?page=mathematic">Estudar</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>';
+                            </div>';
                         }
                     ?>
                 </div>

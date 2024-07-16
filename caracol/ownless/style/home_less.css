@@ -131,6 +131,13 @@ input {
     gap: 0px;
 }
 
+#info-welcm-program {
+    background-image: url("../midia/forless/programer-less.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    visibility: .1px;
+}
+
 .img-back-less {
     background-color: transparent;
     border-radius: 20px 0px 0px 20px;
