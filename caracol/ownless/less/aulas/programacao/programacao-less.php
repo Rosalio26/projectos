@@ -25,24 +25,24 @@
             </div>
             <div class="cnt-less-program">
                 <section class="blck-less-program">
-                    <div class="sub-blck-less">
-                        <h2><a href="less/aulas/programacao/aulajavascript/javascript.php">JavaScript</a></h3>
-                    </div>
-                    <div class="sub-blck-less">
-                        <h2><a href="">Java</a></h2>
-                    </div>
-                    <div class="sub-blck-less">
-                        <h2><a href="">Php</a></h2>
-                    </div>
-                    <div class="sub-blck-less">
-                        <h2><a href="">C#</a></h2>
-                    </div>
-                    <div class="sub-blck-less">
-                        <h2><a href="">C++</a></h2>
-                    </div>
-                    <div class="sub-blck-less">
-                        <h2><a href="">C</a></h2>
-                    </div>
+                    <a href="less/aulas/programacao/aulajavascript/javascript.php" class="sub-blck-less">
+                        <h2>JavaScript</h3>
+                    </a>
+                    <a href="less/aulas/programacao/aulajava/java.php" class="sub-blck-less">
+                        <h2>Java</h2>
+                    </a>
+                    <a href="less/aulas/programacao/aulaphp/al_php.php" class="sub-blck-less">
+                        <h2>Php</h2>
+                    </a>
+                    <a href="less/aulas/programacao/aulaLg-csh/lg_csh.php" class="sub-blck-less">
+                        <h2>C#</h2>
+                    </a>
+                    <a href="less/aulas/programacao/aulaLg-c++/lg_c++.php" class="sub-blck-less">
+                        <h2>C++</h2>
+                    </a>
+                    <a href="less/aulas/programacao/aulaLg-c/lg_c.php" class="sub-blck-less">
+                        <h2>C</h2>
+                    </a>
                 </section>
             </div>
         </div>

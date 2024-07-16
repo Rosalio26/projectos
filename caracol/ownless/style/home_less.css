@@ -135,7 +135,24 @@ input {
     background-image: url("../midia/forless/programer-less.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    visibility: .1px;
+}
+
+#info-welcm-devweb {
+    background-image: url("../midia/forless/back-devweb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#info-welcm-eletron {
+    background-image: url("../midia/forless/copy-eletron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#info-welcm-math {
+    background-image: url("../midia/forless/mat-tw-img-lk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-back-less {
@@ -150,11 +167,34 @@ input {
 }
 
 .img-back-less h1 {
-    color: #444;
+    font-size: 20pt;
+    font-family: monospace;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f6f6f6;
+    padding: 50px;
 }
 
+.img-back-less h1.tlt-prg {
+    background-color: #9aace9ac;
+}
+
+.img-back-less h1.tlt-dvwb {
+    background-color: #00233376;
+}
+
+.img-back-less h1.tlt-eletro {
+    background-color: #41341276;
+}
+
+.img-back-less h1.tlt-math {
+    background-color: #f0500076;
+}
+
+
 .cmp-btn-ctxt-less {
-    background-color: transparent;
+    background-color: #00162dd8;
+    border-radius: 20px;
     width: 50%;
     height: 100%;
     position: relative;
@@ -165,30 +205,60 @@ input {
     justify-content: space-between;
 }
 
+#less-devweb-cmp {
+    background-color: #002333d1;
+}
+
+#less-eletron-cmp {
+    background-color: #513a00d8;
+}
+
+#less-math-cmp {
+    background-color: #f05000d8;
+}
+
 .ctxt-block {
-    background-color: #fff;
-    border-radius: 0px 20px 0px 20px;
+    background-color: #001833;
+    border-bottom: 1px solid #fff;
+    border-radius: 20px 20px 0px 0px;
     display: flex;
     align-items: center;
     height: 40%;
     padding: 20px;
 }
 
+#ctxt-devweb {
+    background-color: #001924;
+    border-bottom: 1px solid #fff;
+}
+
+#ctxt-eletron {
+    background-color: #6a6100;
+    border-bottom: 1px solid #fff;
+}
+
+#ctxt-math {
+    background-color: #de4e00;
+    border-bottom: 1px solid #fff;
+}
+
 .ctxt-block p {
+    color: #e4f0f4;
     font-size: 17px;
-    font-weight: 500;
-    line-height: 23px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 23pt;
 }
 
 .btn-welc a {
     display: block;
     color: #111;
-    border: 2px solid orangered;
+    border: 2px solid rgb(0, 52, 108);
     border-radius: 50px;
     background-color: #fff;
     width: max-content;
     padding: 7px 17px;
-    margin: 50px 0px;
+    margin: 40px 100px;
 }
 
 .btn-welc a::after {
@@ -229,6 +299,18 @@ input {
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+.img-user {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.img-user img {
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 .sep-img-id-user .dados-user .user-type {
@@ -312,28 +394,30 @@ input {
 
 
 
-
 /*===================================
-======= Pagina de Programação =======
+======== GLOBAIS DAS PAGINAS ========
 =====================================*/
-.programer-page {
-    width: 100%;
-    background-color: transparent;
-}
-#programer {
+#programer, #eletronic {
     background-color: transparent;
     width: 100%;
     margin: 100px auto 50px auto;
     position: relative;
 }
 
-.txt-inc {
+.programer-page, .eletronic-page {
+    width: 100%;
+    background-color: transparent;
+}
+
+.txt-inc, .txt-inc-eletron {
     margin: 0px auto;
     width: 80%;
 }
 
-.context-program {
-    background-color: #626262;
+.context-program, .context-eletron {
+    background-repeat: no-repeat;
+    background-size: cover;
+
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -343,31 +427,29 @@ input {
     width: 100%;
 }
 
-.program-tlt {
-    font-size: 32pt;
+.program-tlt, .eletron-tlt {
+    color: transparent;
+    font-size: 40pt;
+    background-clip: text;
+    -webkit-background-clip: text;
+    z-index: 10;
 }
 
-.cntxt-program {
-    background-color: #f5f2f2;
+.cnt-less-program, .cnt-less-eletronic {
+    background-color: #777;
+    width: 100%;
+}
+
+.cntxt-program, .cntxt-eletronic {
     width: 40%;
     height: 80%;
     padding: 10px;
 
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
 
-.cntxt-program p {
-    font-size: 13pt;
-    font-weight: 500;
-}
-
-.cnt-less-program {
-    background-color: #444;
-    width: 100%;
-}
-
-.blck-less-program {
+.blck-less-program, .blck-less-eletron {
     background-color: transparent;
     padding: 10px;
     width: 90%;
@@ -379,11 +461,58 @@ input {
     justify-content: center;
 }
 
+
+/*===================================
+======= Pagina de Programação =======
+=====================================*/
+#programer {
+}
+
+.context-program {
+    background-image: url("../midia/forless/programer-less.jpg");
+}
+
+.program-tlt {
+    background-image: linear-gradient(to right, rgb(255, 0, 157), Orangered);
+}
+
+.cntxt-program {
+    background-color: #000b31e8;
+    border: 2px solid orangered;
+    border-left: 10px solid rgb(255, 85, 0);
+    box-shadow: -200px 10px 70px 2px #ffa97876;
+}
+
+.cntxt-program p {
+    color: rgb(255, 97, 39);
+    font-size: 14pt;
+    font-weight: 600;
+}
+
 .sub-blck-less {
+    display: block;
     background-color: #f3f0f0;
     border-radius: 5px;
     width: 230px;
     height: 180px;
     margin: 10px;
     padding: 10px;
+}
+
+
+/*===================================
+======= Pagina de Eletrônica =======
+=====================================*/
+.context-eletron {
+    background-image: url("../midia/forless/copy-eletron.jpg");
+}
+
+.eletron-tlt {
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 0, 149));
+}
+
+.cntxt-eletronic {}
+
+.cntxt-eletronic p {
+    color: orange;
 }

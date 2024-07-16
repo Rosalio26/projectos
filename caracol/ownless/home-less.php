@@ -55,8 +55,8 @@
                             print '
                             <div class="block-less-info welcm-info-less">
                                 <div id="info-welcm-program" class="welcm-info-cnt info-welcm-program">
-                                    <div class="img-back-less">
-                                        <h1>Programação</h1>
+                                    <div id="welcm-program" class="img-back-less">
+                                        <h1 class="tlt-prg">Programação</h1>
                                     </div>
                                     <div class="cmp-btn-ctxt-less">
                                         <div class="ctxt-block">
@@ -72,12 +72,12 @@
                                     </div>
                                 </div>
 
-                                <div class="welcm-info-cnt info-welcm-eletron">
+                                <div id="info-welcm-eletron" class="welcm-info-cnt info-welcm-eletron">
                                     <div class="img-back-less">
-                                        <h1>Electrônica</h1>
+                                        <h1 class="tlt-eletro">Electrônica</h1>
                                     </div>
-                                    <div class="cmp-btn-ctxt-less">
-                                        <div class="ctxt-block">
+                                    <div id="less-eletron-cmp" class="cmp-btn-ctxt-less">
+                                        <div id="ctxt-eletron" class="ctxt-block">
                                             <p>
                                                 A grande inovação que caracteriza o mundo, é um conheçimento que podes criar. <br>
                                                 Crie uma nova jornada de inteligênçia capaz de responer suas necessidades
@@ -89,12 +89,12 @@
                                     </div>
                                 </div>
 
-                                <div class="welcm-info-cnt info-welcm-devweb">
+                                <div id="info-welcm-devweb" class="welcm-info-cnt info-welcm-devweb">
                                     <div class="img-back-less">
-                                        <h1>Desevolvimento Web</h1>
+                                        <h1 class="tlt-dvwb">Desevolvimento Web</h1>
                                     </div>
-                                    <div class="cmp-btn-ctxt-less">
-                                        <div class="ctxt-block">
+                                    <div id="less-devweb-cmp" class="cmp-btn-ctxt-less">
+                                        <div id="ctxt-devweb" class="ctxt-block">
                                             <p>
                                                 Crie seu propio futuro com tecnologias. <br>
                                                 As primeiras etapas para poder apreender o funcionamento da internet. <br>
@@ -107,12 +107,12 @@
                                     </div>
                                 </div>
 
-                                <div class="welcm-info-cnt info-welcm-math">
+                                <div id="info-welcm-math" class="welcm-info-cnt info-welcm-math">
                                     <div class="img-back-less">
-                                        <h1>Matematica</h1>
+                                        <h1 class="tlt-math">Matematica</h1>
                                     </div>
-                                    <div class="cmp-btn-ctxt-less">
-                                        <div class="ctxt-block">
+                                    <div id="less-math-cmp" class="cmp-btn-ctxt-less">
+                                        <div id="ctxt-math" class="ctxt-block">
                                             <p>
                                                 Grandes Maquinas começão com simples números criados pelo homem <br>
                                                 Começe a criar codigos para suas maquinas <br>
@@ -137,11 +137,11 @@
             <h1>Admin user</h1>
             <div class="sep-img-id-user">
                 <section class="img-user">
-                    <img src="" alt="imagem do usuario">
+                    <img src="./midia/progrm-tw-img-lk.jpg" alt="imagem do usuario">
                 </section>
                 <section class="dados-user">
-                    <div>Id do usuario</div>
-                    <div class="user-type">Tipo de usuario</div>
+                    <div>00001</div>
+                    <div class="user-type">Admin</div>
                 </section>
             </div>
         </div>
