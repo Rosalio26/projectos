@@ -67,7 +67,7 @@
                                         </p>
                                     </div>
                                     <div class="btn-welc">
-                                        <a href="">Estudar</a>
+                                        <a href="?page=programacao">Estudar</a>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                         </p>
                                     </div>
                                     <div class="btn-welc">
-                                        <a href="">Estudar</a>
+                                        <a href="?page=eletronic">Estudar</a>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                         </p>
                                     </div>
                                     <div class="btn-welc">
-                                        <a href="">Estudar</a>
+                                        <a href="?page=devweb">Estudar</a>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                         </p>
                                     </div>
                                     <div class="btn-welc">
-                                        <a href="">Estudar</a>
+                                        <a href="?page=mathematic">Estudar</a>
                                     </div>
                                 </div>
                             </div>
