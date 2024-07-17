@@ -25,23 +25,41 @@
             </div>
             <div class="cnt-less-program">
                 <section class="blck-less-program">
-                    <a href="less/aulas/programacao/aulajavascript/javascript.php" class="sub-blck-less">
+                    <a href="less/aulas/programacao/aulajavascript/javascript.php" id="javascript-block" class="sub-blck-less">
                         <h2>JavaScript</h3>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/progrm/js-01.png" alt="imagem de liguangem de programação JavaScript">
+                        </div>
                     </a>
-                    <a href="less/aulas/programacao/aulajava/java.php" class="sub-blck-less">
+                    <a href="less/aulas/programacao/aulajava/java.php" id="java-block" class="sub-blck-less">
                         <h2>Java</h2>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/progrm/java.png" alt="imagem da liguangem de programação JAVA">
+                        </div>
                     </a>
-                    <a href="less/aulas/programacao/aulaphp/al_php.php" class="sub-blck-less">
+                    <a href="less/aulas/programacao/aulaphp/al_php.php" id="php-block" class="sub-blck-less">
                         <h2>Php</h2>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/progrm/php.png" alt="imagem de programação PHP">
+                        </div>
                     </a>
-                    <a href="less/aulas/programacao/aulaLg-csh/lg_csh.php" class="sub-blck-less">
+                    <a href="less/aulas/programacao/aulaLg-csh/lg_csh.php" id="csh-block" class="sub-blck-less">
                         <h2>C#</h2>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/progrm/csh.png" alt="imagem de liguangem de programação C#">
+                        </div>
                     </a>
-                    <a href="less/aulas/programacao/aulaLg-c++/lg_c++.php" class="sub-blck-less">
+                    <a href="less/aulas/programacao/aulaLg-c++/lg_c++.php" id="cplus-block" class="sub-blck-less">
                         <h2>C++</h2>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/progrm/c++.png" alt="imagem da liguangem de programação C++">
+                        </div>
                     </a>
-                    <a href="less/aulas/programacao/aulaLg-c/lg_c.php" class="sub-blck-less">
+                    <a href="less/aulas/programacao/aulaLg-c/lg_c.php" id="c-block" class="sub-blck-less">
                         <h2>C</h2>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/progrm/c.jpeg" alt="imagem de linguagem de programação C">
+                        </div>
                     </a>
                 </section>
             </div>
