@@ -8,12 +8,12 @@
 <body>
     <div class="eletronic-page">
         <div id="eletronic" class="itm-less-content eletronic">
-            <div class="txt-inc-eletron">
-                <div class="context-eletron">
+            <div class="txt-inc">
+                <div class="context-grl context-eletron">
                     <h1 class="eletron-tlt">Electrônica</h1>
                     <div class="cntxt-eletronic">
                         <p>
-                            A inovação que caracteria o mundo num unico conheçimento. <br>
+                            A inovação que caracteriza o mundo num unico conheçimento. <br>
                             Novas inteligênçias capazes de satisfazer suas necessidades.
                         </p>
                     </div>

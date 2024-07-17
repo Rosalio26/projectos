@@ -1,35 +1,23 @@
 
-
-
-function btnContent() {
-    var myNav = document.querySelector('.cnt-tm-less');
-    var mynavBar = document.querySelector('.navBar');
-
-    if(myNav.style.display === "none" || mynavBar.style.backgroundColor === "transparent") {
-        myNav.style.display = "block";
-        mynavBar.style.backgroundColor = "#0008ff76"
-    } else {
-        myNav.style.display = "none";
-        mynavBar.style.backgroundColor = "transparent"
-    }
+function getpage(a) {
+  $.get(document.getElementById(a).getAttribute('data'), function(data){ paginas = data;});
 }
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content 
+
+/*
+var btnText = document.getElementById("test").addEventListener("click", ev => {
+  ev.preventDefault();
+});
+url = '/shmD9/show';
+
 function btnContent() {
-    document.getElementById("tm-less-program").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.lk-imp-tm')) {
-      var dropdowns = document.getElementsByClassName("cnt-tm-less");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
+
+  var areaHeader = document.querySelector(".header");
+  var areaBody = document.querySelector(".home-less");
+
+  areaHeader.style.background = "red";*/
+  /*if (areaHeader.style.background === "#555" || areaBody.style.background === "#555") {
+    areaHeader.style.background = "red";
+  } else {
+    areaHeader.style.background = "yellow"
   }*/

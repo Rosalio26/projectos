@@ -397,7 +397,7 @@ input {
 /*===================================
 ======== GLOBAIS DAS PAGINAS ========
 =====================================*/
-#programer, #eletronic {
+#programer, #eletronic, #devweb, #mathematic {
     background-color: transparent;
     width: 100%;
     margin: 100px auto 50px auto;
@@ -409,12 +409,12 @@ input {
     background-color: transparent;
 }
 
-.txt-inc, .txt-inc-eletron {
+.txt-inc {
     margin: 0px auto;
     width: 80%;
 }
 
-.context-program, .context-eletron {
+.context-grl {
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -427,7 +427,7 @@ input {
     width: 100%;
 }
 
-.program-tlt, .eletron-tlt {
+.program-tlt, .eletron-tlt, .devweb-tlt, .mathematic-tlt {
     color: transparent;
     font-size: 40pt;
     background-clip: text;
@@ -440,7 +440,7 @@ input {
     width: 100%;
 }
 
-.cntxt-program, .cntxt-eletronic {
+.cntxt-program, .cntxt-eletronic, .cntxt-devweb, .cntxt-mathematic {
     width: 40%;
     height: 80%;
     padding: 10px;
@@ -461,13 +461,28 @@ input {
     justify-content: center;
 }
 
+.sub-blck-less {
+    display: block;
+    background-color: #888;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.sub-blck-less h2 {
+    color: #fff;
+    font-size: 23pt;
+    background-color: #000a3413;
+    text-align: center;
+    padding-top: 10px;
+}
+
 
 /*===================================
 ======= Pagina de Programação =======
 =====================================*/
-#programer {
-}
-
 .context-program {
     background-image: url("../midia/forless/programer-less.jpg");
 }
@@ -489,25 +504,7 @@ input {
     font-weight: 600;
 }
 
-.sub-blck-less {
-    display: block;
-    background-color: #888;
-    border-radius: 5px;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    padding: 0px;
-}
-
-.sub-blck-less h2 {
-    color: #fff;
-    font-size: 23pt;
-    background-color: #000a3413;
-    text-align: center;
-    padding-top: 10px;
-}
-
-#javascript-block, #java-block, #php-block, #csh-block, #cplus-block, #c-block {
+#javascript-block, #java-block, #php-block, #csh-block, #cplus-block, #c-block, #html-css-block {
     border: none;
     display: flex;
     flex-direction: column;
@@ -564,13 +561,24 @@ input {
 =====================================*/
 .context-eletron {
     background-image: url("../midia/forless/copy-eletron.jpg");
-}
+}   
 
 .eletron-tlt {
-    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 0, 149));
+    background-image: linear-gradient(to right, #95ff00, #ffa600);
 }
+
+.cntxt-eletronic {
+    background-color: #003111e8;
+    border: 2px solid #239800;
+    border-left: 10px solid #009539;
+    box-shadow: -200px 10px 70px 2px #78ff9c76;
+}
+
 .cntxt-eletronic p {
-    color: orange;
+    color: #e1ff5b;
+    font-size: 14pt;
+    font-weight: 600;
+    line-height: 30px;
 }
 
 #algorithm-block, #ai-block, #arduino-block {
@@ -579,4 +587,79 @@ input {
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 0px;
+}
+
+
+/*===================================
+========= Pagina de DEV.Web =========
+=====================================*/
+.context-devweb {
+    background-image: url("../midia/forless/back-devweb.jpg");
+    padding: 0px 10px;
+}
+
+.devweb-tlt {
+    background-image: linear-gradient(to right, #00ff62, #fb4160, #ff009d);
+    font-size: 29pt;
+}
+
+.cntxt-devweb {
+    background-color: #0001298d;
+    border: 2px solid #bd93ff63;
+    border-left: 5px solid #b176ffab;
+    box-shadow: -200px 10px 70px 2px #87c7ff76;
+    width: 50%;
+}
+
+.cntxt-devweb p {
+    color: #ab70ff;
+    font-size: 17pt;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.html {
+    text-transform: uppercase;
+    color: rgb(0, 94, 255);
+}
+
+.css {
+    color: orangered;
+    text-transform: uppercase;
+}
+
+#html-css-block {
+    background-image: linear-gradient(40deg, #ff5719 50%, #3961ff 10%);   
+}
+
+
+/*===================================
+======== Pagina de Matematica =======
+=====================================*/
+.context-mathematic {
+    background-color: red;
+    background-image: url("../midia/forless/mat-tw-img-lk.jpg");
+}
+
+.mathematic-tlt {
+    background-image: linear-gradient(to right, #8cff00, #c8ff00, #00ff44);
+}
+
+.cntxt-mathematic {
+    background-color: #ff8000e8;
+    border: 2px solid #ffaa007c;
+    border-left: 10px solid #ff9500b3;
+    box-shadow: -200px 10px 70px 2px #ff950076;
+}
+
+.cntxt-mathematic p {
+    color: #2200ff;
+    font-size: 15pt;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.nvss {
+    background-color: #a76565;
+    padding: 2px;
 }

@@ -12,7 +12,7 @@
     <div class="programer-page">
         <div id="programer" class="itm-less-content programer">
             <div class="txt-inc">
-                <div class="context-program">
+                <div class="context-grl context-program">
                     <h1 class="program-tlt">Programação</h1>
                     <div class="cntxt-program">
                         <p>

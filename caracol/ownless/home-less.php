@@ -67,7 +67,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="?page=programacao">Estudar</a>
+                                            <a href="./less/room-lesson.php">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="?page=eletronic">Estudar</a>
+                                            <a href="./less/room-lesson.php">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="?page=devweb">Estudar</a>
+                                            <a href="./less/room-lesson.php">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="?page=mathematic">Estudar</a>
+                                            <a href="./less/room-lesson.php">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@
             <div class="col-itm-nav-less">
                 <nav class="list-less-nm">
                     <ul class="dpla-itm-less-nm">
-                        <li class="navBar">
-                            <a onclick="btnContent()" class="lk-imp-tm" href="?page=programacao">Programação</a>
+                        <li onclick="btnContent()" class="navBar">
+                            <a onclick="getpage(this.id)" id="test" class="lk-imp-tm" href="?page=programacao">Programação</a>
                             <ul id="tm-less-program" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">JavaScript</a></li>
                                 <li><a class="lk-cnt-less" href="">Java</a></li>

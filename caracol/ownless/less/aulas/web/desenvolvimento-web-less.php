@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desevolvimento Web</title>
     <link rel="stylesheet" href="./style/home_less.css">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../../../style/home_less.css">
 </head>
-
-<?php 
-    include("../../../style/home_less.css");
-?>
 
 <body>
     <div class="devweb-page">
         <div id="devweb" class="itm-less-content devWeb">
             <div class="txt-inc">
-                <div class="context-devweb">
-                    <h1 class="program-tlt">Desenvolvimento Web</h1>
+                <div class="context-grl context-devweb">
+                    <h1 class="devweb-tlt">Desenvolvimento Web</h1>
                     <div class="cntxt-devweb">
                         <p>
+                            Começe a criar e desenvolver sites com as ferramentas <span class="html">html5</span> <br> e faça um design com o novo <span class="css">css3</span>
                         </p>
                     </div>
                 </div>
@@ -28,13 +24,13 @@
             
             <div class="cnt-less-program">
                 <section class="blck-less-program">
-                    <a href="less/aulas/" id="html-css-block" class="sub-blck-less">
+                    <a href="less/aulas/web/htmlcss/html_css.php" id="html-css-block" class="sub-blck-less">
                         <h2>HTML5 e CSS3</h3>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/" alt="imagem de HTML e CSS">
+                            <img src="./midia/icon/devweb/html-css.jpeg" alt="imagem de HTML e CSS">
                         </div>
                     </a>
-                    <a href="less/aulas/" id="html-css-block" class="sub-blck-less">
+                    <a href="less/aulas/" id="svg-block" class="sub-blck-less">
                         <h2>SVG</h3>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/" alt="imagem de HTML e CSS">
