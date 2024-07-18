@@ -131,7 +131,6 @@
             </div>
         </div>
     </main>
-
     <div class="fotr-min-bdy bdy-cnt-inc">
         <div class="user-info">
             <h1>Admin user</h1>
