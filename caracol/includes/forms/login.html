@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Seccao</title>
+    <link rel="stylesheet" href="../../style/homeStyle.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
+    <div class="cnt-lg-cd">
+        <div class="row-lg-cd">
             <div class="col">
+                <div class="login-text">
+                    <h1>Login</h1>
+                </div>
                 <form action="login.php" method="post">
                     <div class="cnt-lbf">
-                        <label for="iduser">Usuario</label> <br>
-                        <input type="text" name="usuario" id="iduser" required>
+                        <label class="lb-txt" for="iduser">ID-Usuario</label> <br>
+                        <input class="inp-lg-cd" type="text" name="usuario" id="iduser" required>
                     </div>
                     <div class="cnt-lbf">
-                        <label for="idpass">Palavra-Passe</label> <br>
-                        <input type="password" name="password" id="idpass" required>
+                        <label class="lb-txt" for="idpass">Palavra-Passe</label> <br>
+                        <input class="inp-lg-cd" type="password" name="password" id="idpass" required>
                     </div>
-                    <hr>
+                    <hr class="hl-frt-lg-cd">
                     <div class="btn-sub">
                         <input type="submit" value="Enviar">
                     </div>

@@ -4,47 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="../../style/homeStyle.css">
 </head>
 <body>
-    <header>
-        <h1>Cadastro</h1>
-    </header>
-
     <main>
-        <section class="cnt-frm">
-            <div class="itm-frm">
-                <form action="cadastro.php" method="post">
-                    <div class="cnt-lbf">
-                        <label for="idname">Nome</label> <br>
-                        <input type="text" name="name" id="idname" required>
+        <div class="cnt-lg-cd">
+            <div class="row-lg-cd">
+                <div>    
+                    <div class="login-text">
+                        <h1>Cadastro</h1>
                     </div>
-
-                    <div class="cnt-lbf">
-                        <label for="idsurname">Sobrenome</label> <br>
-                        <input type="text" name="surname" id="idsurname" required>
-                    </div>
-
-                    <div class="cnt-lbf">
-                        <label for="iduser">Nome do Usuario</label> <br>
-                        <input type="text" name="usuario" id="iduser" required>
-                    </div>
-
-                    <div class="cnt-lbf">
-                        <label for="idemail">Email</label> <br>
-                        <input type="email" name="email" id="idemail" required>
-                    </div>
-
-                    <div class="cnt-lbf">
-                        <label for="idpass">Palavra-Passe</label> <br>
-                        <input type="password" name="password" id="idpass" required>
-                    </div>
-                    <hr>
-                    <div class="btn-sub">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+                    <form action="cadastro.php" method="post">
+                        <hr class="hl-frt-lg-cd">
+                        <div class="sep-itm-cd">
+                            <div class="info-person">
+                                <div class="cnt-lbf">
+                                    <label class="lb-txt" for="idname">Nome</label> <br>
+                                    <input class="inp-lg-cd" type="text" name="name" id="idname" required>
+                                </div>
+                                <div class="cnt-lbf">
+                                    <label class="lb-txt" for="idsurname">Sobrenome</label> <br>
+                                    <input class="inp-lg-cd" type="text" name="surname" id="idsurname" required>
+                                </div>
+                                <div class="cnt-lbf">
+                                    <label class="lb-txt" for="iduser">ID-Usuario</label> <br>
+                                    <input class="inp-lg-cd" type="text" name="usuario" id="iduser" required>
+                                </div>
+                            </div>
+                            <div class="cmp-email-pass">
+                                <div class="cnt-lbf">
+                                    <label class="lb-txt" for="idemail">Email</label> <br>
+                                    <input class="inp-lg-cd" type="email" name="email" id="idemail" required>
+                                </div>
+                                <div class="cnt-lbf">
+                                    <label class="lb-txt" for="idpass">Palavra-Passe</label> <br>
+                                    <input class="inp-lg-cd" type="password" name="password" id="idpass" required>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hl-frt-lg-cd">
+                        <div class="btn-sub">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>

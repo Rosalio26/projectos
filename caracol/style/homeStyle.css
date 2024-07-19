@@ -35,12 +35,85 @@
 }
 
 
+/*
+     Formulario login e cadastro
+===========================================
+*/
+.sep-itm-cd {
+    display: flex;
+    gap: 100px;
+}
+
+.cnt-lg-cd {
+    background-image: linear-gradient(45deg, black, red, orange, blue);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-lg-cd {
+    background-color: #0000006e;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 50px;
+}
+
+.login-text h1 {
+    color: #999ffa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.lb-txt {
+    color: #999;
+    font-size: 11pt;
+}
+
+.inp-lg-cd {
+    outline: none;
+    border: none;
+    background-color: #ddd;
+    border-radius: 100px;
+    margin: 5px 0px;
+    padding: 5px 15px;
+}
+
+.hl-frt-lg-cd {
+    background-color: #ccc;
+    border: none;
+    outline: none;
+    height: 1.5px;
+    margin: 40px 0px;
+}
+
+.btn-sub input {
+    color: #bed2ff;
+    cursor: pointer;
+    font-size: 11pt;
+    font-weight: bold;
+
+    background-color: #005eff;
+    border: 1px solid orange;
+    border-radius: 100px;
+    outline: none;
+    padding: 5px 20px;
+}
+
 body {
     background-color: #121d37;
     font-family: montserrat;
     font-weight: 500;
     overflow-x: hidden;
 }
+
 
 /*
      confing.stickers

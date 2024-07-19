@@ -67,7 +67,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="./less/room-lesson.php">Estudar</a>
+                                            <a href="./less/room-lesson.php?page=pageprogramacao">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="./less/room-lesson.php">Estudar</a>
+                                            <a href="./less/room-lesson.php?page=pageeletronica">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="./less/room-lesson.php">Estudar</a>
+                                            <a href="./less/room-lesson.php?page=pagedevweb">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@
                                             </p>
                                         </div>
                                         <div class="btn-welc">
-                                            <a href="./less/room-lesson.php">Estudar</a>
+                                            <a href="./less/room-lesson.php?page=pagemathematic">Estudar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,14 +133,22 @@
     </main>
     <div class="fotr-min-bdy bdy-cnt-inc">
         <div class="user-info">
-            <h1>Admin user</h1>
             <div class="sep-img-id-user">
                 <section class="img-user">
                     <img src="./midia/progrm-tw-img-lk.jpg" alt="imagem do usuario">
                 </section>
                 <section class="dados-user">
-                    <div>00001</div>
-                    <div class="user-type">Admin</div>
+                    <div>
+                        <?php 
+                       
+                        echo $_SESSION['usuario'];
+                        ?>
+                    </div>
+                    <div class="user-type">
+                        <?php 
+                         // echo $surname
+                        ?>
+                    </div>
                 </section>
             </div>
         </div>
