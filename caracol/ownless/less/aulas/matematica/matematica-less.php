@@ -16,7 +16,7 @@
                     <h1 class="mathematic-tlt">Matematica</h1>
                     <div class="cntxt-mathematic">
                         <p>
-                            Construindo e desenvolvendo além das capacidades da realidade. <br> Apreenda um novo tipo de ensino capaz de mudar oque chamamos de <span class="nvss">novas tecnologias</span>
+                            Construindo e desenvolvendo além das capacidades da realidade. <br> Apreenda um novo tipo de ensino capaz de mudar o que chamamos de <span class="nvss">novas tecnologias</span>
                         </p>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
             <div class="cnt-less-mathematic">
                 <section class="blck-less-program">
                     <a href="" id="" class="sub-blck-less">
-                        <h2>Ciênçia da computação e Engenharia</h2>
+                        <h2>Ciência da computação e Engenharia</h2>
                         <div class="blck-img-grl">
                             <img src="" alt="imagem de ciênçia da computação">
                         </div>

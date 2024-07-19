@@ -16,7 +16,7 @@
                     <h1 class="devweb-tlt">Desenvolvimento Web</h1>
                     <div class="cntxt-devweb">
                         <p>
-                            Começe a criar e desenvolver sites com as ferramentas <span class="html">html5</span> <br> e faça um design com o novo <span class="css">css3</span>
+                            Comece a criar e desenvolver sites com as ferramentas <span class="html">html5</span> <br> e faça um design com o novo <span class="css">css3</span>
                         </p>
                     </div>
                 </div>

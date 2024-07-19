@@ -79,8 +79,8 @@
                                     <div id="less-eletron-cmp" class="cmp-btn-ctxt-less">
                                         <div id="ctxt-eletron" class="ctxt-block">
                                             <p>
-                                                A grande inovação que caracteriza o mundo, é um conheçimento que podes criar. <br>
-                                                Crie uma nova jornada de inteligênçia capaz de responer suas necessidades
+                                                A grande inovação que caracteriza o mundo, é um conhecimento que podes criar. <br>
+                                                Crie uma nova jornada de inteligência capaz de responder suas necessidades
                                             </p>
                                         </div>
                                         <div class="btn-welc">
