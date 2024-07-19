@@ -22,8 +22,7 @@
         session_start();
         $_SESSION["usuario"] = $usuario;
         $_SESSION["password"] = $password;
-      //  print "<script>location.href='../../ownless/home-less.php';</script>";
-    // header("location:../../ownless/home-less.php");
+        print "<script>location.href='../../ownless/home-less.php';</script>";
 
     echo $tela;
 
