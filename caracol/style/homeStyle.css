@@ -57,7 +57,7 @@
 .row-lg-cd {
     background-color: #0000006e;
     border-radius: 10px;
-    width: max-content;
+    width: 400px;
     height: max-content;
     padding: 50px;
 }
@@ -105,6 +105,10 @@
     border-radius: 100px;
     outline: none;
     padding: 5px 20px;
+}
+
+.not-log-cad {
+    color: rgb(148, 148, 255);
 }
 
 body {
