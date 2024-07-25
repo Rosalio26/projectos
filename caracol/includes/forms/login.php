@@ -1,6 +1,5 @@
 <?php
   
-
     if(empty($_POST) or (empty($_POST["usuario"]) or (empty($_POST["password"])))) {
         print "<script>location.href='cadastro.php';</script>";
     }

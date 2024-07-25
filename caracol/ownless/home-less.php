@@ -140,8 +140,7 @@
                 <section class="dados-user">
                     <div>
                         <?php 
-                       
-                        echo $_SESSION['usuario'];
+                        print "$name";
                         ?>
                     </div>
                     <div class="user-type">
