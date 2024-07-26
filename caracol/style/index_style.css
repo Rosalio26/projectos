@@ -72,7 +72,7 @@ header > .sticky_1 > .conor, header > .sticky_1 > .cnt-itm, header > .sticky_1 >
 }
 
 header > .sticky_1 {
-    background-color: red;
+    /*gitbackground-color: red;*/
     width: 100vw;
     height: 100vh;
 
