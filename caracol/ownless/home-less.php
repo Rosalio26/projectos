@@ -140,7 +140,7 @@
                 <section class="dados-user">
                     <div>
                         <?php 
-                        print "$name";
+                          print "ola" . $_SESSION["nome"];
                         ?>
                     </div>
                     <div class="user-type">
