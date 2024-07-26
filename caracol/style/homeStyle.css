@@ -137,7 +137,6 @@ body {
 }
 @media (min-width: 1275px) {
     .sticky_1 {
-        background-color: blue;
         /*background-image: linear-gradient(#060e1f, #0c172f);*/
         /*background-color: #001035;*/
         width: 100vw;
