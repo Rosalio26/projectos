@@ -1,3 +1,12 @@
+
+<?php
+	session_start();
+	if (empty($_SESSION)) {
+		print "<script>location.href= 'login.html';</script>";
+	}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,13 +149,10 @@
                 <section class="dados-user">
                     <div>
                         <?php 
-                          print "ola" . $_SESSION["nome"];
+                          print $_SESSION["usuario"];
                         ?>
                     </div>
                     <div class="user-type">
-                        <?php 
-                         // echo $surname
-                        ?>
                     </div>
                 </section>
             </div>

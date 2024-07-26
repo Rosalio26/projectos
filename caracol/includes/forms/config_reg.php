@@ -1,5 +1,16 @@
 <?php
-   define('HOST','localhost');
+
+   define('HOST', 'localhost');
+   define('USER', 'root');
+   define('PASS', '');
+   define('BASE', 'cadastro');
+
+   $conn = new MYSQLi(HOST, USER, PASS, BASE);
+
+
+
+
+   /*define('HOST','localhost');
    define('USER', 'root');
    define('PASS', '');
    define('BASE', 'cadastro');
@@ -8,4 +19,4 @@
 
    if ($conn->connect_error) {
     die($conn->connect_error);
-   }
+   }*/
