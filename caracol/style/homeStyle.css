@@ -41,11 +41,13 @@
 */
 .sep-itm-cd {
     display: flex;
-    gap: 100px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cnt-lg-cd {
-    background-image: linear-gradient(45deg, black, red, orange, blue);
+    background-image: linear-gradient(45deg, black, red, orange);
     width: 100vw;
     height: 100vh;
 
@@ -54,12 +56,20 @@
     justify-content: center;
 }
 
+#emer-login {
+    width: 300px;
+    height: 400px;
+}
+
 .row-lg-cd {
     background-color: #0000006e;
+    border: 2px solid #fff;
     border-radius: 10px;
-    width: 400px;
-    height: max-content;
-    padding: 50px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .login-text h1 {
@@ -69,12 +79,12 @@
     font-size: 27pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin: 15px 0px;
 }
 
 .lb-txt {
-    color: #999;
-    font-size: 11pt;
+    color: #eee;
+    font-size: 13pt;
 }
 
 .inp-lg-cd {
@@ -82,7 +92,8 @@
     border: none;
     background-color: #ddd;
     border-radius: 100px;
-    margin: 5px 0px;
+    width: 200px;
+    margin: 10px 0px;
     padding: 5px 15px;
 }
 
@@ -91,24 +102,42 @@
     border: none;
     outline: none;
     height: 1.5px;
-    margin: 40px 0px;
+    margin-bottom: 40px;
 }
 
 .btn-sub input {
-    color: #bed2ff;
+    color: #dff;
     cursor: pointer;
-    font-size: 11pt;
+    font-size: 12pt;
     font-weight: bold;
 
     background-color: #005eff;
-    border: 1px solid orange;
+    border: 2px solid #fffff777;
     border-radius: 100px;
     outline: none;
-    padding: 5px 20px;
+    padding: 5px 30px;
+    margin: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lk-cd-lg {
+    text-align: center;
+    color: #ddd;
+    display: block;
 }
 
 .not-log-cad {
     color: #508aff;
+}
+
+.not-log-cad:hover {
+    text-decoration: underline;
 }
 
 body {

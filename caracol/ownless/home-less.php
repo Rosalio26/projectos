@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala Caracolearn</title>
     <link rel="stylesheet" href="./style/home_less.css">
+    <script src="./script/jquery.js"></script>
+    <script src="./script/app_less.js"></script>
 </head>
 <body class="home-less">
     <main class="cntet-rgh-bd bdy-cnt-inc">
@@ -39,7 +41,7 @@
             </section>
         </section>
 
-        <div class="main-obj">
+        <div id="main" class="main-obj">
             <div>
                 <div>
                     <?php 
@@ -149,7 +151,7 @@
                 <section class="dados-user">
                     <div>
                         <?php 
-                          print $_SESSION["usuario"];
+                          print '<span style="color: red;"> ID </span>' . $_SESSION["usuario"];
                         ?>
                     </div>
                     <div class="user-type">
@@ -163,7 +165,8 @@
                 <nav class="list-less-nm">
                     <ul class="dpla-itm-less-nm">
                         <li onclick="btnContent()" class="navBar">
-                            <a onclick="getpage(this.id)" id="test" class="lk-imp-tm" href="?page=programacao">Programação</a>
+                            <!--<a onclick="getpage(this.id)" id="test" class="lk-imp-tm" href="?page=programacao">Programação</a>-->
+                            <button id="btn-program" class="lk-imp-tm">Programacao</button>
                             <ul id="tm-less-program" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">JavaScript</a></li>
                                 <li><a class="lk-cnt-less" href="">Java</a></li>
@@ -173,30 +176,55 @@
                                 <li><a class="lk-cnt-less" href="">C</a></li>
                             </ul>
                         </li>
-                        <script src="script/app_less.js"></script>
+                        <script>                    
+                            $("#btn-program").click(function() {
+                                $("#main").load("./less/aulas/programacao/programacao-less.php");
+                            });
+                        </script>
+
                         <li>
-                            <a class="lk-imp-tm" href="?page=eletronic">Electrônica</a>
+                            <!--<a class="lk-imp-tm" href="?page=eletronic">Electrônica</a>-->
+                            <button id="btn-eletronic" class="lk-imp-tm">Eletronica</button>
                             <ul class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">Algoritmos</a></li>
                                 <li><a class="lk-cnt-less" href="">Intêligençia Artificial</a></li>
                                 <li><a class="lk-cnt-less" href="">Arduino</a></li>
                             </ul>
                         </li>
+                        <script>                    
+                            $("#btn-eletronic").click(function() {
+                                $("#main").load("./less/aulas/eletronica/eletronica-less.php");
+                            });
+                        </script>
+
                         <li>
-                            <a class="lk-imp-tm" href="?page=devweb">Desevolvimento Web</a>
+                            <!--<a class="lk-imp-tm" href="?page=devweb">Desevolvimento Web</a>-->
+                            <button id="btn-devweb" class="lk-imp-tm">Desevolvimento Web</button>
                             <ul class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">Html5</a></li>
                                 <li><a class="lk-cnt-less" href="">Css3</a></li>
                                 <li><a class="lk-cnt-less" href="">Svg e Canvas</a></li>
                             </ul>
                         </li>
+                        <script>                    
+                            $("#btn-devweb").click(function() {
+                                $("#main").load("./less/aulas/web/desenvolvimento-web-less.php");
+                            });
+                        </script>
+
                         <li>
-                            <a class="lk-imp-tm" href="?page=mathematic">Matematica</a>
+                            <!--<a class="lk-imp-tm" href="?page=mathematic">Matematica</a>-->
+                            <button id="btn-math" class="lk-imp-tm">Matematica</button>
                             <ul class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">ciênçia da computaçâo e Egenharia</a></li>
                                 <li><a class="lk-cnt-less" href="">Simbologia da computção</a></li>
                             </ul>
                         </li>
+                        <script>                    
+                            $("#btn-math").click(function() {
+                                $("#main").load("./less/aulas/matematica/matematica-less.php");
+                            });
+                        </script>
                     </ul>
                 </nav>
             </div>

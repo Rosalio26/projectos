@@ -5,6 +5,16 @@ function getpage(a) {
 
 
 /*
+===========Programacao===========
+=================================*/
+
+$("#btn-program").click(function() {
+  $("#main").load("../less/aulas/programacao/programacao-less.php");
+});
+
+
+
+/*
 var btnText = document.getElementById("test").addEventListener("click", ev => {
   ev.preventDefault();
 });

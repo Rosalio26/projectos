@@ -18,7 +18,7 @@ input {
 }
 
 .header, .fotr-min-bdy {
-    background-color: #555;
+    background-image: linear-gradient(to top, #0a0a13 10%, #07070c 50%);
 } 
 
 
@@ -26,7 +26,7 @@ input {
 =============== BODY ================
 =====================================*/
 .home-less {
-    background-color: #555;
+    background-image: -webkit-repeating-linear-gradient(rgb(7, 4, 15), rgb(5, 0, 5));
     border-bottom: 5px solid #666;
     width: 100vw;
     height: 97vh;
@@ -103,7 +103,7 @@ input {
 
 
 .main-obj {
-    background-color: #626262;
+    background-color: #0e0e135e;
     width: 100%;
     height: 87vh;
     overflow-y: scroll;
@@ -333,7 +333,7 @@ input {
 }
 
 .list-less-nm {
-    background-color: #636363;
+    background-color: #6363630f;
     width: 90%;
     height: 100%;
 }
@@ -345,11 +345,15 @@ input {
 
 .lk-imp-tm {
     color: #fff;
-    background-color: #99999910;
+    cursor: pointer;
+    background-color: #0a0a0e;
+    border: 1px solid #777;
+    outline: none;
+    font-size: 12pt;
     border-radius: 50px;
     text-wrap: wrap;
 
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -436,7 +440,7 @@ input {
 }
 
 .cnt-less-program, .cnt-less-eletronic {
-    background-color: #777;
+    background-color: #16171b57;
     width: 100%;
 }
 
