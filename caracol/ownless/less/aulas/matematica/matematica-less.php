@@ -26,13 +26,13 @@
                     <a href="" id="" class="sub-blck-less">
                         <h2>Ciência da computação e Engenharia</h2>
                         <div class="blck-img-grl">
-                            <img src="" alt="imagem de ciênçia da computação">
+                            <img src="./midia/icon/math/science.jpg" alt="imagem de ciênçia da computação">
                         </div>
                     </a>
                     <a href="" id="" class="sub-blck-less">
                         <h2>Simbologia da computação</h2>
                         <div class="blck-img-grl">
-                            <img src="" alt="imagem de simbologia da computação">
+                            <img src="./midia/icon/math/simbologia-01.jpg" alt="imagem de simbologia da computação">
                         </div>
                     </a>
                 </section>

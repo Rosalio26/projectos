@@ -33,7 +33,7 @@
                     <a href="less/aulas/" id="svg-block" class="sub-blck-less">
                         <h2>SVG</h3>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/" alt="imagem de HTML e CSS">
+                            <img src="./midia/icon/devweb/svg.jpg" alt="imagem de HTML e CSS">
                         </div>
                     </a>
                 </section>

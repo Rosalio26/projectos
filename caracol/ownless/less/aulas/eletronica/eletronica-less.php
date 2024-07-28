@@ -24,19 +24,19 @@
                     <a href="less/aulas/eletronica/aulaalgoritmo/algoritmo.php" id="algorithm-block" class="sub-blck-less">
                         <h2>Algoritmos</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/" alt="imagem de Codigo de algoritmo">
+                            <img src="./midia/icon/eletron/algorithm.jpg" alt="imagem de Codigo de algoritmo">
                         </div>
                     </a>
                     <a href="less/aulas/eletronica/aulaAI/ai.php" id="ai-block" class="sub-blck-less">
                         <h2>Inteligênçia Artificial</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/" alt="imagem de inteligençia artificial">
+                            <img src="./midia/icon/eletron/ai.jpg" alt="imagem de inteligençia artificial">
                         </div>
                     </a>
                     <a href="less/aulas/eletronica/aulaarduino/arduino.php" id="arduino-block" class="sub-blck-less">
                         <h2>Arduino</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/" alt="imagem de Arduino">
+                            <img src="./midia/icon/eletron/arduino.jpg" alt="imagem de Arduino">
                         </div>
                     </a>
                 </section>

@@ -15,11 +15,11 @@
     <title>Sala Caracolearn</title>
     <link rel="stylesheet" href="./style/home_less.css">
     <script src="./script/jquery.js"></script>
-    <script src="./script/app_less.js"></script>
+    <script type="module" src="./script/appless.js"></script>
 </head>
 <body class="home-less">
     <main class="cntet-rgh-bd bdy-cnt-inc">
-        <section class="header">
+        <section id="header" class="header">
             <section class="search">
                 <form action="">
                     <div class="area-procura">
@@ -142,7 +142,7 @@
             </div>
         </div>
     </main>
-    <div class="fotr-min-bdy bdy-cnt-inc">
+    <div id="navList" class="fotr-min-bdy bdy-cnt-inc">
         <div class="user-info">
             <div class="sep-img-id-user">
                 <section class="img-user">
@@ -162,12 +162,12 @@
 
         <div class="cmp-nav-list">
             <div class="col-itm-nav-less">
-                <nav class="list-less-nm">
+                <nav id="listNav" class="list-less-nm">
                     <ul class="dpla-itm-less-nm">
-                        <li onclick="btnContent()" class="navBar">
+                        <li id="navBar" class="navBar">
                             <!--<a onclick="getpage(this.id)" id="test" class="lk-imp-tm" href="?page=programacao">Programação</a>-->
                             <button id="btn-program" class="lk-imp-tm">Programacao</button>
-                            <ul id="tm-less-program" class="cnt-tm-less">
+                            <ul id="lessProgram" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">JavaScript</a></li>
                                 <li><a class="lk-cnt-less" href="">Java</a></li>
                                 <li><a class="lk-cnt-less" href="">Php</a></li>
@@ -182,10 +182,10 @@
                             });
                         </script>
 
-                        <li>
+                        <li class="navBar">
                             <!--<a class="lk-imp-tm" href="?page=eletronic">Electrônica</a>-->
                             <button id="btn-eletronic" class="lk-imp-tm">Eletronica</button>
-                            <ul class="cnt-tm-less">
+                            <ul id="lessEletro" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">Algoritmos</a></li>
                                 <li><a class="lk-cnt-less" href="">Intêligençia Artificial</a></li>
                                 <li><a class="lk-cnt-less" href="">Arduino</a></li>
@@ -197,10 +197,10 @@
                             });
                         </script>
 
-                        <li>
+                        <li class="navBar">
                             <!--<a class="lk-imp-tm" href="?page=devweb">Desevolvimento Web</a>-->
                             <button id="btn-devweb" class="lk-imp-tm">Desevolvimento Web</button>
-                            <ul class="cnt-tm-less">
+                            <ul id="lessDevweb" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">Html5</a></li>
                                 <li><a class="lk-cnt-less" href="">Css3</a></li>
                                 <li><a class="lk-cnt-less" href="">Svg e Canvas</a></li>
@@ -212,10 +212,10 @@
                             });
                         </script>
 
-                        <li>
+                        <li class="navBar">
                             <!--<a class="lk-imp-tm" href="?page=mathematic">Matematica</a>-->
                             <button id="btn-math" class="lk-imp-tm">Matematica</button>
-                            <ul class="cnt-tm-less">
+                            <ul id="lessMath" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="">ciênçia da computaçâo e Egenharia</a></li>
                                 <li><a class="lk-cnt-less" href="">Simbologia da computção</a></li>
                             </ul>
