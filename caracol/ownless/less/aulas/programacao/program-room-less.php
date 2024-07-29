@@ -1,7 +1,3 @@
-<div>
-    <h1>JAvascript</h1>
-</div>
-
 
 <div class="menu-cnt-room">
     <nav>

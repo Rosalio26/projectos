@@ -6,7 +6,7 @@ var backngNav = document.getElementById("navList");
 var backngHeader = document.getElementById("header");
 var listNav = document.getElementById("listNav");
 var mainArea = document.getElementById("main");
-//var navBar = document.getElementById("navBar");
+// var navBar = document.getElementById("navBar");
 
 mainArea.style.background = "#0d1821"; //#01161e
 backngNav.style.background = "#01161e";

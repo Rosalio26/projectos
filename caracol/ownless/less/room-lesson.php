@@ -55,7 +55,37 @@
                     <div class="tlt-less">
                     </div>
                     <div class="tlt-abd-tm">
-                        Temas a serem estudados
+                    <?php 
+                       switch(@$_REQUEST["pages"]) {
+                        case "areajavascript";
+                            include("./aulas/programacao/aulajavascript/javascript.php");
+                        break;
+
+                        case "areajava";
+                            include("./aulas/programacao/aulajava/java.php");
+                        break;
+
+                        case "areaphp";
+                            include("./aulas/programacao/aulaphp/al_php.php");
+                        break;
+
+                        case "areacshp";
+                            include("./aulas/programacao/aulaLgCshp/lg_csh.php");
+                        break;
+                        
+                        case "areacps";
+                            include("./aulas/programacao/aulaLgCplus/lg_Cpls.php");
+                        break;
+
+                        case "areacc";
+                            include("./aulas/programacao/aulaLg-c/lg_c.php");
+                        break;    
+
+                        default:
+                        print 'Nenhum ficheiro foi actulizado!'
+                        ;
+                       }
+                    ?>
                     </div>
                 </div>
                 <div class="col-mn-itm-tw"></div>

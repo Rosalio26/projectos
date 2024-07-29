@@ -168,12 +168,20 @@
                             <!--<a onclick="getpage(this.id)" id="test" class="lk-imp-tm" href="?page=programacao">Programação</a>-->
                             <button id="btn-program" class="lk-imp-tm">Programacao</button>
                             <ul id="lessProgram" class="cnt-tm-less">
-                                <li><a class="lk-cnt-less" href="">JavaScript</a></li>
-                                <li><a class="lk-cnt-less" href="">Java</a></li>
-                                <li><a class="lk-cnt-less" href="">Php</a></li>
-                                <li><a class="lk-cnt-less" href="">C#</a></li>
-                                <li><a class="lk-cnt-less" href="">C++</a></li>
-                                <li><a class="lk-cnt-less" href="">C</a></li>
+                                
+                                <li>
+                                    <a class="lk-cnt-less" href="./less/room-lesson.php?pages=areajavascript">JavaScript</a>
+                                </li>
+
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areajava">Java</a></li>
+
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaphp">Php</a></li>
+
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areacshp">C#</a></li>
+
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areacps">C++</a></li>
+
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areacc">C</a></li>
                             </ul>
                         </li>
                         <script>                    
