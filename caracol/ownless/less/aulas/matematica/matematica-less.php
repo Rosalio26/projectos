@@ -23,13 +23,13 @@
             </div>
             <div class="cnt-less-mathematic">
                 <section class="blck-less-program">
-                    <a href="" id="" class="sub-blck-less">
+                    <a href="" id="cceng-block" class="sub-blck-less">
                         <h2>Ciência da computação e Engenharia</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/math/science.jpg" alt="imagem de ciênçia da computação">
                         </div>
                     </a>
-                    <a href="" id="" class="sub-blck-less">
+                    <a href="" id="sbcomp-block" class="sub-blck-less">
                         <h2>Simbologia da computação</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/math/simbologia-01.jpg" alt="imagem de simbologia da computação">
