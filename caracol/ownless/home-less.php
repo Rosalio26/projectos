@@ -170,8 +170,7 @@
                             <ul id="lessProgram" class="cnt-tm-less">
                                 
                                 <li>
-                                    <a class="lk-cnt-less" href="<?php
-                                     echo ""; ?>">JavaScript</a>
+                                    <a class="lk-cnt-less" href="./less/room-lesson.php?pages=areajavascript">JavaScript</a>
                                 </li>
 
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areajava">Java</a></li>
