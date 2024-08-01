@@ -43,9 +43,7 @@
                         case "pagemathematic";
                             include("./aulas/matematica/math-room-less.php");
                         break;
-                        default:
-                        print 'Nenhum ficheiro foi actulizado!'
-                        ;
+                        default: include "./aulas/web/devweb-room-less.php" ;
                        }
                     ?>
                 </div>
@@ -82,7 +80,7 @@
                         break;    
 
                         default:
-                        print 'Nenhum ficheiro foi actulizado!'
+                        print 'Nenhum Dado Foi captado!'
                         ;
                        }
                     ?>

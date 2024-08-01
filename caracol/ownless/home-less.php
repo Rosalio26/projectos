@@ -45,7 +45,7 @@
             <div>
                 <div>
                     <?php 
-                        switch(@$_REQUEST["page"]) {
+                        switch(@$_REQUEST["pageLess"]) {
                             case "programacao";
                                 include("./less/aulas/programacao/programacao-less.php");
                             break;
@@ -63,79 +63,7 @@
                             break;
 
                             default:
-                            print '
-                            <div class="block-less-info welcm-info-less">
-                                <div id="info-welcm-program" class="welcm-info-cnt info-welcm-program">
-                                    <div id="welcm-program" class="img-back-less">
-                                        <h1 class="tlt-prg">Programação</h1>
-                                    </div>
-                                    <div class="cmp-btn-ctxt-less">
-                                        <div class="ctxt-block">
-                                            <p>
-                                                Começe Sua imaginação desenvolvendo e criando a sua imaginação. <br>
-                                                Começe a criar um novo caminho para o mundo <br>  
-                                                Conheça e desevolva com os novos meios de ensino. 
-                                            </p>
-                                        </div>
-                                        <div class="btn-welc">
-                                            <a href="./less/room-lesson.php?page=pageprogramacao">Estudar</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="info-welcm-eletron" class="welcm-info-cnt info-welcm-eletron">
-                                    <div class="img-back-less">
-                                        <h1 class="tlt-eletro">Electrônica</h1>
-                                    </div>
-                                    <div id="less-eletron-cmp" class="cmp-btn-ctxt-less">
-                                        <div id="ctxt-eletron" class="ctxt-block">
-                                            <p>
-                                                A grande inovação que caracteriza o mundo, é um conhecimento que podes criar. <br>
-                                                Crie uma nova jornada de inteligência capaz de responder suas necessidades
-                                            </p>
-                                        </div>
-                                        <div class="btn-welc">
-                                            <a href="./less/room-lesson.php?page=pageeletronica">Estudar</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="info-welcm-devweb" class="welcm-info-cnt info-welcm-devweb">
-                                    <div class="img-back-less">
-                                        <h1 class="tlt-dvwb">Desevolvimento Web</h1>
-                                    </div>
-                                    <div id="less-devweb-cmp" class="cmp-btn-ctxt-less">
-                                        <div id="ctxt-devweb" class="ctxt-block">
-                                            <p>
-                                                Crie seu propio futuro com tecnologias. <br>
-                                                As primeiras etapas para poder apreender o funcionamento da internet. <br>
-                                                Começe a criar uma nova rede para desfrutar dos seus interesses.
-                                            </p>
-                                        </div>
-                                        <div class="btn-welc">
-                                            <a href="./less/room-lesson.php?page=pagedevweb">Estudar</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="info-welcm-math" class="welcm-info-cnt info-welcm-math">
-                                    <div class="img-back-less">
-                                        <h1 class="tlt-math">Matematica</h1>
-                                    </div>
-                                    <div id="less-math-cmp" class="cmp-btn-ctxt-less">
-                                        <div id="ctxt-math" class="ctxt-block">
-                                            <p>
-                                                Grandes Maquinas começão com simples números criados pelo homem <br>
-                                                Começe a criar codigos para suas maquinas <br>
-                                                desevolva seu ambiente de grandes redes capasis de satisfazer suas necessiades.
-                                            </p>
-                                        </div>
-                                        <div class="btn-welc">
-                                            <a href="./less/room-lesson.php?page=pagemathematic">Estudar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>';
+                            include "inc/map_home_less_inc.php" ;
                         }
                     ?>
                 </div>
