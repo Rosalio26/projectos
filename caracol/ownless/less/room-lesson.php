@@ -29,23 +29,29 @@
                 </div>
                 <div class="menu-cnt-room">
                     <span>Menu</span>
-                    <?php 
-                       switch(@$_REQUEST["page"]) {
-                        case "pageprogramacao";
-                            include("./aulas/programacao/program-room-less.php");
-                        break;
-                        case "pageeletronica";
-                            include("./aulas/eletronica/eletron-room-less.php");
-                        break;
-                        case "pagedevweb";
-                            include("./aulas/web/devweb-room-less.php");
-                        break;
-                        case "pagemathematic";
-                            include("./aulas/matematica/math-room-less.php");
-                        break;
-                        default: include "./aulas/web/devweb-room-less.php" ;
-                       }
-                    ?>
+                    <div class="scrType">
+                        <?php 
+                            switch(@$_REQUEST["page"]) {
+                                case "pageprogramacao";
+                                    include("./aulas/programacao/program-room-less.php");
+                                break;
+                                case "pageeletronica";
+                                    include("./aulas/eletronica/eletron-room-less.php");
+                                break;
+                                case "pagedevweb";
+                                    include("./aulas/web/devweb-room-less.php");
+                                break;
+                                case "pagemathematic";
+                                    include("./aulas/matematica/math-room-less.php");
+                                break;
+                                default: 
+                                    include "./aulas/incLesson/themeLesoon.php"
+                                ;
+                            }
+                        ?> 
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
             </div>
             <div class="main-itm-tw">

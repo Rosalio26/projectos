@@ -586,15 +586,21 @@ input {
     gap: 25px;
 }
 .menu-cnt-room {
-    background-color: transparent;
-    width: 100%;
+    background-color: #1b1b231b;
+    width: 85%;
     height: 50%;
     display: flex;
     align-items: center;
+    justify-content: start;
+    gap: 2px;
+    padding: 2px 10px 2px 0px;
+    z-index: 100;
 }
 
 .menu-cnt-room span {
-    background-color: #ccc;
+    background-color: #999;
+    font-weight: bold;
+    color: #060021;
     height: 100%;
     width: 100px;
     display: flex;
@@ -609,7 +615,29 @@ input {
     display: flex;
     align-items: center;
     gap: 40px;
+    width: max-content;
 }
+
+.scrType {
+    background-color: #ff00;
+    overflow: hidden;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(89, 54, 54);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 
 .main-itm-tw {
     background-color: #eee;
