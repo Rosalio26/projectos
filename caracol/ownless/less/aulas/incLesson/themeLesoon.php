@@ -16,7 +16,6 @@
             <li>HTML5</li>
             <li>CSS3</li>
             <li>SVG</li>
-
         </ul>
     </nav>
 </div>

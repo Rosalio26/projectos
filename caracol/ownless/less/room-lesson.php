@@ -28,7 +28,6 @@
                     </div>
                 </div>
                 <div class="menu-cnt-room">
-                    <span>Menu</span>
                     <div class="scrType">
                         <?php 
                             switch(@$_REQUEST["page"]) {
