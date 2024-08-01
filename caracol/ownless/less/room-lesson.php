@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-mn-itm-tw"></div>
             </div>
-            <div class="footer-grl-static">end</div>
+            <div class="footer-grl-static">Por do sol</div>
         </div>
     </div>
 </body>
