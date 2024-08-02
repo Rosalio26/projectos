@@ -153,7 +153,7 @@
                             <button id="btn-math" class="lk-imp-tm">Matematica</button>
                             <ul id="lessMath" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaMathcomputer">ciênçia da computaçâo e Egenharia</a></li>
-                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaareaMathsymbol">Simbologia da computção</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaMathsymbol">Simbologia da computção</a></li>
                             </ul>
                         </li>
                         <script>                    

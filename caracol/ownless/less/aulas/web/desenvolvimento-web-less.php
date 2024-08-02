@@ -24,13 +24,21 @@
             
             <div class="cnt-less-program">
                 <section class="blck-less-program">
-                    <a href="less/aulas/web/htmlcss/html_css.php" id="html-css-block" class="sub-blck-less">
-                        <h2>HTML5 e CSS3</h3>
+                    <a href="./less/room-lesson.php?pages=areaHtml" id="html-css-block" class="sub-blck-less">
+                        <h2>HTML5</h3>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/devweb/html-css.jpeg" alt="imagem de HTML e CSS">
+                            <img src="./midia/icon/devweb/html.png" alt="imagem de HTML">
                         </div>
                     </a>
-                    <a href="less/aulas/" id="svg-block" class="sub-blck-less">
+
+                    <a href="./less/room-lesson.php?pages=areaCss" id="html-css-block" class="sub-blck-less">
+                        <h2>CSS3</h3>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/devweb/css.png" alt="imagem de CSS">
+                        </div>
+                    </a>
+
+                    <a href="./less/room-lesson.php?pages=areaSvg" id="svg-block" class="sub-blck-less">
                         <h2>SVG</h3>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/devweb/svg.jpg" alt="imagem de HTML e CSS">
