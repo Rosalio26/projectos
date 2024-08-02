@@ -122,9 +122,9 @@
                             <!--<a class="lk-imp-tm" href="?page=eletronic">Electrônica</a>-->
                             <button id="btn-eletronic" class="lk-imp-tm">Eletronica</button>
                             <ul id="lessEletro" class="cnt-tm-less">
-                                <li><a class="lk-cnt-less" href="">Algoritmos</a></li>
-                                <li><a class="lk-cnt-less" href="">Intêligençia Artificial</a></li>
-                                <li><a class="lk-cnt-less" href="">Arduino</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaAlgorithm">Algoritmos</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaAi">Intêligençia Artificial</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaArduino">Arduino</a></li>
                             </ul>
                         </li>
                         <script>                    
@@ -137,9 +137,9 @@
                             <!--<a class="lk-imp-tm" href="?page=devweb">Desevolvimento Web</a>-->
                             <button id="btn-devweb" class="lk-imp-tm">Desevolvimento Web</button>
                             <ul id="lessDevweb" class="cnt-tm-less">
-                                <li><a class="lk-cnt-less" href="">Html5</a></li>
-                                <li><a class="lk-cnt-less" href="">Css3</a></li>
-                                <li><a class="lk-cnt-less" href="">Svg e Canvas</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaHtml">Html5</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaCss">Css3</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaSvg">Svg e Canvas</a></li>
                             </ul>
                         </li>
                         <script>                    
@@ -152,8 +152,8 @@
                             <!--<a class="lk-imp-tm" href="?page=mathematic">Matematica</a>-->
                             <button id="btn-math" class="lk-imp-tm">Matematica</button>
                             <ul id="lessMath" class="cnt-tm-less">
-                                <li><a class="lk-cnt-less" href="">ciênçia da computaçâo e Egenharia</a></li>
-                                <li><a class="lk-cnt-less" href="">Simbologia da computção</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaMathcomputer">ciênçia da computaçâo e Egenharia</a></li>
+                                <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaareaMathsymbol">Simbologia da computção</a></li>
                             </ul>
                         </li>
                         <script>                    

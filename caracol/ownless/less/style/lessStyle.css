@@ -2,11 +2,57 @@
 #javascript {
     text-align: center;
     background-color: transparent;
+    padding: 15px 0px;
 }
 
 .cnt-less-itm {
-    background-color: #eee;
+    background-color: #4c4c5a;
     border-radius: 10px;
     height: 75%;
     padding: 10px;
+}
+
+.lessonItm {
+    display: none;
+    background-color: #bbb;
+
+    width: 90%;
+    padding: 5px 10px;
+    margin: 0px 0px 0px auto;
+}
+
+.btnLesson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: transparent;
+    color: #ddd;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: left;
+    
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+
+.btnLesson:hover {
+    font-size: 13pt;
+    box-shadow: 1px 1px 10px 2px #80808094;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnLesson:hover .plusAdd {
+    rotate: 3deg;
+}
+
+.plusAdd {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 1px 6px;
 }

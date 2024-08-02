@@ -82,15 +82,54 @@
 
                             case "areacc";
                                 include("./aulas/programacao/aulaLg-c/lg_c.php");
-                            break;    
+                            break;
+
+                            case "areaAlgorithm";
+                                include("./aulas/eletronica/aulaalgoritmo/algoritmo.php");
+                            break;
+
+                            case "areaAi";
+                                include("./aulas/eletronica/aulaAI/ai.php");
+                            break;
+
+                            case "areaArduino";
+                                include("./aulas/eletronica/aulaarduino/arduino.php");
+                            break;
+
+                            case "areaHtml";
+                                include("./aulas/web/htmlcss/html/html.php");
+                            break;
+
+                            case "areaCss";
+                                include("./aulas/web/htmlcss/css/css.php");
+                            break;
+
+                            case "areaSvg";
+                                include("./aulas/web/svg/svg.php");
+                            break;
+
+                            case "areaMathcomputer";
+                                include("./aulas/matematica/cienciaComputer/ciencia.php");
+                            break;
+
+                            case "areaMathsymbol";
+                                include("./aulas/matematica/symbol/simbologia.php");
+                            break;                
 
                             default:
-                            print 'Nenhum Dado Foi captado!'
+                            echo "<div class='errorUpdatefiles'>Ocorreu um erro na actulização de dados! <br> Por favor Siga as seguintes instruções: <br> Entre com uma conta, <a href='../../includes/forms/cadastro.html' class='contaCad cadLog'>Cadastro</a> ou <a href='../../includes/forms/login.html' class='contaLog cadLog'>Login</a></div>"
                             ;
                         }
                         ?>
                         
-                        <div style="height: 100%; width: 80%; background: red;" class="extra"> Estra</div>
+                        <div class="exmaChild">
+                            <div class="mam-itm">
+                                <div class="child-itm"></div>
+                            </div>
+                            <div class="incText">
+                                <span>inc&UnderBar;Learn &copy;</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 

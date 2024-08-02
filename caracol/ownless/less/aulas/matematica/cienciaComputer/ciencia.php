@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula de C++</title>
+    <title>Aula de Ciencia da computação</title>
     <link rel="stylesheet" href="./style/lessStyle.css">
     <link rel="stylesheet" href="../../../style/lessStyle.css">
 </head>
 <body>
-    <h1 id="javascript" class="lessThem">Aula de  C++</h1>
+    <h1 id="javascript" class="lessThem">Aula de Ciência da computaçâo</h1>
 
     <div class="cnt-less-itm">
         <div class="itmCenter">
