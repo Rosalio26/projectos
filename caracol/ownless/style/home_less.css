@@ -9,6 +9,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 input {
@@ -554,21 +555,27 @@ input {
 ======== Pagina de Room Less =======
 =====================================*/
 .genral-static {
-    overflow-x: hidden;
+    color: #fff;
+    background-color: #050511;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 .cop-static {
-    background-color: #ddd;
-    width: 100vw;
+    background-color: transparent;
+    width: 93vw;
     height: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
 }
 
 .header-static {
-    height: 12vh;
+    height: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo-cnt-room {
@@ -577,7 +584,12 @@ input {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+}
+
+.lef-itm {
+    display: flex;
+    gap: 30px;
 }
 
 .logo-cnt-room .bfs-room ul {
@@ -588,7 +600,7 @@ input {
 .menu-cnt-room {
     background-color: #1b1b231b;
     width: 85%;
-    height: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -609,29 +621,19 @@ input {
 
 .scrType {
     background-color: #ff00;
-    overflow: hidden;
+    overflow: scroll hidden;
     width: 100%;
+    height: 100%;
+
+    scrollbar-color: #eee;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(89, 54, 54);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
 .main-itm-tw {
-    background-color: #eee;
-    width: 95vw;
-    height: 86vh;
+    background-color: #777;
+    border-radius: 10px;
+    width: 100%;
+    height: 82%;
+    overflow: hidden;
 
     margin: 0 auto;
     display: flex;
@@ -639,22 +641,24 @@ input {
 
 .col-mn-itm-on {
     background-color: transparent;
-    border-right: 1px solid #aaa;
+    border-right: 1px solid #ddd;
     width: 25%;
 }
 
-.tlt-less {
-    background-color: #ddd;
+/*.tlt-less {
+    background-color: transparent;
     height: 7%;
     padding: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .tlt-abd-tm {
-    background-color: #eee;
-    height: 85%;
+    background-color: transparent;
+    padding: 10px 5px;
+    color: #000;
+    height: 100%;
 }
 
 .col-mn-itm-tw {
@@ -662,10 +666,6 @@ input {
     width: 80%;
 }
 
-.footer-grl-static {
-    background-color: #fff;
-    height: 13vh;
-}
 
 
 
