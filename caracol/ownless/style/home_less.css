@@ -46,7 +46,7 @@ input {
 =============== BODY ================
 =====================================*/
 .home-less {
-    background-image: -webkit-repeating-linear-gradient(rgb(7, 4, 15), rgb(5, 0, 5));
+    background-image: -webkit-repeating-linear-gradient(#07040f, #050005);
     border-bottom: 5px solid #666;
     width: 100vw;
     height: 97vh;
@@ -192,6 +192,14 @@ input {
     justify-content: flex-end;
 }
 
+.listNav {
+    overflow-y: hidden;
+}
+
+.listNav::-webkit-scrollbar {
+    width: 50px;
+}
+
 .list-less-nm {
     background-color: #63636376;
     width: 90%;
@@ -203,7 +211,7 @@ input {
     width: 100%;
 }
 
-.lk-imp-tm {
+/*.lk-imp-tm {
     color: #fff;
     cursor: pointer;
     background-color: #0a0a0e;
@@ -219,16 +227,7 @@ input {
     gap: 30px;
     margin: 0px 10px;
     padding: 10px 20px;
-}
-
-/*.lk-imp-tm:hover {
-    color: #222;
-    background-color: #999;
 }*/
-
-.lk-imp-tm::after {
-    content: ">";
-}
 
 .navBar {
     background-color: transparent;
@@ -241,7 +240,7 @@ input {
 }
 
 .cnt-tm-less {
-    background-color: #ccc;
+    background-color: #aaa;
     display: none;
     width: 92%;
     padding: 10px;

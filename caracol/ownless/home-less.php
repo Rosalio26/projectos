@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala Caracolearn</title>
     <link rel="stylesheet" href="./style/home_less.css">
+    <link rel="stylesheet" href="./less/style/lessStyle.css">
     <script src="./script/jquery.js"></script>
     <script type="module" src="./script/appless.js"></script>
 </head>
@@ -94,9 +95,8 @@
                     <ul class="dpla-itm-less-nm">
                         <li id="navBar" class="navBar">
                             <!--<a onclick="getpage(this.id)" id="test" class="lk-imp-tm" href="?page=programacao">Programação</a>-->
-                            <button id="btn-program" class="lk-imp-tm">Programacao</button>
+                            <button id="btn-program" class="lk-imp-tm btnLesson">Programacao <span class="plusAdd">&plus;</span></button>
                             <ul id="lessProgram" class="cnt-tm-less">
-                                
                                 <li>
                                     <a class="lk-cnt-less" href="./less/room-lesson.php?pages=areajavascript">JavaScript</a>
                                 </li>
@@ -120,7 +120,7 @@
 
                         <li class="navBar">
                             <!--<a class="lk-imp-tm" href="?page=eletronic">Electrônica</a>-->
-                            <button id="btn-eletronic" class="lk-imp-tm">Eletronica</button>
+                            <button id="btn-eletronic" class="lk-imp-tm btnLesson">Eletronica <span class="plusAdd">&plus;</span></button>
                             <ul id="lessEletro" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaAlgorithm">Algoritmos</a></li>
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaAi">Intêligençia Artificial</a></li>
@@ -135,7 +135,7 @@
 
                         <li class="navBar">
                             <!--<a class="lk-imp-tm" href="?page=devweb">Desevolvimento Web</a>-->
-                            <button id="btn-devweb" class="lk-imp-tm">Desevolvimento Web</button>
+                            <button id="btn-devweb" class="lk-imp-tm btnLesson">Desevolvimento Web <span class="plusAdd">&plus;</span></button>
                             <ul id="lessDevweb" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaHtml">Html5</a></li>
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaCss">Css3</a></li>
@@ -150,7 +150,7 @@
 
                         <li class="navBar">
                             <!--<a class="lk-imp-tm" href="?page=mathematic">Matematica</a>-->
-                            <button id="btn-math" class="lk-imp-tm">Matematica</button>
+                            <button id="btn-math" class="lk-imp-tm btnLesson">Matematica<span class="plusAdd">&plus;</span></button>
                             <ul id="lessMath" class="cnt-tm-less">
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaMathcomputer">ciênçia da computaçâo e Egenharia</a></li>
                                 <li><a class="lk-cnt-less" href="./less/room-lesson.php?pages=areaMathsymbol">Simbologia da computção</a></li>

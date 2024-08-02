@@ -10,7 +10,6 @@ var mainArea = document.getElementById("main");
 
 mainArea.style.background = "#0d1821"; //#01161e
 backngNav.style.background = "#01161e";
-listNav.style.overflowY = "scroll";
 //listNav.style.background = "#9ad5d0";
 
 /*
