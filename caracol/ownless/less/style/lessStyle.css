@@ -78,7 +78,7 @@
 }
 
 .blockTack {
-    background-color: transparent;
+    background-color: red;
     border-radius: 5px;
     width: 90%;
     margin: 0px 0px 0px auto;
