@@ -14,15 +14,22 @@
 
     <div class="cnt-less-itm">
         <div class="itmCenter">
-            <button class="btnLesson">Materias <span class="plusAdd">&plus;</span></button>
             <nav class="lessonItm">
+                <button class="btnLesson">Materias <span class="plusAdd">&plus;</span></button>
                 <ul class="blockTack">
                     <li>Introdução</li>
                 </ul>
             </nav>
         </div>
         <div class="itmCenter">
-            <button class="btnLesson">Referência <span class="plusAdd">&plus;</span></button>
+            <nav class="lessonItm">
+                <button class="btnLesson">Referência <span class="plusAdd">&plus;</span></button>
+                <ul class="blockTack">
+                    <li>Referencias  Bibliograficas</li>
+                    <li>Livros</li>
+                    <li>Documentos</li>
+                </ul>
+            </nav>
         </div>
         <div class="itmCenter">
             <button class="btnLesson">Exercicios <span class="plusAdd">&plus;</span></button>
