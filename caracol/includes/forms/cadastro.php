@@ -39,10 +39,10 @@
 
   
   if ($qtd==0) {
-    $_SESSION["usuario"] = $usuario;
+    /*$_SESSION["usuario"] = $usuario;
     $_SESSION["nome"] = $name;
     $_SESSION["email"] = $email;
-    $_SESSION["surname"] = $surname;
+    $_SESSION["surname"] = $surname;*/
 
     print "<script>location.href='../../ownless/home-less.php';</script>";
   } else {
