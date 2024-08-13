@@ -6,6 +6,8 @@
     <title>Home Page</title>
     <link rel="stylesheet" href=".style/homeStyle.css">
     <link rel="stylesheet" href="./style/index_style.css">
+    <link rel="stylesheet" href="../style/homeStyle.css">
+    <link rel="stylesheet" href="../style/index_style.css">
     <script src="./script/apt.js"></script>
 </head>
 <body>
