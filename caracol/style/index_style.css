@@ -374,6 +374,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     }
 
     .gnl-reg:hover {
+        border: 1px solid #555;
         background-color: var(--cor005);
     }
 }
@@ -382,14 +383,22 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     background-color: var(--cor005);
 }
 #hd-lgn {
+    color: #3636cb;
     border: none;
 }
 
 .lgn-ins {
     border-radius: 20px;
 }
-#lgn-ins {
+#hd-ins {
+    color: #ccc;
+    display: block;
     border: none;
+}
+
+#hd-ins:hover {
+    color: #ccc;
+    background-color: #1c1e34;
 }
 
 
