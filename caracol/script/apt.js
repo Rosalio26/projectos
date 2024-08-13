@@ -23,12 +23,10 @@ var sticky = header.offsetTop;
 function  mySctiker(x) {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-        header.style.backgroundColor = "#11161f";
         header.style.opacity = "1";
-        header.style.transition = ".5s";
+        header.style.transition = ".1s";
     } else {
         header.classList.remove("sticky");
-        header.style.backgroundColor = "#fff";
         header.style.opacity = "0";
     }
 }

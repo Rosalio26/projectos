@@ -43,7 +43,7 @@
             ============= LOGO ===============
             -->
             <div class="logo-cnt">
-                <a href="./index.html" class="logo lk-lg">
+                <a href="./index.php" class="logo lk-lg">
                     <span>
                         <img class="img-logo" src="./midia/img/logo.png">
                     </span>
@@ -78,8 +78,8 @@
                     <li class="cmp-reg registro">
                         <span class="btn-reg reg-itm">Registar</span>
                         <ul class="cnfg-reg gnl-reg hidd-nv">
-                            <li><a class="cnt-lk nv-lk lgn-ins hd-lgn" href="./includes/forms/login.html">Login</a></li>
-                            <li><a class="cnt-lk nv-lk lgn-ins hd-ins" href="./includes/forms/cadastro.html">Cadastro</a></li>
+                            <li><a id="hd-lgn" class="cnt-lk nv-lk lgn-ins hd-lgn" href="./includes/forms/login.html">Login</a></li>
+                            <li><a id="hd-ins" class="cnt-lk nv-lk lgn-ins hd-ins" href="./includes/forms/cadastro.html">Cadastro</a></li>
                         </ul>
                         <script src="./script/apt.js"></script>
                     </li>
@@ -100,7 +100,7 @@
                             <p class="txt-lmz lema-zr">Aproveite cada oportunidade, Aprenda e desenvolva mais</p>
                             <p class="txt-lmz lema">A jornada de mil milhas começa com um unico passo</p>
                         </div>
-                        <a href="./includes/forms/cadastro.html" class="btn-lm">
+                        <a href="#" class="btn-lm">
                             <span>Começar</span> 
                             <span>
                                 <img class="btn-col-one" src="./midia/img/icon/seta-direita (1).png" alt="">
@@ -366,17 +366,17 @@
                     <div class="wn-tt-cnt cnt-wno">
                         <p>Imagine Crie e Desenvolva</p>
                         <section class="comp-wno">
-                            <p>Começe a desenvolver o seu futuro com os novos cursos de tecnologias a nivel mundial</p>
+                            <p>Começe a desenvolver o seu futuro com os novos cursos de tecnologias</p>
                         </section>
                     </div>
                     <div class="wn-tt-cnt cnt-wnw">
-                        <a href="./ownless/othless/other_room.php" class="btn-new-les">começar</a>
+                        <a href="#" class="btn-new-les">começar</a>
                     </div>
                 </div>
             </div>     
         </div>
     </main>
-    <footer>
+    <!--<footer>
         <div class="cnct-prop">
             <div class="propetario">
                 <h5 class="tlt-ftr">Propietário</h5>
@@ -390,7 +390,7 @@
             </div>
         </div>
         <div class="copy-right">&copy; 2024 caracoLearn</div>
-    </footer>
+    </footer>-->
     
 </body>
 </html>

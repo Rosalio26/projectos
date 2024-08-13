@@ -72,8 +72,6 @@ header > .sticky_1 > .conor, header > .sticky_1 > .cnt-itm, header > .sticky_1 >
 }
 
 header > .sticky_1 {
-    background-image: linear-gradient(180deg,#000b34 50%, #ff6f0023);
-    /*gitbackground-color: red;*/
     width: 100vw;
     height: 100vh;
 
@@ -215,7 +213,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 
 .myHeader/*or STICKER_2*/ {
-    background-color: var(--cor004);
+    background-color: #00000027;
     justify-content: space-between;
     width: 100vw;
     padding: 10px 50px 10px 10px;
@@ -243,7 +241,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 .txt-logo {
     color: var(--cor002);
-    font-size: 13pt;
+    font-size: 22pt;
     font-family: kanit;
     font-weight: 550;
 }   
@@ -318,14 +316,16 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
         display: block;
         text-align: center;
         font-size: 12pt;
-        background-color: transparent;
-        border: 1px solid var(--cor004);
-        border-radius: 20px 20px 0px 0px;
-    
+        background-color: #00000009;
+        border-radius: 100px;
         width: 90px;
         margin: 0px;
         padding: 4px 0px;
-    }    
+    }
+    
+    .cnt-lk:hover {
+        border: 1px solid #999;
+    }
 }
 
 @media (min-width: 700px) {
@@ -367,24 +367,29 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 @media (min-width: 1100px) {
     .gnl-reg {
-        border: 1px solid var(--cor001);
+        border: 1px solid var(--cor005);
         border-radius: 20px;
         display: flex;
-        gap: 20px;
+        gap: 0px;
     }
 
     .gnl-reg:hover {
-        background-color: var(--cor001);
+        background-color: var(--cor005);
     }
 }
 
 .hd-lgn {
-    background-color: var(--cor001);
+    background-color: var(--cor005);
+}
+#hd-lgn {
+    border: none;
 }
 
 .lgn-ins {
-    border: 1px solid transparent;
     border-radius: 20px;
+}
+#lgn-ins {
+    border: none;
 }
 
 
@@ -406,7 +411,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 @media (min-width: 900px) {
     .col-main {
-        background-image: none;
+        background-image: linear-gradient( 980deg, #7e07fe40 48%, #df910082 45%, #0000a634 50%);
         width: 100vw;
         margin: 100px auto;
         padding: 0px 200px;
@@ -447,7 +452,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 @media (min-width: 900px) {
     .txt-itm-mn {
-        width: 25vw;
+        width: 23vw;
     }
 }
 
@@ -464,6 +469,12 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     font-weight: 400;
     text-transform: lowercase;
     line-height: 30px;
+}
+@media (min-width: 700px) {
+    .lema-zr {
+        color: #ccc;
+        font-size: 15pt;
+    }
 }
 
 .lema {
@@ -486,7 +497,8 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     }
 
     .itn-img {
-        border-radius: 50px 0px 0px;
+        box-shadow: 1px 1px 20px 2px #636363b1;
+        border-radius: 50px;
         width: 100%;
         margin: 0 auto;
     }
@@ -494,15 +506,15 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 .btn-lm {
     color: var(--cor002);
-    font-size: 11pt;
+    font-size: 12pt;
     font-family: kanit;
     font-weight: 550;
     text-transform: lowercase;
 
     border: 1px solid lightgoldenrodyellow;
-    border-radius: 0px 20px 0px;
+    border-radius: 20px;
     width: 100px;
-    padding: 3px 0px;
+    padding: 5px 5px;
 }
 
 .btn-lm:hover {
@@ -522,6 +534,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 .block-blast-cnt {
     background-color: transparent;
+
 }
 
 .arm-blst {
@@ -532,30 +545,34 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 @media (min-width: 600px) {
     .arm-blst {
+        background-color: transparent;
         padding: 0px 0px;
-        width: 86vw;
-        margin: 0 auto 100px auto;
+        width: 100vw;
+        justify-content: center;
+        margin: 100px 0px;
     }
 }
 
 .itm-blst-blck {
-    border: none;
+    border: 1px solid #999;
     border-radius: 20px;
-    box-shadow: -1px 1px 10px -1px #2b2e30;
     width: 250px;
     height: 330px;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
     margin: 50px auto;
     padding: 10px 0px 0px 0px;
 }
 @media (min-width: 700px) {
     .itm-blst-blck {
         border-radius: 10px;
-        width: 280px;
-        height: 350px;
+        width: 260px;
+        height: 340px;
         margin: 10px;
+        
     }
 }
 
@@ -564,7 +581,6 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     background-color: transparent;
     width: 100%;
     height: 60%;
-    padding: 20px 0px;
 }
 
 .sp-cnt-txt {
@@ -573,16 +589,17 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 @media (min-width: 700px) {
     .sp-cnt-txt {
-        width: 90%;
+        width: 100%;
     }
 }
 
 #tli-elm-pry, #tli-elm-scd, #tli-elm-trd, #tli-elm-frd {
-    color: #9498d8;
-    text-align: left;
-    font-size: 14pt;
+    color: #bbb999;
+    text-align: center;
+    font-size: 15pt;
     font-family: kanit;
-    font-weight: 400;
+    font-weight: 520;
+    padding-bottom: 10px;
 }
 @media (min-width: 700px) {
     #tli-elm-pry, #tli-elm-scd, #tli-elm-trd, #tli-elm-frd {
@@ -592,8 +609,8 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 
 .el-itm-tli {
     text-align: left;
-    font-size: 10pt;
-    margin: 5px 0px;
+    font-size: 11pt;
+    margin: 0px 0px;
 }
 
 .li-cnt::before {
@@ -604,19 +621,25 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 
 .ctr-cnt-blst {
+    border: 1px solid #999;
+    border-right: none;
+    border-left: none;
     margin: 10px 0px;
+    padding: 20px;
 }
 @media (min-width: 900px) {
     .ctr-cnt-blst {
-        margin: 10px 0px;
+        margin: 0px 0px;
+        height: 120px;
     }
 }
 
 .btn-stb {
     display: block;
     color: #6669b2;
-    border: 1px double rgb(35, 35, 42);
-    border-radius: 100px;
+    border: 1px solid #999;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
     font-size: 11pt;
     font-family: kanit;
     font-weight: 600;
@@ -1013,58 +1036,6 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
     padding: 5px;
 }
 
-/*===========================================================
-========================== RODAPÉ ===========================
-=============================================================*/
-footer {
-    text-align: left;
-    background-color: var(--cor002);
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-}
-@media (min-width: 700px) {
-    footer {
-        text-align: left;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 200px;
-    }
-}
-
-.propetario > h5, .propetario > p, .contacto > h5, .contacto {
-    color: var(--cor006);
-}
-
-.contacto {
-    margin: 20px 0px;
-}
-
-.tlt-ftr {
-    font-size: 13pt;
-    font-family: kanit;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.propetario p {
-    text-transform: uppercase;
-}
-
-.whtsp {
-    color: rgb(98, 98, 211);
-    text-decoration: underline;
-}
-
-.copy-right {
-    color: var(--cor006);
-    border-bottom: 1px solid var(--cor004);
-    padding: 5px;
-}
 
 /*TEMPORARIO*/
 .itm-hdd {
