@@ -124,7 +124,8 @@
                         
                         <div class="exmaChild">
                             <div class="mam-itm">
-                                <div class="child-itm"></div>
+                                <div class="child-itm">
+                                </div>
                             </div>
                             
                             <div class="incText">
@@ -134,7 +135,20 @@
                     </div>
                 </div>
                 
-                <div class="col-mn-itm-tw"></div>
+                <div class="col-mn-itm-tw">
+                    <?php 
+                        switch (@$_REQUEST['svgPages']) {
+                            case 'introPage':
+                                include('./aulas/web/svg/introducao/introSvg.php');
+                                break;
+                            
+                            default:
+                                echo"Erro";
+                                break;
+                        }
+                    
+                    ?>
+                </div>
             </div>
         </div>
     </div>

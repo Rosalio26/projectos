@@ -18,9 +18,15 @@
             <nav class="lessonItm">
                 <ul class="blockTack">
                     <li>
-                        <span>Introdução</span>
+                        <a href="?svgPages=introPage">Introdução</a>
                         <ul>
-                            <?php include('');?>
+                            <li>Oque é SVG</li>
+                            <li>Examplos de Svg</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Desenvolvimento</span>
+                        <ul>
                         </ul>
                     </li>
                 </ul>
