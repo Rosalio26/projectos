@@ -17,7 +17,12 @@
             <button class="btnLesson">Materias <span class="plusAdd">&plus;</span></button>
             <nav class="lessonItm">
                 <ul class="blockTack">
-                    <li>Introdução</li>
+                    <li>
+                        <span>Introdução</span>
+                        <ul>
+                            <?php include('');?>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
