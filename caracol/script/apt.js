@@ -5,7 +5,7 @@ function btnmenuHamb() {
 
     if(myNav.style.display === "none" || mynavBar.style.backgroundColor === "transparent") {
         myNav.style.display = "block";
-        mynavBar.style.backgroundColor = "#0008ff76"
+        /*mynavBar.style.backgroundColor = "#0008ff76"*/
     } else {
         myNav.style.display = "none";
         mynavBar.style.backgroundColor = "transparent"
@@ -23,8 +23,9 @@ var sticky = header.offsetTop;
 function  mySctiker(x) {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-        header.style.opacity = "1";
-        header.style.transition = ".1s";
+        header.style.opacity = "0";
+        header.style.backgroundColor = "red"; 
+        //header.style.transition = "10";
     } else {
         header.classList.remove("sticky");
         header.style.opacity = "0";

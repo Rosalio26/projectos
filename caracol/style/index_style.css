@@ -213,7 +213,7 @@ header > .sticky_1 > .svgs > .svg-stick_1 {
 }
 
 .myHeader/*or STICKER_2*/ {
-    background-color: #00000027;
+    background-color: blue;
     justify-content: space-between;
     width: 100vw;
     padding: 10px 50px 10px 10px;

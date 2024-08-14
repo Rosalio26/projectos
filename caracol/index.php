@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href=".style/homeStyle.css">
+    <!--<link rel="stylesheet" href=".style/homeStyle.css">-->
     <link rel="stylesheet" href="./style/index_style.css">
     <link rel="stylesheet" href="../style/homeStyle.css">
     <link rel="stylesheet" href="../style/index_style.css">
@@ -81,7 +81,7 @@
                             <li><a id="hd-lgn" class="cnt-lk nv-lk lgn-ins hd-lgn" href="./includes/forms/login.html">Login</a></li>
                             <li><a id="hd-ins" class="cnt-lk nv-lk lgn-ins hd-ins" href="./includes/forms/cadastro.html">Cadastro</a></li>
                         </ul>
-                        <script src="./script/apt.js"></script>
+                        <script src="./script/at.js"></script>
                     </li>
                 </ul>
             </nav>
