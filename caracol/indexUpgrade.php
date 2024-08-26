@@ -6,6 +6,7 @@
     <title>CaracoLearn || Welcome</title>
     <link rel="stylesheet" href="./style/mainHd.css">
     <link rel="stylesheet" href="./style/outputs/header.css">
+    <script defer src="script/mainHd.js"></script>
     
 </head>
 <body>

@@ -310,9 +310,9 @@ nav.ded-nav {
 .slide-win {
     background-color: #e2eaee;
     border: 2px solid #888;
-    width: 40%;
+    width: 40vw;
     height: 100%;
-    overflow: scroll hidden;
+    overflow: hidden;
 
     display: flex;
 }
@@ -320,12 +320,17 @@ nav.ded-nav {
 .img-text-slide {
     width: 100%;
     height: 100%;
+    vertical-align: middle;
 }
 
 .scrollInfinity {
     border: 1px solid #888;
-    width: 100%;
+    width: 90%;
     height: 20vh;
-    margin-top: 150px;
+    margin: 0px auto;
+    margin-top: 50px;
 }
+
+
+
 /*Fim do bloco tres (Boxe THD)*/
