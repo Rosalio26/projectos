@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>CaracoLearn || Welcome</title>
-    <link rel="stylesheet" href="./style/novoEstilo/header.css">
+    <link rel="stylesheet" href="./style/mainHd.css">
+    <link rel="stylesheet" href="./style/outputs/header.css">
+    
 </head>
 <body>
     <header>
-        <?php 
-            include('./includesPaginaprincipal/header.php'); 
-        ?>
+        <div class="header hd-1">
+            <?php include('./libdextml/filemain/header.php');?>
+        </div>
+        <div id="hdSticky">
+            <div>
+                <?php include('./libdextml/filemain/headerSticky.php');?>
+            </div>
+        </div>
     </header>
-    <main>
+
+    <main class="msn main dmn-mn-1">
+        <div class="frt cnt-dmn">
+            <?php include('./libdextml/filemain/boxeonepart.html');?>
+        </div>
+        
+        <div class="hd-sec boxing">
+            <?php include('./libdextml/filemain/boxesecpart.html');?>        
+        </div>
+
+        <div class="hd-thd">
+            <?php include('./libdextml/filemain/boxethdpart.html');?>
+        </div>,
     </main>
 </body>
 </html>

@@ -1,23 +1,23 @@
 
-function btnmenuHamb() {
-    var myNav = document.querySelector('.itm-content');
-    var mynavBar = document.querySelector('.navBar');
+// function btnmenuHamb() {
+//     var myNav = document.querySelector('.itm-content');
+//     var mynavBar = document.querySelector('.navBar');
 
-    if(myNav.style.display === "none" || mynavBar.style.backgroundColor === "transparent") {
-        myNav.style.display = "block";
-        /*mynavBar.style.backgroundColor = "#0008ff76"*/
-    } else {
-        myNav.style.display = "none";
-        mynavBar.style.backgroundColor = "transparent"
-    }
-}
+//     if(myNav.style.display === "none" || mynavBar.style.backgroundColor === "transparent") {
+//         myNav.style.display = "block";
+//         /*mynavBar.style.backgroundColor = "#0008ff76"*/
+//     } else {
+//         myNav.style.display = "none";
+//         mynavBar.style.backgroundColor = "transparent"
+//     }
+// }
 
 /*
   STICKER DO HEADER
 --------------------------------------------------------------------*/
 window.onscroll = function() {mySctiker()};
 
-var header = document.getElementById("sticky_2");
+var header = document.getElementById("hdSticky");
 var sticky = header.offsetTop;
 
 function  mySctiker(x) {
