@@ -324,11 +324,36 @@ nav.ded-nav {
 }
 
 .scrollInfinity {
-    border: 1px solid #888;
-    width: 90%;
-    height: 20vh;
+    background-color: transparent;
+    border: 1px solid #c8cbce;
+    width: 80vw;
+    height: 17vh;
     margin: 0px auto;
-    margin-top: 50px;
+    margin-top: 100px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.itm-scrolling-infinity {
+    width: 300px;
+    height: 100%;
+    background-color: #e8e8f5;
+}
+
+.itm-scrolling-infinity > span {
+    display: flex;
+    color: #918282;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    font-size: 20pt;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 
 

@@ -1,4 +1,4 @@
-alert('Working');
+// alert('Working');
 
 let slideIndex = 0;
 showSlides ();
