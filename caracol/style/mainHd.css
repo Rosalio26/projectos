@@ -316,27 +316,62 @@ nav.ded-nav {
     overflow: hidden;
 
     display: flex;
+    transition: 2s;
 }
 
 .img-text-slide {
     width: 100%;
     height: 100%;
     vertical-align: middle;
+    transition: 2s;
 }
 
-#text-slide {
-    padding: 0px;
-    width: 30%;
-    height: 30vh;
-    background-color: blue;
+#cnt-main-boxe {
+    border: 1px solid #222;
+    width: 430px;
+    height: 250px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    background-color: #1a375b;
     display: flex;
+    align-items: center;
+    width: 500%;
+    height: 100%;
+}
+
+.slides input {
+    display: none;
 }
 
 .cnt-itm-txt {
-    background-color: red;
-    width: 500%;
-    height: 50%;
-    margin: 10px;
+    width: 50%;
+    transition: 1s;
+}
+
+.span-sliding {
+    display: block;
+    text-align: left;
+    font-size: 17pt;
+    padding-left: 10px;
+}
+
+#radio1:checked ~ .first-sliding {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first-sliding {
+    margin-left: -50%;
+}
+
+#radio3:checked ~ .first-sliding {
+    margin-left: -100%;
 }
 
 .scrollInfinity {
