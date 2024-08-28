@@ -291,10 +291,14 @@ nav.ded-nav {
 ========Inicio Bloco tres========
 =============Boxe Thd============*/
 .hd-thd {
-    background-color: #dbe4e8;
+    background-color: #0d0d14;
     width: 100%;
-    height: 100vh;
     position: relative;
+}
+
+#smp-slide {
+    background-color: rgb(64, 63, 78);
+    padding-bottom: 100px;
 }
 
 .cnt-slide {
@@ -309,8 +313,9 @@ nav.ded-nav {
 }
 
 .slide-win {
+    box-shadow: 1px 1px 20px 2px #363636;
     background-color: #e2eaee;
-    border: 2px solid #888;
+    border-radius: 10px;
     width: 40vw;
     height: 100%;
     overflow: hidden;
@@ -327,8 +332,8 @@ nav.ded-nav {
 }
 
 #cnt-main-boxe {
-    border: 1px solid #222;
-    width: 430px;
+    border-radius: 10px;
+    width: 450px;
     height: 250px;
 }
 
@@ -339,7 +344,7 @@ nav.ded-nav {
 }
 
 .slides {
-    background-color: #1a375b;
+    /* background-color: #1a375b; */
     display: flex;
     align-items: center;
     width: 500%;
@@ -351,6 +356,7 @@ nav.ded-nav {
 }
 
 .cnt-itm-txt {
+    background-color: transparent;
     width: 50%;
     transition: 1s;
 }
@@ -358,8 +364,12 @@ nav.ded-nav {
 .span-sliding {
     display: block;
     text-align: left;
-    font-size: 17pt;
+    color: #888;
+    font-size: 18pt;
+    font-weight: bold;
     padding-left: 10px;
+    letter-spacing: 0.1em;
+    line-height: 35px;
 }
 
 #radio1:checked ~ .first-sliding {
@@ -376,7 +386,6 @@ nav.ded-nav {
 
 .scrollInfinity {
     background-color: transparent;
-    border: 1px solid #c8cbce;
     width: 80vw;
     height: 17vh;
     margin: 0px auto;
@@ -392,11 +401,12 @@ nav.ded-nav {
 .itm-scrolling-infinity {
     width: 300px;
     height: 100%;
-    background-color: #e8e8f5;
+    padding-bottom: 50px;
 }
 
 .itm-scrolling-infinity > span {
     display: flex;
+    cursor: none;
     color: #918282;
     background-color: transparent;
     height: 100%;
@@ -406,7 +416,4 @@ nav.ded-nav {
     align-items: center;
     justify-content: center;
 }
-
-
-
 /*Fim do bloco tres (Boxe THD)*/
