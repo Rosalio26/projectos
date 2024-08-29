@@ -1,5 +1,7 @@
-//alert('Working');
+// alert('Working');
 
+/*======================================
+========Inicio de menu de Slide=========*/
 let slideIndex = 0;
 showSlides ();
 
@@ -25,3 +27,20 @@ setInterval(function(){
         couter = 1;
     }
 }, 3000);
+/*===Fim menu slide===*/
+
+/*==================================
+======Inicio de menu scrollinf======*/
+    let itmScrollinf = document.querySelector('.container-inf-slide');
+    let itmScrollcont = itmScrollinf.querySelector('.container-itm-slide-inf');
+
+    let itmChilds = Array.from(itmScrollcont.children);
+    itmChilds.forEach(itm => {
+        let dupleElement = itm.cloneNode(true);
+        dupleElement.setAttribute('aria-hidden', true);
+
+        itmScrollcont.appendChild(dupleElement);
+    });
+    
+    // console.log(itmChilds);
+/*===Fim menu===*/

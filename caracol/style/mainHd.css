@@ -384,35 +384,43 @@ nav.ded-nav {
     margin-left: -100%;
 }
 
-.scrollInfinity {
+.container-inf-slide {
     background-color: transparent;
-    width: 80vw;
-    height: 17vh;
-    margin: 0px auto;
-    margin-top: 100px;
-    padding: 10px;
+    max-width: 800px;
+    height: 10vh;
+    margin-inline: auto;
+    padding: 0px 10px;
 
-    display: flex;
-    justify-content: center;
-    gap: 50px;
     overflow: hidden;
+    mask: linear-gradient(to right, transparent, gray 5%, gray 90%, transparent );
 }
 
-.itm-scrolling-infinity {
-    width: 300px;
-    height: 100%;
-    padding-bottom: 50px;
-}
+.container-itm-slide-inf {
+    animation: infinityScroll 25s linear infinite;
 
-.itm-scrolling-infinity > span {
     display: flex;
-    cursor: none;
-    color: #918282;
-    background-color: transparent;
+    gap: 20px;
+    width: max-content;
     height: 100%;
-    width: 100%;
+}
+
+@keyframes infinityScroll {
+    to {
+        translate: calc(-50% - 5px);
+    }
+}
+
+.itm-slide-inf {
+    background-color: #2222221a;
+    color: #fff;
     font-size: 20pt;
-    font-weight: bold;
+
+    white-space: nowrap;
+    border-radius: 5px;
+    width: 170px;
+    height: 100%;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 }
