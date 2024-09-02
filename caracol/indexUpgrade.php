@@ -32,7 +32,13 @@
 
         <div class="hd-thd">
             <?php include('./libdextml/filemain/boxethdpart.html');?>
-        </div>,
+        </div>
+        <div class="asset frt-par">
+            <?php include('./libdextml/filemain/boxefourpart.html');?>
+        </div>
     </main>
+    <footer>
+        <?php include('./libdextml/filemain/footerUpgrade.html');?>
+    </footer>
 </body>
 </html>
