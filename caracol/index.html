@@ -6,17 +6,41 @@
     <title>New style</title>
     <style>
         body {
+            overflow: hidden;
             padding: 0px;
             margin: 0px;
         }
         .desg {
-            animation: animm 2s linear 1s infinite alternate;
+            background-image: url('./files/img/principal.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             width: 100vw;
             height: 100vh;
+        }
+        .ints {
+            backdrop-filter: blur(30px);
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 200px;
         }
+
+        .ttnm {
+            background-image: linear-gradient(#fff 90%, transparent 1%);
+            border: 2px solid #fff000;
+            border-radius: 5px;
+            width: 430px;
+            height: 400px;
+        }
+
+        .reding {
+            background-image: url('./');
+        } 
+        
+        /*
         span.textCon {
             background-color: transparent;
             color: #ddd;
@@ -26,14 +50,18 @@
             text-wrap: wrap;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
-        }
+        } */
 
         .coll {
             position: absolute;
             z-index: 100;
             width: 100%;
-            height: 20vh;
-            background-image: linear-gradient(50deg, blue, rgb(255, 49, 12), rgb(255, 62, 95));
+            background-image: linear-gradient(3deg, rgb(33, 33, 211), rgb(255, 49, 12));
+            padding: 10px 0px;
+            font-size: 20pt;
+            color: #fff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 11px;
         }
 
         .ddTm {
@@ -44,7 +72,7 @@
             text-transform: uppercase;
         }
 
-        @keyframes animm {
+        @keyframes anim {
             from {
                 background-color: rgb(46, 46, 221);
             } to {
@@ -53,15 +81,26 @@
         }
     </style>
 </head>
-<body>
 
-    <div class="coll"></div>
+<body>
+    <div class="coll">
+        <span>CaracoLearn</span>
+    </div>
     
     <div class="desg">
-        <span class="textCon">
-            Oi! <span class="ddTm">Caracolearn</span> esta em manuteção <br>
-            Jájá estaremos de volta.
-        </span> 
+        <div class="ints">
+            <div class="ttnm tlt">
+                <div class="reding">
+                    <span>Construa a sua paixão</span> <br>
+                    <span>Desenvolva os seus Sentimentos</span>
+                </div>
+            </div>
+            <div class="ttnm subtlt">
+                <span>Momentos Recentes 2024</span>
+                <div class="ipet-img">
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
