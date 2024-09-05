@@ -21,6 +21,8 @@
         </div>
     </header>
 
+    <span class="metter">Ajuda!</span>
+
     <main class="msn main dmn-mn-1">
         <div class="frt cnt-dmn">
             <?php include('./libdextml/filemain/boxeonepart.html');?>

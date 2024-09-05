@@ -25,6 +25,20 @@ body {
     width: 100vw;
 }
 
+.metter {
+    color: #222;
+    font-weight: bold;
+    background-color: yellow;
+    display: block;
+    padding: 10px;
+    width: max-content;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10%;
+    right: 0;
+    border-radius: 100px 0px 0px 100px;
+}
+
 .main {
     height: 100%;
 }
@@ -429,22 +443,19 @@ nav.ded-nav {
 /*======================================
 =======Four Part (Boxe Quatro)==========*/
 .frt-par {
-    background-image: url('../libdextml/filemain/imagens/backs.jpg');
+    background-image: url('../libdextml/filemain/imagens/back1.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 80vh;
     margin-top: 100px;
-    opacity: 0.65;
-    -moz-opacity: 0.65;
-    filter: alpha(opacity=65);
+    
 }
 
 .app-elem {
-    background-color: rgb(4, 4, 110);
-    opacity: 0.65;
-    -moz-opacity: 0.65;
-    filter: alpha(opacity=65);
+    backdrop-filter: blur(200px);
+    /* opacity: 0.65;
+    -moz-opacity: 0.65; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -461,11 +472,45 @@ nav.ded-nav {
 }
 
 .lef-sit {
-    height: 100%;
+    background-color: transparent;
+    height: 50%;
+    width: 650px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 100px;
+}
+
+.itm-apxt {
+    line-height: 33px;
+    letter-spacing: 0.5px;
+}
+
+.itm-apxt span:nth-child(1) {
+    border: 1px solid #8383837a;
+    color: #ff7300;
+    font-size: 25pt;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: lowercase;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.itm-apxt span.sptext {
+    text-transform: uppercase;
+    color: #3a78ff;
+    font-size: 13pt;
+}
+
+.itm-apxt span.spwtext {
+    font-size: 14pt;
+    font-weight: 900;
+    color: transparent;
+    background-image: linear-gradient(to left, #ff9d2c, #ea00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .rght-sit {
