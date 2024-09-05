@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>CaracoLearn || Welcome</title>
+    <link rel="stylesheet" href="./style/homeStyle.css">
     <link rel="stylesheet" href="./style/mainHd.css">
     <link rel="stylesheet" href="./style/outputs/header.css">
     <script defer src="script/mainHd.js"></script>
@@ -38,6 +39,7 @@
         <div class="asset frt-par">
             <?php include('./libdextml/filemain/boxefourpart.html');?>
         </div>
+        <div class="conti-nl"></div>
     </main>
     <footer>
         <?php include('./libdextml/filemain/footerUpgrade.html');?>

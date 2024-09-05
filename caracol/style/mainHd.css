@@ -443,7 +443,7 @@ nav.ded-nav {
 /*======================================
 =======Four Part (Boxe Quatro)==========*/
 .frt-par {
-    background-image: url('../libdextml/filemain/imagens/back1.png');
+    background-image: url('../libdextml/filemain/imagens/well.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -453,7 +453,7 @@ nav.ded-nav {
 }
 
 .app-elem {
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(300px);
     /* opacity: 0.65;
     -moz-opacity: 0.65; */
     display: flex;
@@ -472,14 +472,14 @@ nav.ded-nav {
 }
 
 .lef-sit {
-    background-color: transparent;
-    height: 50%;
-    width: 650px;
+    background-color: #0001135b;
+    height: 100%;
+    width: 750px;
 
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: 100px;
+    padding-left: 100px;
 }
 
 .itm-apxt {
@@ -489,7 +489,7 @@ nav.ded-nav {
 
 .itm-apxt span:nth-child(1) {
     border: 1px solid #8383837a;
-    color: #ff7300;
+    color: #ffd3aef3;
     font-size: 25pt;
     font-weight: bold;
     padding: 10px;
@@ -500,7 +500,7 @@ nav.ded-nav {
 
 .itm-apxt span.sptext {
     text-transform: uppercase;
-    color: #3a78ff;
+    color: #cdddff;
     font-size: 13pt;
 }
 
@@ -517,7 +517,19 @@ nav.ded-nav {
     background-color: transparent;
     border: 1px solid #999;
     border-right: none;
-    border-radius: 10px 0px 0px 10px;
-    width: 40%;
+    border-radius: 100px 0px 0px 0px;
+    width: 45%;
+    overflow: hidden;
+}
+
+.fundo-cont {
+    width: 100%;
+    height: 100%;
+}
+
+.conti-nl {
+    background-color: #d6dde6;
+    width: 100%;
+    height: 70vh;
 }
 /*Fim do bloco quatro*/

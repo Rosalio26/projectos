@@ -32,12 +32,12 @@
             <nav class="hd-navbar-primary navbar hd-navbar">
                 <ul class="navBar hd-navBar hd-nav-2">
                     <li class="itm itm-navbar itm-hd-1 prisma">
-                        <span class="prisma-title"><a href="" class="hd-link-btn link-prisma">Aulas</a></span>
+                        <span class="prisma-title"><a href="" class="hd-link-btn link-prisma">Materias</a></span>
                         <ul class="navBar nav-prisma">
                             <li class="itm itm-navbar itm-hd-1"><a href="" class="hd-link-btn">Programação</a></li>
                             <li class="itm itm-navbar itm-hd-1"><a href="" class="hd-link-btn">Eletrônica</a></li>
                             <li class="itm itm-navbar itm-hd-1"><a href="" class="hd-link-btn">Desenvolvimento &oror;eb</a></li>
-                            <li class="itm itm-navbar itm-hd-1"><a href="" class="hd-link-btn">Matematica Computacional</a></li>
+                            <li class="itm itm-navbar itm-hd-1"><a href="" class="hd-link-btn">Matematica</a></li>
                         </ul>
                     </li>
                 </ul>
