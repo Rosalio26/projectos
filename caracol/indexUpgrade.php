@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/homeStyle.css">
     <link rel="stylesheet" href="./style/mainHd.css">
     <link rel="stylesheet" href="./style/outputs/header.css">
+    <link rel="stylesheet" href="./room/conf/style/sala-materias.css">
     <script defer src="script/mainHd.js"></script>
     
 </head>

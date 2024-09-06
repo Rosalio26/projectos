@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala Caracolearn</title>
     <link rel="stylesheet" href="./conf/style/sala-materias.css">
-    <link rel="stylesheet" href="style/mainHd.css">
+    <!-- <link rel="stylesheet" href="room/conf/style/sala-materias.css">
+    <link rel="stylesheet" href="style/mainHd.css"> -->
     <link rel="stylesheet" href="../style/mainHd.css">
     <script defer src="./conf/script/sala.js"></script>
 </head>
@@ -18,7 +19,7 @@
             <button id="show-hide" onclick="clickHdshow()" class="hdd-btn hidden-cnt-btn"></button>
             <button id="hide-show" onclick="clickHdhidde()" class="hdd-btn hidden-cnt-btn"></button>
             <div class="cnt-left-main-sala">
-                <?php include('./inc-sala-materias/left-side.html');?>
+                <?php include('inc-sala-materias/left-side.html');?>
             </div>
         </div>
         <div id="rigth-main-sala" class="rigth-main-sala">
