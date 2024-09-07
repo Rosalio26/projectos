@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style/mainHd.css">
     <script defer src="./conf/script/sala.js"></script>
 </head>
-<body>
+<body class="bod-conf">
     <header class="header-main-sala header-sala">
         <?php include('./inc-sala-materias/header.php');?>
     </header>
