@@ -1,19 +1,26 @@
 
-// alert('working');
-let btnHdshow = document.getElementById('show-hide');
-let btnHdhidde = document.getElementById('hide-show');
-let campHdleft = document.getElementById('left-main-sala');
-let campHdright = document.getElementById('rigth-main-sala');
+/*
+=================================================
+===============Left side Sala(Room)
+=================================================
+*/
+
+var btnShow = document.querySelector('button#show-hide');
+var btnHidden = document.querySelector('button#hide-show');
+var gerArea = document.querySelector('div#left-main-sala');
+var imgCamp = document.querySelector('div.img-smole-icon');
+var contSide = document.querySelector('div.camp-left-side');
 
 function clickHdshow() {
-    btnHdshow.style.display = 'none';
-    btnHdhidde.style.display = 'block';
-    campHdleft.style.width ='300px';
-    campHdright.style.minWidth = '1160px';
+    // imgCamp.style.display = 'none';
+    btnShow.style.display = 'none';
+    imgCamp.style.display = 'none';
+    btnHidden.style.display = 'block';
+    gerArea.style.width ='300px';
 }
 function clickHdhidde() {
-    btnHdhidde.style.display = 'none';
-    btnHdshow.style.display ='block';
-    campHdleft.style.width = '70px';
-    campHdright.style.minWidth = '1360px';
+    btnShow.style.display = 'block';
+    imgCamp.style.display = 'block';
+    btnHidden.style.display = 'none';
+    gerArea.style.width ='70px';
 }

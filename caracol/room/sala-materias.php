@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala Caracolearn</title>
+    <style>
+        .ext-hdd {display: none;}
+        .ext-shw {display: block;}
+    </style>
     <link rel="stylesheet" href="./conf/style/sala-materias.css">
     <!-- <link rel="stylesheet" href="room/conf/style/sala-materias.css">
     <link rel="stylesheet" href="style/mainHd.css"> -->
