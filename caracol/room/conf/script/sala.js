@@ -17,10 +17,12 @@ function clickHdshow() {
     imgCamp.style.display = 'none';
     btnHidden.style.display = 'block';
     gerArea.style.width ='300px';
+    contSide.style.display = 'block';
 }
 function clickHdhidde() {
     btnShow.style.display = 'block';
     imgCamp.style.display = 'block';
     btnHidden.style.display = 'none';
     gerArea.style.width ='70px';
+    contSide.style.display = 'none';
 }
