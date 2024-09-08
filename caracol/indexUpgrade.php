@@ -16,11 +16,11 @@
         <div class="header hd-1">
             <?php include('./libdextml/filemain/header.php');?>
         </div>
-        <div id="hdSticky">
+        <!-- <div id="hdSticky">
             <div>
                 <?php include('./libdextml/filemain/headerSticky.php');?>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <span class="metter">Ajuda!</span>
