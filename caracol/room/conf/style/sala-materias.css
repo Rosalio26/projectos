@@ -212,20 +212,34 @@ main.main-sala {
     overflow: hidden;
     flex-wrap: wrap;
     padding: 4px;
+    text-wrap: wrap;
 }
 
 .list-itm-icon {
-    background-color: red;
+    background-color: transparent;
     width: 55px;
-    height: 70px;
+    height: 60px;
     margin: 5px;
     overflow: hidden;
+    text-wrap: wrap;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-itm-icon img {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
 }
 
 .list-itm-icon span {
     display: block;
+    text-wrap: wrap;
     text-align: center;
-    font-size: 5pt;
+    font-size: 10pt;
     color: #fff;
 }
 
