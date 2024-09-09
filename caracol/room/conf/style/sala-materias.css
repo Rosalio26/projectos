@@ -88,6 +88,7 @@ main.main-sala {
 
     display: flex;
     padding-right: 10px;
+    overflow-y: scroll;
 }
 
 .hdd-btn {
@@ -129,7 +130,7 @@ main.main-sala {
 .left-main-sala {
     background-color: #111318;
     position: relative;
-    width: 400px;
+    width: 70px;
     height: 100vh;
 
     overflow: hidden;
@@ -148,7 +149,7 @@ main.main-sala {
     background-color: transparent;
     width: 100%;
     height: 600px;
-    display: none;
+    display: block;
     align-items: center;
     flex-direction: column;
 }
@@ -158,7 +159,7 @@ main.main-sala {
     padding: 7px;
     width: 100%;
     height: 550px;
-    display: block;
+    display: none;
     overflow-y: scroll;
 }
 
@@ -264,17 +265,48 @@ main.main-sala {
     align-items: center;
 }
 
-.rigth-main-sala {
-    background-color: #373b46;
+.row-itm-less {
+    background-color: transparent;
     width: 100%;
 }
+
+.itm-files {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cnt-lk-files {
+    background-color: transparent;
+    margin: 10px;
+}
+
+.cnt-lk-files a {
+    color: #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #888;
+    display: block;
+    padding: 3px 7px;
+}
+
+.cnt-lk-files a:hover {
+    color: #111318;
+    background-color: #eee;
+    border: 2px solid #192b3b;
+}
+
 /*=============================
 ====content Boxes of material*/
 
 .rigth-main-sala {
+    background-color: #373b46;
+    width: 100%;
+}
+
+.rigth-main-sala {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .block-material {
@@ -327,35 +359,4 @@ main.main-sala {
     padding-left: 10px;
     display: flex;
     align-items: center;
-}
-
-.text-boxes {
-    background-color: #805180;
-    border-radius: 7px;
-    width: 800px;
-    height: 30vh;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.text-boxes:hover
-.up-txt-bxs {
-    background-color: #d83030;
-}
-.text-boxes:hover
-.dwn-txt-bxs {
-    background-color: #b83232;
-}
-
-.up-txt-bxs {
-    background-color: #903099;
-    width: 100%;
-    height: 25%;
-}
-
-.dwn-txt-bxs {
-    background-color: transparent;
-    width: 100%;
-    height: 75%;
 }
