@@ -12,7 +12,7 @@
 
 .bod-conf {
     background-color: #373b46;
-    overflow: hidden;
+    overflow: hidden scroll;
 }
 
 img {
@@ -83,7 +83,7 @@ img {
 main.main-sala {
     background-color: #373b46;
     /* background-color: #343741; */
-    width: 90vw;
+    width: 100vw;
     height: 90vh;
 
     display: flex;
@@ -359,4 +359,10 @@ main.main-sala {
     padding-left: 10px;
     display: flex;
     align-items: center;
+}
+
+.inc-sala {
+    background-color: red;
+    height: 100px;
+    width: 100%;
 }

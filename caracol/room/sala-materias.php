@@ -30,5 +30,8 @@
             <?php include('./inc-sala-materias/right-side.html');?>
         </div>
     </main>
+    <footer class="inc-sala">
+        <?php include("./inc-sala-materias/inc-footer-sala.html");?>
+    </footer>
 </body>
 </html>
