@@ -16,7 +16,7 @@ function clickHdshow() {
     btnShow.style.display = 'none';
     imgCamp.style.display = 'none';
     btnHidden.style.display = 'block';
-    gerArea.style.width ='300px';
+    gerArea.style.width ='400px';
     contSide.style.display = 'block';
 }
 function clickHdhidde() {
