@@ -14,7 +14,33 @@
     </header>
     <main class="materias-win">
         <div class="left-aside-materias">
-            <?php include("left-aside.php");?>
+            <div class="left-itm-materias">
+                <?php 
+                    switch (@$_REQUEST["pages-material"]) {
+                        case "programacao":
+                            include("programacao/programacao-aside.html");
+                        break;  
+                        case "eletronica":
+                            include("eletronica/eletronica-aside.html");
+                        break;
+                        case "devweb":
+                            include("dev_web/devweb-aside.html");
+                        break;
+
+                        //Janelas Aulas Dev Web
+                        case "html":
+                            include("dev_web/auladeHtml/html_aside.html");
+                        break;
+
+                        case "matematica":
+                            include("matematica/matematica-aside.html");
+                        break;
+                        default:        
+                            print("Janela Materias");
+                        break;
+                    }
+                ?>
+            </div>
         </div>
         <div class="right-aside-materias">
             <?php
@@ -28,6 +54,12 @@
                     case "devweb":
                         include("dev_web/devweb.php");
                     break;
+
+                    //Janelas Aulas Dev Web
+                    case "html":
+                        include("dev_web/auladeHtml/html.php");
+                    break;
+
                     case "matematica":
                         include("matematica/matematica.php");
                     break;
