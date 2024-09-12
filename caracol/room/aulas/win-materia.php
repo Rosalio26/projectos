@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../conf/style/sala-materias.css">
     <link rel="stylesheet" href="../../style/mainHd.css">
     <link rel="stylesheet" href="./conf_lesson/style/win-materias.css">
+    <script defer src="conf_lesson/script/appch.js"></script>
+    <script defer src="conf_lesson/script/jquery.js"></script>
 </head>
 <body class="win-materias">
     <header>
@@ -26,17 +28,11 @@
                         case "devweb":
                             include("dev_web/devweb-aside.html");
                         break;
-
-                        //Janelas Aulas Dev Web
-                        case "html":
-                            include("dev_web/auladeHtml/html_aside.html");
-                        break;
-
                         case "matematica":
                             include("matematica/matematica-aside.html");
                         break;
                         default:        
-                            print("Janela Materias");
+                            print("Janela Aside");
                         break;
                     }
                 ?>
@@ -54,12 +50,6 @@
                     case "devweb":
                         include("dev_web/devweb.php");
                     break;
-
-                    //Janelas Aulas Dev Web
-                    case "html":
-                        include("dev_web/auladeHtml/html.php");
-                    break;
-
                     case "matematica":
                         include("matematica/matematica.php");
                     break;
