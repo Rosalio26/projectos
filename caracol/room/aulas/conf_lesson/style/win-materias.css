@@ -1,4 +1,14 @@
 
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
 .win-materias {
     padding: 0;
     margin: 0;
@@ -37,4 +47,49 @@
     background-color: #555;
     padding: 20px;
     overflow: hidden scroll;
+}
+
+/*
+=========================================
+=========================================
+========Paginas da lissão*/
+#body_lesson_page {
+    overflow: hidden scroll;
+}
+
+#main_lesson_page {
+    background-color: #555;
+    width: 100vw;
+    height: 95vh;
+}
+
+#main_lesson_page > #scd-main-les {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.lef-mn-les 
+{
+    background-color: #666;
+    width: 23%;
+    height: 100%;
+}
+
+.cnt-boxe-less
+{
+    background-color: #999;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden scroll;
+    margin: auto auto;
+}
+
+.rig-mn-les
+{
+    border-radius: 5px7;
+    background-color: #999;
+    width: 70%;
+    height: 100%;
 }
