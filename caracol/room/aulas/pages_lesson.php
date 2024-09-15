@@ -133,7 +133,29 @@
                 </div>
             </div>
 
-            <div class="rig-mn-les">right</div>
+            <div class="rig-mn-les">
+                <?php 
+                    switch (@$_REQUEST["pageEletronic"]) {
+                        case "titleAlgoritmo":
+                            include("eletronica/auladeAlgoritmo/pages/introducao.html");    
+                        break;
+                        case "titleArduino":
+                            include("eletronica/auladeArduino/arduino_aside.html");    
+                        break;
+                        case "titleAi":
+                            include("eletronica/auladeAi/ai_aside.html");    
+                        break;
+                        case "titleRobotica":
+                            include("eletronica/auladeRobotica/robotica_aside.html");    
+                        break;
+                        case "titleProteus":
+                            include("eletronica/auladeProteus/proteus_aside.html");    
+                        break;
+                        default:
+                        print("");
+                    }
+                ?>
+            </div>
         </div>
     </main>
     <footer></footer>
