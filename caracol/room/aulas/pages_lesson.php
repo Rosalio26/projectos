@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria do apreendizado</title>
     <link rel="stylesheet" href="conf_lesson/style/win-materias.css">
+    <script defer src="conf_lesson/script/appch.js"></script>
+    <script defer src="conf_lesson/script/jquery.js"></script>
 </head>
 <body id="body_lesson_page">
     <header>        
@@ -133,28 +135,7 @@
                 </div>
             </div>
 
-            <div class="rig-mn-les">
-                <?php 
-                    switch (@$_REQUEST["pageEletronic"]) {
-                        case "titleAlgoritmo":
-                            include("eletronica/auladeAlgoritmo/pages/introducao.html");    
-                        break;
-                        case "titleArduino":
-                            include("eletronica/auladeArduino/arduino_aside.html");    
-                        break;
-                        case "titleAi":
-                            include("eletronica/auladeAi/ai_aside.html");    
-                        break;
-                        case "titleRobotica":
-                            include("eletronica/auladeRobotica/robotica_aside.html");    
-                        break;
-                        case "titleProteus":
-                            include("eletronica/auladeProteus/proteus_aside.html");    
-                        break;
-                        default:
-                        print("");
-                    }
-                ?>
+            <div id="camp_right_pages" class="rig-mn-les">
             </div>
         </div>
     </main>

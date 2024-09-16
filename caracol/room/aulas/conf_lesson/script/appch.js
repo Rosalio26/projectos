@@ -1,5 +1,10 @@
 
-var genBtn = document.querySelector(".chl-lk");
-var contentAsp = document.querySelector(".right-aside-materias");
+let btnPages = document.querySelector("#carregar_html");
+let campPages = document.querySelector("#camp_right_pages");
 
-contentAsp.style.background = 'orange';
+btnPages.style.background="red";
+campPages.style.background="blue";
+
+$(btnPages).click(function() {
+    $(campPages).load("dev_web/auladeHtml/pages/introducao.html");
+});
