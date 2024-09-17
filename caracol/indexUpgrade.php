@@ -40,7 +40,6 @@
         <div class="asset frt-par">
             <?php include('./libdextml/filemain/boxefourpart.html');?>
         </div>
-        <div class="conti-nl"></div>
     </main>
     <footer>
         <?php include('./libdextml/filemain/footerUpgrade.html');?>
