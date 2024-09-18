@@ -37,6 +37,7 @@
         <div class="hd-thd">
             <?php include('./libdextml/filemain/boxethdpart.html');?>
         </div>
+        
         <div class="asset frt-par">
             <?php include('./libdextml/filemain/boxefourpart.html');?>
         </div>
