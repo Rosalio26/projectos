@@ -1,6 +1,6 @@
 .header {
     color: #ccc;
-    background-image: linear-gradient(7deg, #020314e3, #000010e3);
+    background-color: #2f2fff;
     overflow: hidden;
 
     width: 100vw;
@@ -56,13 +56,15 @@ a.logo-btn {
 ============================
 ======Campo de procura======*/
 .hd-search {
-    background-color: #ff9500;
+    background-color: blue;
     border-radius: 20px;
-    padding: 4px;
+    padding: 0px 10px 0px 0px;
+    
 }
 
 .in-search {
-    width: 220px;
+    background-color: #eee;
+    width: 250px;
     padding: 5px 10px;
     border-radius: 20px;
 }
@@ -76,17 +78,20 @@ a.logo-btn {
 }
 
 .hd-link-btn {
-    color: #888;
+    color: #fff;
     font-size: 11pt;
     font-weight: bold;
-    border: 1px solid #4e634e;
+    border: 1px solid #eee;
     border-radius: 5px;
     padding: 2px 6px;
+    font-weight: 400;
 }
 
 .hd-link-btn:hover {
+    color: #000;
+    background-color: #aaa;
     border: 1px solid transparent;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 1px 1px 10px #444;
     transition: .3s;
 }

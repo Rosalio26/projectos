@@ -48,7 +48,7 @@ body {
 ====Bloco de Cor Amarela e Azul====
 ==============Boxe Um==============*/
 .conservator {
-    background-image: linear-gradient( 45deg, #2f2fff 55%, #ff9500 10%);
+    background-color: #2f2fff;
     position: relative;
     justify-content: center;
     gap: 50px;
