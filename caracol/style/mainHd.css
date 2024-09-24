@@ -105,6 +105,7 @@ body {
 }
 
 .cmp-img {
+    background-color: transparent;
     position: relative;
     width: 40%;
     height: 100%;
