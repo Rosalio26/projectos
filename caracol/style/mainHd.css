@@ -20,9 +20,11 @@
 }
 
 body {
-    background-color: #bdb9ce;
+    opacity: 1;
+    background-color: #1c2335;
     overflow-x: hidden;
     width: 100vw;
+    transition: all 1s;
 }
 
 .metter {
@@ -255,7 +257,7 @@ nav.ded-nav {
 ========Inicio Bloco tres========
 =============Boxe Thd============*/
 .hd-thd {
-    background-color: #c6cefb82;
+    background-color: #c6cefb;
     /* background-image: url("../libdextml/filemain/imagens/slide-1.jpg"); */
     width: 100vw;
     height: 60vh;
@@ -291,14 +293,14 @@ nav.ded-nav {
     overflow: hidden;
 
     display: flex;
-    transition: 2s;
+    transition: all 2s;
 }
 
 .img-text-slide {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    transition: 2s;
+    transition: all 2s;
 }
 
 #cnt-main-boxe {
@@ -328,7 +330,7 @@ nav.ded-nav {
 .cnt-itm-txt {
     background-color: transparent;
     width: 50%;
-    transition: 1s;
+    transition: all 1s;
 }
 
 .span-sliding {
@@ -574,9 +576,13 @@ nav.ded-nav {
 }
 
 .inc-info {
-    border: 1px solid #fff;
-    width: 400px;
+    /* border: 1px solid #fff; */
+    width: 380px;
     height: 80%;
+}
+
+.inc-info h2 {
+    color: #b09784;
 }
 
 .inc-footer {
@@ -615,4 +621,26 @@ nav.ded-nav {
 .base-lin {
     color: #006eff;
     padding: 0px 10px;
+}
+
+.text-cmp-inc {
+    color: #aaa;
+    background-color: #65656513;
+    border-radius: 5px;
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 70px;
+    padding: 10px 5px;
+}
+
+.cnt-cmp-itm {
+    height: 270px;
+    color: #ccc;
+    font-size: 10.4pt;
+    padding: 0px 5px;
+}
+
+.cnt-cmp-itm li {
+    margin-top: 10px;
 }
