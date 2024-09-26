@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="cnt-less-mathematic">
-                <section class="blck-less-program">
+                <section class="blck-less-gnr">
                     <a href="./less/room-lesson.php?pages=areaMathcomputer" id="cceng-block" class="sub-blck-less">
                         <h2>Ciência da computação e Engenharia</h2>
                         <div class="blck-img-grl">

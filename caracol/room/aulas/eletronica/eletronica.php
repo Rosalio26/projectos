@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="cnt-less-eletronic">
-                <section class="blck-less-eletron">
+                <section class="blck-less-gnr">
                     <a href="./less/room-lesson.php?pages=areaAlgorithm" id="algorithm-block" class="sub-blck-less">
                         <h2>Algoritmos</h2>
                         <div class="blck-img-grl">

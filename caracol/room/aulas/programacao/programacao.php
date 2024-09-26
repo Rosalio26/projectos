@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="cnt-less-program">
-                <section class="blck-less-program">
+                <section class="blck-less-gnr">
                     <a href="./less/room-lesson.php?pages=areajavascript" id="javascript-block" class="sub-blck-less">
                         <h2>JavaScript</h3>
                         <div class="blck-img-grl">

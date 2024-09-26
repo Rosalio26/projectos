@@ -23,7 +23,7 @@
             </div>
             
             <div class="cnt-less-program">
-                <section class="blck-less-program">
+                <section class="blck-less-gnr">
                     <a href="./less/room-lesson.php?pages=areaHtml" id="html-css-block" class="sub-blck-less">
                         <h2>HTML5</h3>
                         <div class="blck-img-grl">
