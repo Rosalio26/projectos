@@ -11,37 +11,8 @@
 <body id="body_lesson_page">
     <header>        
         <div class="mn-header">
-            <div class="container-hhd">
-                
-            </div>
-                <?php include('conf_lesson/lib/header-pgl.html'); ?>
-            <div>
-                <ul>
-                    <li><a href="pages_lesson.php?pageProgram=titlejavascript">JavaScript</a></li>
-                    <li><a href="pages_lesson.php?pageProgram=titlephp">php</a></li>
-                    <li><a href="pages_lesson.php?pageProgram=titlejava">Java</a></li>
-                    <li><a href="pages_lesson.php?pageProgram=titlecsharp">C#</a></li>
-                    <li><a href="pages_lesson.php?pageProgram=titlecplus">C++</a></li>
-                    <li><a href="pages_lesson.php?pageProgram=titlepython">Python</a></li>
-                    <li><a href="pages_lesson.php?pageEletronic=titleAlgoritmo">Algoritmo</a></li>
-                    <li><a href="pages_lesson.php?pageEletronic=titleArduino">Arduino</a></li>
-                    <li><a href="pages_lesson.php?pageEletronic=titleRobotica">Robotica</a></li>
-                    <li><a href="pages_lesson.php?pageEletronic=titleAi">Ai</a></li>
-                    <li><a href="pages_lesson.php?pageEletronic=titleProteus">Proteus</a></li>
-                    <li><a href="pages_lesson.php?pageLesson=titlehtml">Html5</a></li>
-                    <li><a href="pages_lesson.php?pageLesson=titlecss">Css3</a></li>
-                    <li><a href="pages_lesson.php?pageLesson=titlesvg">Svg</a></li>
-                    <li><a href="pages_lesson.php?pageLesson=titlecanvas">Canvas</a></li>
-                    <li>Computacao</li>
-                    <li>Geometria</li>
-                    <li>Analitica</li>
-                </ul>
-            </div>
+            <?php include('conf_lesson/lib/header-pgl.html') ?>
         </div>
-
-        
-
-
     </header>
     <main id="main_lesson_page">
         <div id="scd-main-les" class="mn-les-pg">
