@@ -174,7 +174,7 @@ img {
 ============Header pagina de lissao*/
 .mn-header {
    color: #ccc;
-   background-color: #292637;
+   background-color: transparent;
    width: 100%;
    height: 100px;
    overflow: hidden;
@@ -189,12 +189,83 @@ img {
 
 .arm-nw-hd {
     height: 65%;
+    gap: 60px;
+}
+
+.logo-esc {
+    font-size: 21pt;
+}
+
+.cnt-frm {
+    background-color: #002aff;
+    border-radius: 300px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#campo-procura {
+    color: #222;
+    font-size: 12pt;
+    background-color: #ccc;
+
+    border-radius: 300px;
+    width: 700px;
+    min-width: 200px;
+
+    padding: 9px 20px;
+}
+
+.ser-btn {
+    font-weight: bold;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: -2px;
+    padding-right: 10px;
+}
+
+.cnt-dim-btn {
+    display: flex;
+    background-color: #002aff;
+    border-radius: 300px;
+}
+
+.btnd {
+    color: #222;
+    cursor: pointer;    
+    background-color: transparent;
+    border-radius: 300px;
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: orange;
+    padding: 10px 20px;
+}
+
+.btnd a {
+    color: #222;
+}
+
+.btn-dim-pro {
+    background-color: transparent;
+}
+
+.btn-nll {
+    cursor: pointer;
+    background-color: #3b383f;
+    border: 2px solid #8800ff;
+    border-radius: 300px;
+    width: 35px;
+    height: 1px;
+    padding: 3px 5px;
 }
 
 .arm-list-les {
     display: flex;
     justify-content: center;
-    background-color: #3f3c4e;
+    background-color: transparent;
     height: 35%;
     width: 100%;
 }
@@ -228,16 +299,21 @@ img {
     }
 } */
 
+
+
+
+
 /*
 =========================================
 =========================================
 ========Paginas da lissão*/
 #body_lesson_page {
+    background-color: #161823;
     overflow: hidden scroll;
 }
 
 #main_lesson_page {
-    background-color: #555;
+    background-color: transparent;
     width: 100vw;
     height: 95vh;
 }
@@ -250,25 +326,26 @@ img {
 
 .lef-mn-les 
 {
-    background-color: #666;
+    background-color: transparent;
     width: 23%;
     height: 100%;
 }
 
 .cnt-boxe-less
 {
-    background-color: #999;
+    background-color: transparent;
     border-radius: 10px;
     width: 100%;
     height: 100%;
     overflow: hidden scroll;
     margin: auto auto;
+    padding: 20px;
 }
 
 .rig-mn-les
 {
     border-radius: 5px7;
-    background-color: #999;
+    background-color: #7b7b7b54;
     width: 70%;
     height: 100%;
 }

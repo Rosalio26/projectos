@@ -85,6 +85,23 @@
                                 default:
                                 print("");
                             }
+                            
+                            
+                            //======================================
+                            //=========Asides de Matematica
+                            switch (@$_REQUEST["pageDevweb"]) {
+                                case "titleComputacao":
+                                    include("matematica/auladeComputacao/computacao.php");    
+                                break;
+                                case "titleGeometria":
+                                    include("matematica/auladeGeometria/geometria.php");    
+                                break;
+                                case "titleAnalatica":
+                                    include("matematica/auladeAnalitica/analitica.php");    
+                                break;
+                                default:
+                                print("");
+                            }
                         ?>
                     </div>
                 </div>

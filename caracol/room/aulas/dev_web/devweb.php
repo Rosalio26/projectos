@@ -24,22 +24,29 @@
             
             <div class="cnt-less-program">
                 <section class="blck-less-gnr">
-                    <a href="./less/room-lesson.php?pages=areaHtml" id="html-css-block" class="sub-blck-less">
+                    <a href="pages_lesson.php?pageLesson=titlehtml" id="html-css-block" class="sub-blck-less">
                         <h2>HTML5</h3>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/devweb/html.png" alt="imagem de HTML">
                         </div>
                     </a>
 
-                    <a href="./less/room-lesson.php?pages=areaCss" id="html-css-block" class="sub-blck-less">
+                    <a href="pages_lesson.php?pageLesson=titlecss" id="html-css-block" class="sub-blck-less">
                         <h2>CSS3</h3>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/devweb/css.png" alt="imagem de CSS">
                         </div>
                     </a>
 
-                    <a href="./less/room-lesson.php?pages=areaSvg" id="svg-block" class="sub-blck-less">
+                    <a href="pages_lesson.php?pageLesson=titlesvg" id="svg-block" class="sub-blck-less">
                         <h2>SVG</h3>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/devweb/svg.jpg" alt="imagem de HTML e CSS">
+                        </div>
+                    </a>
+
+                    <a href="pages_lesson.php?pageLesson=titlecanvas" id="svg-block" class="sub-blck-less">
+                        <h2>Canvas</h3>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/devweb/svg.jpg" alt="imagem de HTML e CSS">
                         </div>

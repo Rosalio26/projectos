@@ -23,16 +23,24 @@
             </div>
             <div class="cnt-less-mathematic">
                 <section class="blck-less-gnr">
-                    <a href="./less/room-lesson.php?pages=areaMathcomputer" id="cceng-block" class="sub-blck-less">
-                        <h2>Ciência da computação e Engenharia</h2>
+                    <a href="pages_lesson.php?pageDevweb=titleComputacao" id="cceng-block" class="sub-blck-less">
+                        <h2>Computacional</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/math/science.jpg" alt="imagem de ciênçia da computação">
                         </div>
                     </a>
-                    <a href="./less/room-lesson.php?pages=areaareaMathsymbol" id="sbcomp-block" class="sub-blck-less">
-                        <h2>Simbologia da computação</h2>
+
+                    <a href="pages_lesson.php?pageDevweb=titleGeometria" id="sbcomp-block" class="sub-blck-less">
+                        <h2>Geometrica</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/math/simbologia-01.jpg" alt="imagem de simbologia da computação">
+                        </div>
+                    </a>
+                    
+                    <a href="pages_lesson.php?pageDevweb=titleAnalitica" class="sub-blck-less">
+                        <h2>Analitica</h2>
+                        <div class="blck-img-grl">
+                            <img src="./midia/icon/math/simbologia-01.jpg">
                         </div>
                     </a>
                 </section>

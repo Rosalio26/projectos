@@ -21,19 +21,19 @@
             </div>
             <div class="cnt-less-eletronic">
                 <section class="blck-less-gnr">
-                    <a href="./less/room-lesson.php?pages=areaAlgorithm" id="algorithm-block" class="sub-blck-less">
+                    <a href="pages_lesson.php?pageEletronic=titleAlgoritmo" id="algorithm-block" class="sub-blck-less">
                         <h2>Algoritmos</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/eletron/algorithm.jpg" alt="imagem de Codigo de algoritmo">
                         </div>
                     </a>
-                    <a href="./less/room-lesson.php?pages=areaAi" id="ai-block" class="sub-blck-less">
+                    <a href="pages_lesson.php?pageEletronic=titleAi" id="ai-block" class="sub-blck-less">
                         <h2>Inteligênçia Artificial</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/eletron/ai.jpg" alt="imagem de inteligençia artificial">
                         </div>
                     </a>
-                    <a href="./less/room-lesson.php?pages=areaArduino" id="arduino-block" class="sub-blck-less">
+                    <a href="pages_lesson.php?pageEletronic=titleArduino" id="arduino-block" class="sub-blck-less">
                         <h2>Arduino</h2>
                         <div class="blck-img-grl">
                             <img src="./midia/icon/eletron/arduino.jpg" alt="imagem de Arduino">
