@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./conf/style/sala-materias.css">
     <!-- <link rel="stylesheet" href="room/conf/style/sala-materias.css">
     <link rel="stylesheet" href="style/mainHd.css"> -->
-    <link rel="stylesheet" href="../style/mainHd.css">
+    <!-- <link rel="stylesheet" href="../style/mainHd.css"> -->
     <script defer src="./conf/script/sala.js"></script>
 </head>
 <body class="body-sala-material">
