@@ -16,8 +16,5 @@
                 </ul>
             </nav>
         </div>
-        <div class="logn-main">
-            <p>profile</p>
-        </div>
     </div>
 </div>
