@@ -134,6 +134,49 @@ img {
     transition: all 0.2s ease-in-out;
 }
 
+/*Page Cil configuração*/
+.gui-cil-plat {
+    background-image: linear-gradient(to right, blue, orangered);
+    align-items: center;
+    gap: 200px;
+    width: 100%;
+    height: 40vh;
+    margin: 60px 0px;
+    padding: 0px 60px;
+}
+
+.content-gui-cil h1 {
+    background-image: linear-gradient(to left, #ff8c00 90%, #ff00ae);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 20px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.content-gui-cil p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.go-cil-page-btn {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--color-sobline);
+    border: none;
+    border-radius: 100px;
+    margin: 40px 0px;
+    padding: 10px 15px;
+}
+
+.go-cil-page-btn:hover {
+    cursor: pointer;
+    background-color: orangered;
+    border: 3px solid #4e4eff;
+    color: var(--color-letter-primary);
+}
+
 /*Configuracao das janelas modais da biblioteca e Ficheiros*/
 .side-body-materias {
     background-color: var(--color-background-none);
@@ -245,10 +288,11 @@ img {
 }
 
 .text-campo-esseci h3 {
-    color: #9742B9;
-    font-size: 22px;
+    color: #9e8c88;
+    font-size: 17px;
     font-weight: 100;
     font-style: italic;
+    text-transform: uppercase;
     padding-left: 30px;
     padding-right: 20px;
 }
@@ -266,6 +310,7 @@ img {
     -webkit-background-clip: text;
     color: transparent;
 
+    font-size: 14px;
     cursor: pointer;
     box-shadow: 1px 1px 10px 1px var(--primary-background);
     border-radius: 10px;
@@ -434,4 +479,148 @@ img {
 
 .campos-ca-og-co:hover::before {
     border: none;
+}
+
+/*Campo de ficheiros externos*/
+.discopact {
+    background-image: linear-gradient(30deg, #d3b5b5, #a9ceff);
+    padding: 20px;
+    color: var(--primary-background);
+    position: relative;
+}
+
+.text-ext-resources {
+    background-image: linear-gradient(to left, #c800ff 50%, #ff6f00);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 50px 0px 0px 50px;
+    font-size: 40px;
+}
+
+.campo-software {
+    /* background-image: linear-gradient(-30deg, #d3b5b5, #a9ceff); */
+    border-radius: 20px;
+    width: 1180px;
+    margin: 0 auto;
+    padding: 50px 0px 30px 50px;
+    line-height: 47px;
+}
+
+.text-softwares {
+    color: #7676d0;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.campo-software p.so-ft-onn {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #6d6da2;
+}
+
+.campo-software p.so-ft-tw {
+    font-size: 20px;
+    font-weight: bold;
+    color: #646474;
+}
+
+.list-so-ft {
+    border: 1px solid var(--color-letter-primary);
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 1px #afafcb;
+    margin: 50px 0px;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-so-ft-tw {
+    border: none;
+    box-shadow: none;
+}
+
+
+#list-so-ft-tw li {
+    background-image: none;
+    border: 3px solid #eaba96;
+    height: 80px;
+    width: 200px;
+}
+
+#list-so-ft-tw li:hover {
+    background-color: #ff903c60;
+    border: 3px solid #0055ff;
+    color: var(--primary-background);
+    font-weight: bold;
+    height: 80px;
+    width: 200px;
+}
+
+.list-so-ft li {
+    background-image: linear-gradient(30deg, #b0b0f0, #f0ccb0);
+    border-radius: 10px;
+    border: 1px solid var(--color-letter-primary);
+    box-shadow: 1px 1px 10px 1px var(--color-letter-primary);
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-so-ft li:hover {
+    box-shadow: 1px 1px 10px 1px var(--secondary-background);
+    border: 3px solid var(--color-letter-primary);
+}
+
+.list-so-ft li a{
+    color: #121217;
+    border-top: 1px solid #1c1c1f;
+}
+
+.list-so-ft li a::after {
+    content: '->';
+    margin-left: 10px;
+}
+
+.itm-so-ft {
+    height: 80%;
+    display: block;
+}
+
+.dini-splay {
+    border-radius: 100%;
+    position: absolute;
+}
+
+.dini-prem {
+    border-bottom: 1px solid #ddff00;
+    border-left: 1px solid #ff9900;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.dini-sece {
+    border-top: 1px solid #0055ff;
+    border-left: 1px solid #bb00ff;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    right: 130px;
+    z-index: 10;
+}
+
+.dini-smil {
+    border-bottom: 1px solid #ff5500;
+    border-left: 1px solid #0055ff;
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    right: 0;
 }
