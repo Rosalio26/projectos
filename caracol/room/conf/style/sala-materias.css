@@ -16,7 +16,7 @@
     font-family: poppins;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 :root {
@@ -179,12 +179,14 @@ img {
 }
 
 .go-cil-page-btn {
+    display: block;
     font-size: 15px;
     font-weight: bold;
     background-color: var(--color-sobline);
     border: none;
     border-radius: 100px;
     margin: 40px 0px;
+    width: max-content;
     padding: 10px 15px;
     position: relative;
     z-index: 200;
@@ -597,7 +599,7 @@ img {
 }
 
 .list-so-ft li a{
-    color: #121217;
+    color: #161692;
     border-top: 1px solid #1c1c1f;
 }
 
@@ -609,6 +611,34 @@ img {
 .itm-so-ft {
     height: 80%;
     display: block;
+}
+
+.as-img-so-ft {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.as-img-so-ft-1 {
+    background-image: url("../../midia/softwares/vscode.png");
+}
+
+.as-img-so-ft-2 {
+    background-image: url("../../midia/softwares/sublime.png");
+}
+
+.as-img-so-ft-3 {
+    background-image: url("../../midia/softwares/netbeans.png");
+}
+
+.as-img-so-ft-4 {
+    background-image: url("../../midia/softwares/jetbrains.jpeg");
+}
+
+.as-img-so-ft-5 {
+    background-image: url("../../midia/softwares/notepad.png");
 }
 
 .dini-splay {
@@ -643,4 +673,109 @@ img {
     height: 200px;
     top: 150px;
     right: 0;
+}
+
+/*Footer*/
+.inc-sala-footer {
+    background-image: linear-gradient( to bottom, var(--color-letter-primary), var(--color-background-none));
+    width: 100%;
+    height: max-content;
+}
+
+.footer-sala-materiais {
+    background-color: #6d6da2;
+    border-radius: 25px 50px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.inc-info {
+    background-color: var(--color-background-none);
+    width: 410px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.inc-info h2 {
+    color: #00044f;
+}
+
+.text-cmp-inc {
+    color: #00044f90;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+}
+
+.cnt-cmp-itm li {
+    color: var(--primary-background);
+    background-color: var(--color-background-none);
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 2px;
+    position: relative;
+    width: max-content;
+}
+
+.cnt-cmp-itm li:hover {
+    color: #282941;
+}
+
+.cnt-cmp-itm li::before {
+    background-color: var(--color-sobline);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    transition: all 1s ease-in-out;
+}
+
+.cnt-cmp-itm li:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+#social-icon {
+    background-color: var(--color-background-none);
+    display: flex;
+    width: max-content;
+    padding-right: 10px;
+}
+
+.icons-net-conf {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-background);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 1000px;
+    margin-left: 15px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#net-icons-wha {
+    background-image: url("../../midia/socialNetwork/whatsapp.png");
+}
+
+#net-icons-link {
+    background-image: url("../../midia/socialNetwork/linkidn.png");
+}
+
+#net-icons-fac {
+    background-image: url("../../midia/socialNetwork/facebook.png");
+}
+
+#net-icons-inst {
+    background-image: url("../../midia/socialNetwork/instagram.png");
 }

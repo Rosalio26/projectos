@@ -19,7 +19,7 @@
             <?php include('./inc-sala-materias/body-side.html');?>
         </div>
     </main>
-    <footer class="inc-sala">
+    <footer class="inc-sala-footer">
         <?php include("./inc-sala-materias/inc-footer-sala.html");?>
     </footer>
 </body>
