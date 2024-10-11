@@ -143,21 +143,39 @@ img {
     height: 40vh;
     margin: 60px 0px;
     padding: 0px 60px;
+    position: relative;
+}
+
+.asto-gui-cil {
+    background-image: url("../../midia/gui-cil-back-learn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
 }
 
 .content-gui-cil h1 {
     background-image: linear-gradient(to left, #ff8c00 90%, #ff00ae);
     -webkit-background-clip: text;
     color: transparent;
+    position: relative;
     padding: 20px 0px;
     font-size: 40px;
     font-weight: bolder;
     letter-spacing: 3px;
+    z-index: 200;
 }
 
 .content-gui-cil p {
     font-size: 17px;
     line-height: 30px;
+    position: relative;
+    z-index: 200;
 }
 
 .go-cil-page-btn {
@@ -168,6 +186,8 @@ img {
     border-radius: 100px;
     margin: 40px 0px;
     padding: 10px 15px;
+    position: relative;
+    z-index: 200;
 }
 
 .go-cil-page-btn:hover {
