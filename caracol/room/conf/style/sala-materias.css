@@ -361,10 +361,13 @@ img {
 
 /*Configuracoes das janelas modais*/
 .conf-windows {
+    /* background-color: #1d1d9c86; */
     background-color: #12121786;
     backdrop-filter: blur(4px);
-    position: absolute;
+    position: fixed;
     display: none;
+    /* width: 100vw;
+    height: 100vh; */
     top: 0;
     left: 0;
     right: 0;
@@ -384,6 +387,8 @@ img {
     padding: 5px 10px;
     right: 50px;
     top: 30px;
+    width: 41px;
+    height: 40px;
 }
 
 .conf-windows.open-modal {

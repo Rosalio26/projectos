@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programação | Aulas</title>
-    <link rel="stylesheet" href="./style/home_less.css">
+    <!-- <link rel="stylesheet" href="./style/home_less.css">
     <link rel="stylesheet" href="../../../style/home_less.css">
     <link rel="stylesheet" href="../../../style/home_less.css">
-</head>
+</head> -->
 <body>
     <div class="programer-page">
         <div id="programer" class="itm-less-content programer">
@@ -28,38 +28,38 @@
                     <a href="pages_lesson.php?pageProgram=titlejavascript" id="javascript-block" class="sub-blck-less">
                         <h2>JavaScript</h3>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/progrm/js-01.png" alt="imagem de liguangem de programação JavaScript">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlejava" id="java-block" class="sub-blck-less">
                         <h2>Java</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/progrm/java.png" alt="imagem da liguangem de programação JAVA">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlephp" id="php-block" class="sub-blck-less">
                         <h2>Php</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/progrm/php.png" alt="imagem de programação PHP">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlecsharp" id="csh-block" class="sub-blck-less">
                         <h2>C#</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/progrm/csh.png" alt="imagem de liguangem de programação C#">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlecplus" id="cplus-block" class="sub-blck-less">
                         <h2>C++</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/progrm/c++.png" alt="imagem da liguangem de programação C++">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlepython" id="c-block" class="sub-blck-less">
                         <h2>phython</h2>
                         <div class="blck-img-grl">
-                            <img src="./midia/icon/progrm/c.jpeg" alt="imagem de linguagem de programação C">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                 </section>
             </div>
