@@ -25,23 +25,22 @@
                 <section class="blck-less-gnr">
                     <a href="pages_lesson.php?pageDevweb=titleComputacao" id="cceng-block" class="sub-blck-less">
                         <h2>Computacional</h2>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/math/science.jpg" alt="imagem de ciênçia da computação">
+                        <div id="cmpy-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
 
                     <a href="pages_lesson.php?pageDevweb=titleGeometria" id="sbcomp-block" class="sub-blck-less">
                         <h2>Geometrica</h2>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/math/simbologia-01.jpg" alt="imagem de simbologia da computação">
+                        <div id="geo-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     
                     <a href="pages_lesson.php?pageDevweb=titleAnalitica" class="sub-blck-less">
                         <h2>Analitica</h2>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/math/simbologia-01.jpg">
-                        </div>
+                        <div id="analy-img-icon" class="blck-img-grl"></div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                 </section>
             </div>

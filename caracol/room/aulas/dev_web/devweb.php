@@ -26,30 +26,30 @@
                 <section class="blck-less-gnr">
                     <a href="pages_lesson.php?pageLesson=titlehtml" id="html-css-block" class="sub-blck-less">
                         <h2>HTML5</h3>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/devweb/html.png" alt="imagem de HTML">
+                        <div id="html-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
 
                     <a href="pages_lesson.php?pageLesson=titlecss" id="html-css-block" class="sub-blck-less">
                         <h2>CSS3</h3>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/devweb/css.png" alt="imagem de CSS">
+                        <div id="css-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
 
                     <a href="pages_lesson.php?pageLesson=titlesvg" id="svg-block" class="sub-blck-less">
                         <h2>SVG</h3>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/devweb/svg.jpg" alt="imagem de HTML e CSS">
+                        <div id="svg-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
 
                     <a href="pages_lesson.php?pageLesson=titlecanvas" id="svg-block" class="sub-blck-less">
                         <h2>Canvas</h3>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/devweb/svg.jpg" alt="imagem de HTML e CSS">
+                        <div id="canvas-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                 </section>
             </div>

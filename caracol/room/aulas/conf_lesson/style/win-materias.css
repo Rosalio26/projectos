@@ -1,6 +1,6 @@
 
 *{
-    color: #ccc;
+    color: #333;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -142,8 +142,88 @@ img {
     color: #d7a66b;
 }
 
+/*============================================================
+==============================================================
+===Icons dos blocos --PROGRAMACAO--*/
+#js-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1001.svg");
+}
+
+#jv-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1002.svg");
+}
+
+#php-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1003.svg");
+}
+
+#csh-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1004.svg");
+}
+
+#cpls-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1005.svg");
+}
+
+#pyth-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1006.svg");
+}
+
+/*============================================================
+==============================================================
+===Icons dos blocos --ELETRONICA--*/
+#alg-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1007.svg");
+}
+
+#ia-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1009.svg");
+}
+
+#ard-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-1008.svg");
+}
+
+/*============================================================
+==============================================================
+===Icons dos blocos --DESENVOLVIMENTO WEB--*/
+#html-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-dev-1003.svg");
+}
+
+#css-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-dev-1001.svg");
+}
+
+#svg-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-dev-1004.svg");
+}
+
+#canvas-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-dev-1005.svg");
+}
+
+
+/*============================================================
+==============================================================
+===Icons dos blocos --MATEMATICA--*/
+#cmpy-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-mat-1002.svg");
+}
+
+#geo-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-dev-1005.svg");
+}
+
+#analy-img-icon {
+    background-image: url("../../../midia/img-co-ca-mi-mat-1001.svg");
+}
+
 .blck-img-grl {
     background-color: #313335;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 50%;
 }
@@ -195,7 +275,7 @@ img {
 ========================================
 ============Header pagina de lissao*/
 .mn-header {
-   color: #ccc;
+   color: #222;
    background-color: transparent;
    width: 100%;
    height: 100px;
@@ -231,12 +311,6 @@ img {
     color: #222;
     font-size: 12pt;
     background-color: #ccc;
-
-    border-radius: 300px;
-    width: 700px;
-    min-width: 200px;
-
-    padding: 9px 20px;
 }
 
 .ser-btn {
@@ -246,28 +320,6 @@ img {
     cursor: pointer;
     margin-left: -2px;
     padding-right: 10px;
-}
-
-.cnt-dim-btn {
-    display: flex;
-    background-color: #002aff;
-    border-radius: 300px;
-}
-
-.btnd {
-    color: #222;
-    cursor: pointer;    
-    background-color: transparent;
-    border-radius: 300px;
-    font-size: 14pt;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: orange;
-    padding: 10px 20px;
-}
-
-.btnd a {
-    color: #222;
 }
 
 .btn-dim-pro {
@@ -287,18 +339,14 @@ img {
 .arm-list-les {
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    background-color: #eee;
     height: 35%;
     width: 100%;
 }
 
 .list-amd {
-    width: 98%;
+    width: 95%;
     overflow: hidden;
-}
-
-.list-amd:hover {
-    overflow: scroll hidden;
 }
 
 .itm-arm-lk {
@@ -310,8 +358,27 @@ img {
 }
 
 .itm-arm-lk:hover {
-    background-color: #444;
+    background-color: #b9b9b9;
 }
+
+.conf-pag-left-rig {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+.conf-pag-left-rig:hover {
+    background-color: #bbb;
+}
+
+#lef-scr-pag::after {
+    content: '<';
+}
+
+#rig-scr-pag::after {
+    content: '>';
+}
+
 /* @keyframes typeHd {
     0% {
         background-color: red;
@@ -326,14 +393,15 @@ img {
 =========================================
 ========Paginas da lissão*/
 #body_lesson_page {
-    background-color: #161823;
-    overflow: hidden scroll;
+    background-image: linear-gradient(20deg, #eff1fb, #fff);
+    overflow: hidden auto;
 }
 
 #main_lesson_page {
     background-color: transparent;
     width: 100vw;
-    height: 95vh;
+    height: 87vh;
+    border-top: 1px solid #222;
 }
 
 #main_lesson_page > #scd-main-les {
@@ -342,30 +410,25 @@ img {
     height: 100%;
 }
 
-.lef-mn-les 
-{
+.left-pag-lesson-col {
     background-color: transparent;
+    border-right: 1px solid #222;
     width: 23%;
-    height: 100%;
-}
-
-.cnt-boxe-less
-{
-    background-color: transparent;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden scroll;
-    margin: auto auto;
-    padding: 20px;
 }
 
 .rig-mn-les
 {
     border-radius: 5px7;
-    background-color: #7b7b7b54;
-    width: 70%;
+    background-color: transparent;
+    width: 54%;
     height: 100%;
+}
+
+.rig-mn-after {
+    border-left: 1px solid #222;
+    width: 23%;
+    height: 100%;
+    background-color: transparent;
 }
 
 

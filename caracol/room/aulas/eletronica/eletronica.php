@@ -23,21 +23,21 @@
                 <section class="blck-less-gnr">
                     <a href="pages_lesson.php?pageEletronic=titleAlgoritmo" id="algorithm-block" class="sub-blck-less">
                         <h2>Algoritmos</h2>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/eletron/algorithm.jpg" alt="imagem de Codigo de algoritmo">
+                        <div id="alg-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageEletronic=titleAi" id="ai-block" class="sub-blck-less">
                         <h2>Inteligênçia Artificial</h2>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/eletron/ai.jpg" alt="imagem de inteligençia artificial">
+                        <div id="ia-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageEletronic=titleArduino" id="arduino-block" class="sub-blck-less">
                         <h2>Arduino</h2>
-                        <div class="blck-img-grl">
-                            <img src="./midia/icon/eletron/arduino.jpg" alt="imagem de Arduino">
+                        <div id="ard-img-icon" class="blck-img-grl">
                         </div>
+                        <button class="lk-lesson-efect">Apreender</button>
                     </a>
                 </section>
             </div>

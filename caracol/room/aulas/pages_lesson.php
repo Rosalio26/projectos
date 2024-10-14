@@ -16,98 +16,95 @@
     </header>
     <main id="main_lesson_page">
         <div id="scd-main-les" class="mn-les-pg">
-            <div class="lef-mn-les">
-                <div class="cnt-boxe-less">
-                    <div class="sub-box-les">
-                        <?php 
-                        //======================================
-                        //=========Asides de DESENVOLVIMENTO WEB
-                            switch (@$_REQUEST["pageLesson"]) {
-                                case "titlehtml":
-                                    include("dev_web/auladeHtml/html_aside.html");    
-                                break;
-                                case "titlecss":
-                                    include("dev_web/auladeCss/css_aside.html");    
-                                break;
-                                case "titlesvg":
-                                    include("dev_web/auladeSvg/svg_aside.html");    
-                                break;
-                                case "titlecanvas":
-                                    include("dev_web/auladeCanvas/canvas_aside.html");    
-                                break;  
-                                default:
-                                print("");
-                            }
-                            
-                            //======================================
-                            //=========Asides de PROGRAMACAO
-                            switch (@$_REQUEST["pageProgram"]) {
-                                case "titlejavascript":
-                                    include("programacao/auladeJavascript/javascript_aside.html");    
-                                break;
-                                case "titlephp":
-                                    include("programacao/auladePhp/php_aside.html");    
-                                break;
-                                case "titlejava":
-                                    include("programacao/auladeJava/java_aside.html");    
-                                break;
-                                case "titlecsharp":
-                                    include("programacao/auladeLinguagemCsharp/lgCsharp_aside.html");    
-                                break;  
-                                case "titlecplus":
-                                    include("programacao/auladeLinguagemCplus/lgCplus_aside.html");    
-                                break;  
-                                case "titlepython":
-                                    include("programacao/auladePython/python_aside.html");    
-                                break;  
-                                default:
-                                print("");
-                            }
-                            
-                            //======================================
-                            //=========Asides de ELETRONICA
-                            switch (@$_REQUEST["pageEletronic"]) {
-                                case "titleAlgoritmo":
-                                    include("eletronica/auladeAlgoritmo/algoritmo_aside.html");    
-                                break;
-                                case "titleArduino":
-                                    include("eletronica/auladeArduino/arduino_aside.html");    
-                                break;
-                                case "titleAi":
-                                    include("eletronica/auladeAi/ai_aside.html");    
-                                break;
-                                case "titleRobotica":
-                                    include("eletronica/auladeRobotica/robotica_aside.html");    
-                                break;
-                                case "titleProteus":
-                                    include("eletronica/auladeProteus/proteus_aside.html");    
-                                break;
-                                default:
-                                print("");
-                            }
-                            
-                            
-                            //======================================
-                            //=========Asides de Matematica
-                            switch (@$_REQUEST["pageDevweb"]) {
-                                case "titleComputacao":
-                                    include("matematica/auladeComputacao/computacao.php");    
-                                break;
-                                case "titleGeometria":
-                                    include("matematica/auladeGeometria/geometria.php");    
-                                break;
-                                case "titleAnalatica":
-                                    include("matematica/auladeAnalitica/analitica.php");    
-                                break;
-                                default:
-                                print("");
-                            }
-                        ?>
-                    </div>
-                </div>
+            <div class="left-pag-lesson-col">
+                <?php 
+                //======================================
+                //=========Asides de DESENVOLVIMENTO WEB
+                    switch (@$_REQUEST["pageLesson"]) {
+                        case "titlehtml":
+                            include("dev_web/auladeHtml/html_aside.html");    
+                        break;
+                        case "titlecss":
+                            include("dev_web/auladeCss/css_aside.html");    
+                        break;
+                        case "titlesvg":
+                            include("dev_web/auladeSvg/svg_aside.html");    
+                        break;
+                        case "titlecanvas":
+                            include("dev_web/auladeCanvas/canvas_aside.html");    
+                        break;  
+                        default:
+                        print("");
+                    }
+                    
+                    //======================================
+                    //=========Asides de PROGRAMACAO
+                    switch (@$_REQUEST["pageProgram"]) {
+                        case "titlejavascript":
+                            include("programacao/auladeJavascript/javascript_aside.html");    
+                        break;
+                        case "titlephp":
+                            include("programacao/auladePhp/php_aside.html");    
+                        break;
+                        case "titlejava":
+                            include("programacao/auladeJava/java_aside.html");    
+                        break;
+                        case "titlecsharp":
+                            include("programacao/auladeLinguagemCsharp/lgCsharp_aside.html");    
+                        break;  
+                        case "titlecplus":
+                            include("programacao/auladeLinguagemCplus/lgCplus_aside.html");    
+                        break;  
+                        case "titlepython":
+                            include("programacao/auladePython/python_aside.html");    
+                        break;  
+                        default:
+                        print("");
+                    }
+                    
+                    //======================================
+                    //=========Asides de ELETRONICA
+                    switch (@$_REQUEST["pageEletronic"]) {
+                        case "titleAlgoritmo":
+                            include("eletronica/auladeAlgoritmo/algoritmo_aside.html");    
+                        break;
+                        case "titleArduino":
+                            include("eletronica/auladeArduino/arduino_aside.html");    
+                        break;
+                        case "titleAi":
+                            include("eletronica/auladeAi/ai_aside.html");    
+                        break;
+                        case "titleRobotica":
+                            include("eletronica/auladeRobotica/robotica_aside.html");    
+                        break;
+                        case "titleProteus":
+                            include("eletronica/auladeProteus/proteus_aside.html");    
+                        break;
+                        default:
+                        print("");
+                    }
+                    
+                    
+                    //======================================
+                    //=========Asides de Matematica
+                    switch (@$_REQUEST["pageDevweb"]) {
+                        case "titleComputacao":
+                            include("matematica/auladeComputacao/computacao.php");    
+                        break;
+                        case "titleGeometria":
+                            include("matematica/auladeGeometria/geometria.php");    
+                        break;
+                        case "titleAnalatica":
+                            include("matematica/auladeAnalitica/analitica.php");    
+                        break;
+                        default:
+                        print("");
+                    }
+                ?>
             </div>
-
             <div id="camp_right_pages" class="rig-mn-les">
+            </div>
+            <div id="camp_right_after" class="rig-mn-after">
             </div>
         </div>
     </main>

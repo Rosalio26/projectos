@@ -27,37 +27,37 @@
                 <section class="blck-less-gnr">
                     <a href="pages_lesson.php?pageProgram=titlejavascript" id="javascript-block" class="sub-blck-less">
                         <h2>JavaScript</h3>
-                        <div class="blck-img-grl">
+                        <div id="js-img-icon" class="blck-img-grl">
                         </div>
                         <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlejava" id="java-block" class="sub-blck-less">
                         <h2>Java</h2>
-                        <div class="blck-img-grl">
+                        <div id="jv-img-icon" class="blck-img-grl">
                         </div>
                         <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlephp" id="php-block" class="sub-blck-less">
                         <h2>Php</h2>
-                        <div class="blck-img-grl">
+                        <div id="php-img-icon" class="blck-img-grl">
                         </div>
                         <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlecsharp" id="csh-block" class="sub-blck-less">
                         <h2>C#</h2>
-                        <div class="blck-img-grl">
+                        <div id="csh-img-icon" class="blck-img-grl">
                         </div>
                         <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlecplus" id="cplus-block" class="sub-blck-less">
                         <h2>C++</h2>
-                        <div class="blck-img-grl">
+                        <div id="cpls-img-icon" class="blck-img-grl">
                         </div>
                         <button class="lk-lesson-efect">Apreender</button>
                     </a>
                     <a href="pages_lesson.php?pageProgram=titlepython" id="c-block" class="sub-blck-less">
                         <h2>phython</h2>
-                        <div class="blck-img-grl">
+                        <div id="pyth-img-icon" class="blck-img-grl">
                         </div>
                         <button class="lk-lesson-efect">Apreender</button>
                     </a>
