@@ -105,6 +105,7 @@
             <div id="camp_right_pages" class="rig-mn-les">
             </div>
             <div id="camp_right_after" class="rig-mn-after">
+                <div class="reserv-mn-after"></div>
             </div>
         </div>
     </main>

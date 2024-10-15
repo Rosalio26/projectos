@@ -401,6 +401,7 @@ img {
     background-color: transparent;
     width: 100vw;
     height: 87vh;
+    padding: 0px 10px;
     border-top: 1px solid #222;
 }
 
@@ -418,17 +419,43 @@ img {
 
 .rig-mn-les
 {
-    border-radius: 5px7;
     background-color: transparent;
+    overflow-y: scroll;
+    border-radius: 5px7;
     width: 54%;
     height: 100%;
 }
 
+.rig-mn-les::-webkit-scrollbar {
+    width: 1px;
+}
+
+.rig-mn-les::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.rig-mn-les::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+.rig-mn-les::-webkit-scrollbar-button {
+    display: none;
+}
+
 .rig-mn-after {
+    background-color: #eee;
     border-left: 1px solid #222;
     width: 23%;
     height: 100%;
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.reserv-mn-after {
+    background-color: #ddd;
+    height: 100%;
+    width: 100%;
 }
 
 
