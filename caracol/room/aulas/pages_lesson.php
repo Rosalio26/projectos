@@ -100,9 +100,51 @@
                         default:
                         print("");
                     }
+
+
+                    //================================================================
+                    //================================================================
+                    //================================================================
+                    //================================================================
+                    //================================================================
+                    //================================================================
+                    //================================================================
+                    //================================================================
+                    switch (@$_REQUEST["beginLearning"]) {
+                        case "introducaoJavaScript":
+                            include("programacao/auladeJavascript/javascript_aside.html");    
+                        break;
+                        case "titlephp":
+                            include("programacao/auladePhp/php_aside.html");    
+                        break;
+                        case "titlejava":
+                            include("programacao/auladeJava/java_aside.html");    
+                        break;
+                        case "titlecsharp":
+                            include("programacao/auladeLinguagemCsharp/lgCsharp_aside.html");    
+                        break;  
+                        case "titlecplus":
+                            include("programacao/auladeLinguagemCplus/lgCplus_aside.html");    
+                        break;  
+                        case "titlepython":
+                            include("programacao/auladePython/python_aside.html");    
+                        break;  
+                        default:
+                        print("");
+                    }
                 ?>
             </div>
             <div id="camp_right_pages" class="rig-mn-les">
+                <?php 
+                    switch (@$_REQUEST["beginLearning"]) {
+                        case "introducaoJavaScript":
+                            include("programacao/auladeJavascript/lib/introducao.html");
+                        break;
+                        default :
+                            print("Falha no carregamento dos arquivos");
+                        break;
+                    }
+                ?>
             </div>
             <div id="camp_right_after" class="rig-mn-after">
                 <div class="reserv-mn-after"></div>
