@@ -141,7 +141,18 @@
                             include("programacao/auladeJavascript/lib/introducao.html");
                         break;
                         default :
-                            print("Falha no carregamento dos arquivos");
+                            print("");
+                        break;
+                    }
+                ?>
+
+                <?php 
+                    switch (@$_REQUEST["pageProgram"]) {
+                        case "titlejavascript":
+                            include("programacao/auladeJavascript/lib/introducao.html");
+                        break;
+                        default :
+                            print("");
                         break;
                     }
                 ?>
