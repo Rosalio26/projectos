@@ -7,7 +7,7 @@
     </div>
     <div class="col-rs hd-reverse">
         <!--BLOGS E FICHEIROS-->
-        <div class="hd-row hd-row-1">
+        <!-- <div class="hd-row hd-row-1">
             <button class="btn toggle-btn hd-btn"></button>
             <nav class="hd-navbar-primary navbar hd-navbar">
                 <ul class="navBar hd-navBar hd-nav-2">
@@ -25,14 +25,14 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
 
         <!--SALA DE AULAS E DISCIPLINAS-->
         <div class="hd-row hd-row-2">
             <nav class="hd-navbar-primary navbar hd-navbar">
                 <ul class="navBar hd-navBar hd-nav-2">
                     <li class="itm itm-navbar itm-hd-1 prisma">
-                        <span class="prisma-title"><a href="room/sala-materias.php" class="hd-link-btn link-prisma">Materias</a></span>
+                        <span class="prisma-title"><a href="room/sala-materias.php" class="hd-link-btn link-prisma">GuiSheet</a></span>
                         <ul class="navBar nav-prisma">
                             <li class="itm itm-navbar itm-hd-1"><a href="room/aulas/win-materia.php?pages-material=programacao" class="hd-link-btn">Programação</a></li>
                             <li class="itm itm-navbar itm-hd-1"><a href="room/aulas/win-materia.php?pages-material=eletronica" class="hd-link-btn">Eletrônica</a></li>

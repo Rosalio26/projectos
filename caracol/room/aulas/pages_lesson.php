@@ -102,59 +102,38 @@
                     }
 
 
-                    //================================================================
-                    //================================================================
-                    //================================================================
-                    //================================================================
-                    //================================================================
-                    //================================================================
-                    //================================================================
-                    //================================================================
+                  
                     switch (@$_REQUEST["beginLearning"]) {
                         case "introducaoJavaScript":
                             include("programacao/auladeJavascript/javascript_aside.html");    
                         break;
-                        case "titlephp":
+                        case "introducaophp":
                             include("programacao/auladePhp/php_aside.html");    
                         break;
-                        case "titlejava":
+                        case "introducaojava":
                             include("programacao/auladeJava/java_aside.html");    
                         break;
-                        case "titlecsharp":
+                        case "introducaocsharp":
                             include("programacao/auladeLinguagemCsharp/lgCsharp_aside.html");    
                         break;  
-                        case "titlecplus":
+                        case "introducaocplus":
                             include("programacao/auladeLinguagemCplus/lgCplus_aside.html");    
                         break;  
-                        case "titlepython":
+                        case "introducaopython":
                             include("programacao/auladePython/python_aside.html");    
                         break;  
+                        case "introducaoc":
+                            include("programacao/auladeLinguagemC/lgC_aside.html");
+                        break;
                         default:
                         print("");
                     }
                 ?>
             </div>
             <div id="camp_right_pages" class="rig-mn-les">
-                <?php 
-                    switch (@$_REQUEST["beginLearning"]) {
-                        case "introducaoJavaScript":
-                            include("programacao/auladeJavascript/lib/introducao.html");
-                        break;
-                        default :
-                            print("");
-                        break;
-                    }
-                ?>
-
-                <?php 
-                    switch (@$_REQUEST["pageProgram"]) {
-                        case "titlejavascript":
-                            include("programacao/auladeJavascript/lib/introducao.html");
-                        break;
-                        default :
-                            print("");
-                        break;
-                    }
+                <?php
+                    include('learning_aside_pages.php');
+                    include('intro_lesson.php');
                 ?>
             </div>
             <div id="camp_right_after" class="rig-mn-after">
