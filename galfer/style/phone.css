@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*
+{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: none;
+    margin: none;
+}
+
+.cnt-btn-reg
+{
+    border-radius: 1000px;
+    padding: 1px;
+    height: 35px;
+    width: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnt-btn-reg-calculator
+{
+    border: 1px solid green;
+}
+
+.cnt-btn-reg-call
+{
+    border: 1px solid tomato;
+}
+
+.submit-btn-reg
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 25px;
+    height: 25px;
+}
+
+.calculator-submit-btn
+{
+    background-image: url('./icon/calculator.png');
+}
+
+.call-submit-btn
+{
+    background-image: url('./icon/telephone.png');
+}
