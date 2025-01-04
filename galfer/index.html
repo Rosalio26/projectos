@@ -7,40 +7,43 @@
     <link rel="stylesheet" href="style/phone.css">
 </head>
 <body>
-    <div>
-        <form action="calling.php" method="POST">
-            <div>
-                <input type="text" name="phoneNumber" placeholder="Disca um numero"/>
+    <div class="cell-struct">
+        <form action="conf/calling.php" method="POST">
+            <div class="cnt-text-input">
+                <input id="cnt-text-call" type="text" name="phoneNumber" placeholder="Disca o numero" disabled/>
             </div>
-            <div>
+            <div class="inc-call-calculator">
                 <div  class="cnt-btn-reg cnt-btn-reg-calculator">
-                    <input type="submit" value="" class="btn submit-btn submit-btn-reg calculator-submit-btn"/>
+                    <a href="inc/calculator.html" class="btn submit-btn submit-btn-reg calculator-submit-btn"></a>
                 </div>
                 <div  class="cnt-btn-reg cnt-btn-reg-call">
                     <input type="submit" value="" class="btn submit-btn submit-btn-reg  call-submit-btn"/>
                 </div>
             </div>
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-            </div>
-            <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-            </div>
-            <div>
-                <button>*</button>
-                <button>0</button>
-                <button>#</button>
+            <div class="cnt-btn-cell">
+                <div>
+                    <span class="btn-call-phone" id="btn-01">1</span>
+                    <span class="btn-call-phone" id="btn-02">2</span>
+                    <span class="btn-call-phone" id="btn-03">3</span>
+                </div>
+                <div>
+                    <span class="btn-call-phone" id="btn-04">4</span>
+                    <span class="btn-call-phone" id="btn-05">5</span>
+                    <span class="btn-call-phone" id="btn-06">6</span>
+                </div>
+                <div>
+                    <span class="btn-call-phone" id="btn-07">7</span>
+                    <span class="btn-call-phone" id="btn-08">8</span>
+                    <span class="btn-call-phone" id="btn-09">9</span>
+                </div>
+                <div>
+                    <span class="btn-call-phone" id="btn-mt">*</span>
+                    <span class="btn-call-phone" id="btn-00">0</span>
+                    <span class="btn-call-phone" id="btn-sh">#</span>
+                </div>
             </div>
         </form>
     </div>
+    <script src="scripts/phone.js"></script>
 </body>
 </html>

@@ -9,6 +9,122 @@
     margin: none;
 }
 
+body
+{
+    background-image: linear-gradient(47deg, #111920, #38163c);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*
+=================================
+Definindo a estrutura do telefone
+=================================
+*/
+.cell-struct
+{
+    border: 1px solid #555;
+    box-shadow: inset 0.0001px 2px 1px 15px #1f1f1f2b;
+}
+
+@media  (max-width: 350px) {
+    .cell-struct
+    {
+        border-radius: 5px;
+        overflow: hidden;
+        width: 80%;
+        height: 40%;
+
+        margin: 0 auto;
+    }
+
+    .cell-struct form
+    {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .cell-struct form div.cnt-text-input
+    {
+        background-color: transparent;
+        border-bottom: 1px solid #555;
+        width: 100%;
+        height: 20%;
+    }
+
+    .cell-struct form div.cnt-text-input input
+    {
+        background-color: #dddddd00;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cell-struct form div.inc-call-calculator
+    {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 15%;
+    }
+
+    .cell-struct form div.cnt-btn-cell
+    {
+        background-color: #00000030;
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cell-struct form div.cnt-btn-cell div
+    {
+        display: flex;
+        margin: 0 auto;
+        width: max-content;
+    }
+}
+
+.cell-struct form div.cnt-btn-cell .btn-call-phone
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #666;
+    border-radius: 1000px;
+    
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+    margin: 5px 10px;
+    width: 45px;
+    height: 35px;
+}
+
+.cell-struct form div.cnt-btn-cell .btn-call-phone:hover
+{
+    color: #fff;
+    background-color: #00000090;
+    border: 1px solid #444;
+}
+
+
 .cnt-btn-reg
 {
     border-radius: 1000px;
@@ -23,12 +139,12 @@
 
 .cnt-btn-reg-calculator
 {
-    border: 1px solid green;
+    border: 1px solid tomato;
 }
 
 .cnt-btn-reg-call
 {
-    border: 1px solid tomato;
+    border: 1px solid green;
 }
 
 .submit-btn-reg
@@ -42,7 +158,7 @@
     height: 25px;
 }
 
-.calculator-submit-btn
+/* .calculator-submit-btn
 {
     background-image: url('./icon/calculator.png');
 }
@@ -50,4 +166,4 @@
 .call-submit-btn
 {
     background-image: url('./icon/telephone.png');
-}
+} */
