@@ -25,7 +25,7 @@ function submitForm() {
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                window.location.href = "homeHw.php"
+                window.location.href = "confhw/confReg.php"
             }
         };
         xhr.send("personalName=" + personalName + "&email=" + email + "&userName=" + userName + "&password=" + password + "&usernameId=" + usernameId + "&numberInc=" + numberInc);

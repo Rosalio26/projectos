@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="cnt-form-reg-hw">
-        <form id="personalDate">
-            <div class="cnt-inp-lab">
+        <form id="cnt-itm-form">
+            <div id="personalDate" class="cnt-inp-lab">
                 <div class="itm-inp-lab">
                     <label for="personalname">Nome:</label>
                     <input type="text" id="personalname" name="personalname" required>
@@ -28,19 +28,19 @@
                 </div>
                 <button type="button" onclick="nextStep()">Next</button>
             </div>
-        </form>
 
-        <form id="personalId" style="display: none;">
-            <div class="cnt-inp-lab">
-                <div class="itm-inp-lab">
-                    <label for="usernameId">Nome de Usuario</label>
-                    <input type="text" id="usernameId" name="username">
+            <div id="personalId" style="display: none;">
+                <div class="cnt-inp-lab">
+                    <div class="itm-inp-lab">
+                        <label for="usernameId">Nome de Usuario</label>
+                        <input type="text" id="usernameId" name="username">
+                    </div>
+                    <div class="itm-inp-lab">
+                        <label for="numberInc">Numero de Acesso</label>
+                        <input type="number" id="numberInc" name="numberAccess">
+                    </div>
+                    <button type="button" onclick="submitForm()">Enviar</button>
                 </div>
-                <div class="itm-inp-lab">
-                    <label for="numberInc">Numero de Acesso</label>
-                    <input type="number" id="numberInc" name="numberAccess">
-                </div>
-                <button type="button" onclick="submitForm()">Enviar</button>
             </div>
         </form>
     </div>
