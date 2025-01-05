@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interless || 100HW || Registro</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="cnt-form-reg-hw">
+        <form id="personalDate">
+            <div class="cnt-inp-lab">
+                <div class="itm-inp-lab">
+                    <label for="personalname">Nome:</label>
+                    <input type="text" id="personalname" name="personalname" required>
+                </div>
+                <div class="itm-inp-lab">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="itm-inp-lab">
+                    <label for="username">Nome de usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="itm-inp-lab">
+                    <label for="password">Palavra-Passe</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="button" onclick="nextStep()">Next</button>
+            </div>
+        </form>
+
+        <form id="personalId" style="display: none;">
+            <div class="cnt-inp-lab">
+                <div class="itm-inp-lab">
+                    <label for="usernameId">Nome de Usuario</label>
+                    <input type="text" id="usernameId" name="username">
+                </div>
+                <div class="itm-inp-lab">
+                    <label for="numberInc">Numero de Acesso</label>
+                    <input type="number" id="numberInc" name="numberAccess">
+                </div>
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts/form.js"></script>
+</body>
+</html>
