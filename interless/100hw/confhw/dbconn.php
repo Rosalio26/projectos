@@ -1,11 +1,11 @@
 <?php
-    define('HOST', 'localhost');
-    define('USER', 'root');
-    define('PASS', '');
-    define('BASE', 'interless');
+    $host = 'localhost';
+    $db = 'interless';
+    $user = 'root';
+    $pass = '';
 
-    $conn = new MySQLi(HOST, USER, PASS, BASE);
+    $conn = new mysqli($host, $user, $pass, $db);
 
     if ($conn->connect_error) {
-        die("Falha na conexao ao banco de dados: " . $conn->connect_error);
+        die("Erro de conexao: " . $conn->connect_error);
     }

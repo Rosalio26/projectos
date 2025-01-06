@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <?php 
-        include("confhw/confReg.php");
-    ?>
     <div class="cnt-form-reg-hw">
-        <form id="cnt-itm-form">
+        <form id="cnt-itm-form" method="post" action="confhw/confReg.php" onsubmit="return validateForm()">
             <div id="personalDate" class="cnt-inp-lab">
                 <div class="itm-inp-lab">
                     <label for="personalname">Nome:</label>
@@ -23,7 +20,7 @@
                 </div>
                 <div class="itm-inp-lab">
                     <label for="username">Nome de usuario</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username" required oninput="copyValue()">
                 </div>
                 <div class="itm-inp-lab">
                     <label for="password">Palavra-Passe</label>
@@ -36,13 +33,15 @@
                 <div class="cnt-inp-lab">
                     <div class="itm-inp-lab">
                         <label for="usernameId">Nome de Usuario</label>
-                        <input type="text" id="usernameId" name="username">
+                        <input type="text" id="usernameId" name="username" readonly>
                     </div>
                     <div class="itm-inp-lab">
                         <label for="numberInc">Numero de Acesso</label>
                         <input type="number" id="numberInc" name="numberAccess">
                     </div>
-                    <button type="button" onclick="submitForm()">Enviar</button>
+                    <!-- <button type="button" onclick="submitForm()">Enviar</button> -->
+                    <button type="button" onclick="backForm()">Voltar</button>
+                    <input type="submit" value="Enviar" id="submitForm">
                 </div>
             </div>
         </form>
