@@ -45,6 +45,7 @@
                 </div>
             </div>
         </form>
+        <div><a href="confhw/inc/login.php">Login</a></div>
     </div>
 
     <script src="scripts/form.js"></script>
