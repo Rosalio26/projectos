@@ -1,6 +1,5 @@
-<?php
-    session_start();
-    ?>
+
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +10,7 @@
 </head>
 <body>
     <div class="cnt-form-reg-hw">
-        <form id="cnt-itm-form" method="post" action="../confLogin.php" onsubmit="return validateForm()">
+        <form id="cnt-itm-form" method="post" action="../confLogin.php">
             <div id="personalId">
                 <div class="cnt-inp-lab">
                     <div class="itm-inp-lab">
@@ -26,6 +25,7 @@
                 </div>
             </div>
         </form>
+        <a href="../../index.php">Registro</a>
     </div>
 </body>
 </html>

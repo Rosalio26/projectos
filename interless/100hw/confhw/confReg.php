@@ -1,5 +1,6 @@
 <?php
     include('./dbconn.php');
+    include('./function.php');
 
     if ($_SERVER["REQUEST_METHOD"]=="POST") {
         $personalname = filter_input(INPUT_POST, "personalname", FILTER_SANITIZE_STRING);
@@ -26,7 +27,7 @@
                 $stmt->bind_param("sssss", $personalname, $email, $username, $passwordHash, $numberaccess);
                 
                 if ($stmt->execute()) {
-                    echo "Sucess";
+                    header("Location: ../homeHw.php");
                 } else {
                     echo "Error";
                 }
