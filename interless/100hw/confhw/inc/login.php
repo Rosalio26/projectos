@@ -19,15 +19,14 @@
 
         //Verificar se o usuario existe
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($user_id, $stored_numberaccess);
+            $stmt->bind_result($st_username, $stored_numberaccess);
             $stmt->fetch();
 
             //verificando o numero
             if($numberaccess == $stored_numberaccess) {
+                $_SESSION['username'] = $username;
                 header("Location: ../../homeHw.php");
                 exit();
-                // print "<script>location.href='../homeHw.php'</script>";
-                // echo "Login Sucess: " . $user_id;
             } else {
                 $error = "Error numero";
             }
@@ -35,9 +34,7 @@
             $error = "Usuario nao encotrado";
         }
         $stmt->close();
-
     }
-
     $conn->close();
 ?>
 
