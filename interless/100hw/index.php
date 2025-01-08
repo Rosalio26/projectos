@@ -1,4 +1,53 @@
 
+<?php
+    session_start();;
+    include('./confhw/dbconn.php');
+
+    $error = '';
+    $success = '';
+
+    if ($_SERVER["REQUEST_METHOD"]=="POST") {
+        $personalname = filter_input(INPUT_POST, "personalname", FILTER_SANITIZE_STRING);
+        $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
+        $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
+        $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
+        $numberaccess = filter_input(INPUT_POST, "numberAccess", FILTER_SANITIZE_STRING);
+
+        //Verificar se a sanitizacao e validacao foram bem-sucedidas
+        if ($personalname && $email && $username && $password && $numberaccess) {
+            //Verificar se o usuario, email e numero ja existem no banco de dados
+            $stmt = $conn-> prepare("SELECT id FROM getch WHERE username = ? OR numberAccess = ? OR email = ?");
+            $stmt->bind_param("sss", $username, $numberaccess, $email);
+            $stmt->execute();
+            $stmt->store_result();
+
+            if ($stmt->num_rows > 0) {
+                $error = "Nome de Usuario e email ja existem!";
+            } else {
+                //Has do password
+                $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                //Preparar eclaracao SQL para inserir dados
+                $stmt = $conn->prepare("INSERT INTO getch (personalname, email, username, password, numberAccess) VALUES (?, ?, ?, ?, ?)");
+                $stmt->bind_param("sssss", $personalname, $email, $username, $passwordHash, $numberaccess);
+                
+                if ($stmt->execute()) {
+                    header("Location: ../homeHw.php");
+                } else {
+                    $error = "Error";
+                }
+
+            }
+            //Fechar Declaracao
+            $stmt->close();
+        } else {
+            $error = "Dados Invalidos";
+        }
+    }
+
+    //Fechar a conexao
+    $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +60,11 @@
 </head>
 <body class="body-forms">
     <div class="cnt-form-reg-hw">
-
-        <!-- <?php if ($error) {echo "<p style = 'color: red;'>$error</p>"; }?>
-        <?php if ($success) {echo "<p style = 'color: green;'>$success</p>"; }?> -->
-
-        <form id="cnt-itm-form" method="post" action="confhw/confReg.php" onsubmit="return validateForm()">
+        <div class="dial-message">
+            <p class="error-msg"><?php if ($error) { echo $error; } ?></p>
+            <p class="success-msg"><?php if ($success) { echo $success; } ?></p>
+        </div>
+        <form id="cnt-itm-form" method="post" action="index.php" onsubmit="return validateForm()">
             <div id="personalDate" class="cnt-inp-lab">
                 <div class="itm-inp-lab">
                     <label class="lab-form" for="personalname">Nome:</label> <br>
@@ -33,26 +82,28 @@
                     <label class="lab-form" for="password">Palavra-Passe</label> <br>
                     <input class="input-forms" type="password" id="password" name="password">
                 </div>
-                <button class="btn btn-step" type="button" onclick="nextStep()">Next</button>
+                <button class="btn btn-step" type="button" onclick="nextStep()">Next -></button>
             </div>
 
             <div id="personalId" style="display: none;">
                 <div class="cnt-inp-lab">
                     <div class="itm-inp-lab">
                         <label class="lab-form" for="usernameId">Nome de Usuario</label> <br>
-                        <input type="text" id="usernameId" name="username" readonly>
+                        <input class="input-forms" type="text" id="usernameId" name="username" readonly>
                     </div>
                     <div class="itm-inp-lab">
-                        <label for="numberInc">Numero de Acesso</label> <br>
-                        <input type="number" id="numberInc" name="numberAccess">
+                        <label class="lab-form" for="numberInc">Numero de Acesso</label> <br>
+                        <input class="input-forms" type="number" id="numberInc" name="numberAccess">
                     </div>
                     <!-- <button type="button" onclick="submitForm()">Enviar</button> -->
-                    <button type="button" onclick="backForm()">Voltar</button>
-                    <input type="submit" value="Enviar" id="submitForm">
+                    <div style="display: flex; justify-content: space-between;">
+                        <button class="btn btn-step" type="button" onclick="backForm()"><- Voltar</button>
+                        <input class="btn btn-step" type="submit" value="Enviar" id="submitForm">
+                    </div>
                 </div>
             </div>
+            <div class="arm-reg-log">Já tenho uma conta. </br> Só preciso fazer login para acessar. <a class="login-inc-form" href="confhw/inc/login.php">Login</a></div>
         </form>
-        <div class="arm-reg-log">Já tenho uma conta. </br> Só preciso fazer login para acessar. <a class="login-inc-form" href="confhw/inc/login.php">Login</a></div>
     </div>
     <script src="scripts/form.js"></script>
 </body>

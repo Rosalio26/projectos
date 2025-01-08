@@ -1,5 +1,45 @@
 
-<?php session_start(); ?>
+<?php
+    session_start();
+    include("../dbconn.php");
+    
+    $error = '';
+
+    //Verificar se os dados foram enviados
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        //Validar os dados de formulario
+        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+        $numberaccess = filter_input(INPUT_POST, 'numberAccess', FILTER_SANITIZE_STRING);
+
+        //Busacando o usuario
+        $stmt = $conn->prepare("SELECT id, numberAccess FROM getch WHERE username = ?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $stmt->store_result();
+
+        //Verificar se o usuario existe
+        if ($stmt->num_rows > 0) {
+            $stmt->bind_result($user_id, $stored_numberaccess);
+            $stmt->fetch();
+
+            //verificando o numero
+            if($numberaccess == $stored_numberaccess) {
+                header("Location: ../../homeHw.php");
+                exit();
+                // print "<script>location.href='../homeHw.php'</script>";
+                // echo "Login Sucess: " . $user_id;
+            } else {
+                $error = "Error numero";
+            }
+        } else {
+            $error = "Usuario nao encotrado";
+        }
+        $stmt->close();
+
+    }
+
+    $conn->close();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,25 +47,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interless || 100HW || Login</title>
+    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="stylesheet" href="../../style/100hw.css">
+    <link rel="stylesheet" href="../../style/forms.css">
 </head>
-<body>
+
+<body class="body-forms">
     <div class="cnt-form-reg-hw">
-        <form id="cnt-itm-form" method="post" action="../confLogin.php">
+        <div class="dial-message">
+            <p class="error-msg"><?php if ($error) { echo $error; } ?></p>
+        </div>
+        <form id="cnt-itm-form" method="post" action="login.php">
             <div id="personalId">
                 <div class="cnt-inp-lab">
                     <div class="itm-inp-lab">
-                        <label for="usernameId">Nome de Usuario</label>
-                        <input type="text" id="usernameId" name="username">
+                        <label class="lab-form" for="usernameId">Nome de Usuario</label>
+                        <input class="input-forms" type="text" id="usernameId" name="username">
                     </div>
                     <div class="itm-inp-lab">
-                        <label for="numberInc">Numero de Acesso</label>
-                        <input type="number" id="numberInc" name="numberAccess">
+                        <label class="lab-form" for="numberInc">Numero de Acesso</label>
+                        <input class="input-forms" type="number" id="numberInc" name="numberAccess">
                     </div>
-                    <input type="submit" value="Enviar" id="submitForm">
+                    <input class="btn btn-step" type="submit" value="Enviar" id="submitForm">
                 </div>
             </div>
+            <div class="arm-reg-log"><a href="../../index.php">Registro</a></div>
         </form>
-        <a href="../../index.php">Registro</a>
     </div>
 </body>
 </html>

@@ -7,7 +7,7 @@
         $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
         $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
         $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
-        $numberaccess = filter_input(INPUT_POST, "numberAccess", FILTER_SANITIZE_STRING);
+        $numberaccess = filter_input(INPUT_POST, "numberAccess", FILTER_SANITIZE_INT);
 
         //Verificar se a sanitizacao e validacao foram bem-sucedidas
         if ($personalname && $email && $username && $password && $numberaccess) {
@@ -42,3 +42,4 @@
 
     //Fechar a conexao
     $conn->close();
+?>
