@@ -37,7 +37,7 @@ label, input, button
     position: relative;
 }
 
-@media (min-width: 661px) {
+@media (min-width: 561px) {
     #cnt-itm-form
     {
         width: 50%;
@@ -47,52 +47,75 @@ label, input, button
 @media (min-width: 1224px) {
     #cnt-itm-form
     {
+        padding: 10px 20px;
         width: 25%;
     }
 }
 
 .itm-inp-lab
 {
-    margin-top: 20px;
-    letter-spacing: 1px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
 }
 
 .lab-form
 {
     color: #eee;
+    font-size: 0.9rem;
 }
 
 .input-forms
 {
+    border: 2px solid transparent;
+    border-image-source: url('../midia/img/border.png');
+    border-image-slice: 10;
+    border-image-repeat: repeat;
+
+    color: #eee;
+    background-color: #00000065;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    
     width: 100%;
-    padding: 10px 20px;
-    border-radius: 1000px;
+    margin-top: 2px;
+    padding: 8px 10px;
+    /* border-radius: 1000px; */
+
 }
 
 .btn-step
 {
     color: #eee;
-    cursor: pointer;
     background-color: transparent;
     border: 1px solid red;
+    border-image-source: url('../midia/img/border.png');
+    border-image-slice: 10;
+    border-image-repeat: repeat;
+    
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+
+    cursor: pointer;
     border-radius: 1000px;
     margin: 15px 0px 0px 0px;
-    padding: 7px 30px;
-    /* position: absolute;
-    bottom: 0; */
+    padding: 5px 15px;
 }
 
 .arm-reg-log
 {
+    font-size: 0.7rem;
     margin-top: 20px;
     padding: 10px;
-    line-height: 30px;
     letter-spacing: 2px;
 }
 
 .login-inc-form
 {
+    font-family: poppis-light;
+    font-size: 0.7rem;
     display: inline-block;
     background-color: rgba(12, 19, 55, 0.484);
-    padding: 5px;
+    padding: 2px;
 }

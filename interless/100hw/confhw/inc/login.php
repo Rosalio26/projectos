@@ -68,7 +68,7 @@
                     <input class="btn btn-step" type="submit" value="Enviar" id="submitForm">
                 </div>
             </div>
-            <div class="arm-reg-log"><a href="../../index.php">Registro</a></div>
+            <div class="arm-reg-log">Sou novo e ainda nao tenho uma conta. Gostaria de fazer um <a class="login-inc-form" href="../../index.php">Registro</a> para poder entrar na plataforma.</div>
         </form>
     </div>
 </body>

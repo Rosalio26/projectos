@@ -7,12 +7,22 @@
     box-sizing: border-box;
     outline: none;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppis-medium;
+    font-weight: 100;
     font-size: 1.1rem;
     text-decoration: none;
 
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: poppis-light;
+    src: url('./font/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: poppis-medium;
+    src: url('./font/Poppins-Medium.ttf');
 }
 
 /*

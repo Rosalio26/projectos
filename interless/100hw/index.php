@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="arm-reg-log">Já tenho uma conta. </br> Só preciso fazer login para acessar. <a class="login-inc-form" href="confhw/inc/login.php">Login</a></div>
+            <div class="arm-reg-log">Já tenho uma conta. </br> Só preciso fazer <a class="login-inc-form" href="confhw/inc/login.php">login</a> para acessar.</div>
         </form>
     </div>
     <script src="scripts/form.js"></script>
