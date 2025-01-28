@@ -6,16 +6,14 @@
         <div class="cnt-act-hed">
             <div class="item-cnt-lef cnt-lef-username">
                 <?php if ($user['profile_image']): ?>
-                    <span class="cnt-user-icon">
-                        <img class="icon-sml-img" src="profile_conf/uploads/<?php echo $user['profile_image'];?>" alt="user icon">
-                    </span>
+                    <a href="?pagesStamen=uploadImagem" class="cnt-user-icon">
+                        <img class="icon-sml-img" src="conf_home/profile_conf/uploads/<?php echo $user['profile_image'];?>" alt="user icon">
+                    </a>
                 <?php else: ?>
-                    <img class="icon-sml-img" src="./static/midia/img/user.png" alt="user icon">
+                    <a href="?pagesStamen=uploadImagem" class="cnt-user-icon">
+                        <img class="icon-sml-img" src="./static/midia/img/user.png" alt="user icon">
+                    </a>
                 <?php endif; ?>
-                    <!-- <form>
-                        <input type="file" id="profile-image" name="profile_image">
-                        <input type="submit" value="Upload">
-                    </form> -->
                 <span class="cnt-user-txt"><?php echo $_SESSION['username_hw'];?></span>
             </div>
             <div class="item-cnt-lef cnt-lef-quick-view">

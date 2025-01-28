@@ -19,7 +19,15 @@
                 include("store_fun/settings.html");
             break;
             default:
-                include("conf_home/posts_home_page.php");
+                echo "";;
+        }
+
+        switch(@$_REQUEST["pagesStamen"]){
+            case "uploadImagem":
+                include("conf_home/profile_conf/upload_image.php");
+            break;
+            default:
+                echo "";
         }
     ?>
 </div>

@@ -42,3 +42,7 @@
     <script src="./static/scripts/hw.js"></script>
 </body>
 </html>
+
+<?php
+    $conn->close();
+?>
