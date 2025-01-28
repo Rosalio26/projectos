@@ -1,169 +1,195 @@
-@charset "UTF-8";
 
-*
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button
 {
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    padding: none;
-    margin: none;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
-body
+input[type=number]
 {
-    background-image: linear-gradient(47deg, #111920, #38163c);
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+	-moz-appearance: textfield;
 }
 
-/*
-=================================
-Definindo a estrutura do telefone
-=================================
-*/
-.cell-struct
+.body-phone
 {
-    border: 1px solid #555;
-    box-shadow: inset 0.0001px 2px 1px 15px #1f1f1f2b;
+	background-color: #0c0c16;
+	width: 100vw;
+	height: 100vh;
 }
 
-@media  (max-width: 350px) {
-    .cell-struct
-    {
-        border-radius: 5px;
-        overflow: hidden;
-        width: 80%;
-        height: 40%;
 
-        margin: 0 auto;
+.body-phone form
+{
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.text-glf
+{
+	text-align: center;
+	display: inline-block;
+	position: relative;
+
+	margin: 0px auto 10px auto;
+	padding: 0px 0px;
+	width: 100%;
+}
+
+.text-glf span
+{
+	color: #999;
+	font-size: 1.2rem;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+.text-glf span::after
+{
+	content: "";
+	position: absolute;
+	left: 28%;
+	right: 29%;
+	bottom: 0;
+	height: 3px;
+    background-color: #325e6b;
+	animation: underlineAnimation 2s ease-in;
+}
+
+@keyframes underlineAnimation {
+    0% {
+        transform: scaleX(0);
+        background-color: #002f3a;
     }
-
-    .cell-struct form
-    {
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        width: 100%;
-        height: 100%;
+    50% {
+        background-color: #113f4a;
     }
-
-    .cell-struct form div.cnt-text-input
-    {
-        background-color: transparent;
-        border-bottom: 1px solid #555;
-        width: 100%;
-        height: 20%;
-    }
-
-    .cell-struct form div.cnt-text-input input
-    {
-        background-color: #dddddd00;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .cell-struct form div.inc-call-calculator
-    {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        height: 15%;
-    }
-
-    .cell-struct form div.cnt-btn-cell
-    {
-        background-color: #00000030;
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cell-struct form div.cnt-btn-cell div
-    {
-        display: flex;
-        margin: 0 auto;
-        width: max-content;
+    100% {
+        transform: scaleX(1);
+    	background-color: #325e6b;
     }
 }
 
-.cell-struct form div.cnt-btn-cell .btn-call-phone
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #666;
-    border-radius: 1000px;
-    
-    color: #666;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    cursor: pointer;
-    
-    margin: 5px 10px;
-    width: 45px;
-    height: 35px;
+@keyframes borderEffect {
+    0% {
+        border-top-color: #325e6b;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    33.333333333333333333333333333333% {
+        border-top-color: transparent;
+        border-right-color: #325e6b;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    66.666666666666666666666666666666% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #325e6b;
+        border-left-color: transparent;
+    }
+    100% {
+        border-top-color: #325e6b;
+        border-right-color: #325e6b;
+        border-bottom-color: #325e6b;
+        border-left-color: #325e6b;
+    }
 }
 
-.cell-struct form div.cnt-btn-cell .btn-call-phone:hover
+.cnt-block-note
 {
-    color: #fff;
-    background-color: #00000090;
-    border: 1px solid #444;
+	animation: borderEffect 1.5s ease-out forwards; 
+	background-color: #001f2e;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	padding: 5px;
+	width: 330px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.inp-cell-gal 
+{
+	animation: borderEffectInput 3s ease-out forwards; 
+	background-color: #0c0c16;
+	color: #555;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: lowercase;
+
+	border: 2px solid #333;
+	border-radius: 10px;
+	
+	width: 95%;
+	padding: 5px 0px;
+}
+
+@keyframes borderEffectInput {
+    0% {
+        border-top-color: #325e6b;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    33.333333333333333333333333333333% {
+        border-top-color: transparent;
+        border-right-color: #325e6b;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    66.666666666666666666666666666666% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #325e6b;
+        border-left-color: transparent;
+    }
+    100% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #325e6b;
+    }
+}
+
+#resNotice
+{
+	display: none;
+	background-color: rgba(255, 0, 0, 0.15);
+	margin-top: 20px;
+	padding: 15px 20px;
+	border-radius: 10px;
+}
+
+.erro
+{
+	animation: borderEffectInput 1s ease-out; 
+	border: 1px solid red;
+}
+
+.erro-aviso
+{
+	color: red;
+}
+
+.cnt-pin-info
+{
+	display: none;
+	margin-top: 10px;
+}
+
+.btn-submit
+{
+	display: none;
 }
 
 
-.cnt-btn-reg
-{
-    border-radius: 1000px;
-    padding: 1px;
-    height: 35px;
-    width: 35px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cnt-btn-reg-calculator
-{
-    border: 1px solid tomato;
-}
-
-.cnt-btn-reg-call
-{
-    border: 1px solid green;
-}
-
-.submit-btn-reg
-{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    width: 25px;
-    height: 25px;
-}
-
-/* .calculator-submit-btn
-{
-    background-image: url('./icon/calculator.png');
-}
-
-.call-submit-btn
-{
-    background-image: url('./icon/telephone.png');
-} */

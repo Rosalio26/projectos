@@ -1,0 +1,1053 @@
+@charset "UTF-8";
+
+*
+{
+    color: #aaa;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+
+    font-family: poppis-medium;
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-decoration: none;
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: poppis-light;
+    src: url('./font/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: poppis-medium;
+    src: url('./font/Poppins-Medium.ttf');
+}
+
+/*
+==================================
+=======Admin Config Style=========
+==================================
+*/
+.body-gr
+{
+    background-color: #0c0c16;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+===========================================================================================================
+===========================================================================================================
+===========================================================================================================
+===========================================================================================================
+*/
+#body_new
+{
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+#body_new .ac-sp
+{
+    width: 100%;
+    height: 90%;
+}
+
+.cnt-new-asp
+{
+    border: 1PX solid #333;
+    border-radius: 10PX;
+    width: 90%;
+    margin: 40PX auto;
+    padding: 20px;
+}
+
+.post-friend
+{
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.lk-oct
+{
+    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+}
+
+.my-find
+{
+    border: 1px solid #222;
+    border-radius: 10px;
+    width: 95%;
+    margin: 30px auto;
+    padding: 0px;
+}
+
+.find-friend
+{
+    width: 88%;
+    margin: 20px auto;
+}
+
+.find-friend div.cnt-input
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    /*padding: 5px;*/
+}
+
+.cnt-search-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.cnt-my-friend-direction
+{
+    width: 85%;
+    margin: 0px auto;
+}
+
+.cnt-my-friend-direction a
+{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px 7px;
+}
+
+.icon-img
+{
+    width: 30px;
+}
+
+#find-friend-input
+{
+    border: none;
+    border-left: 1px solid #333;
+    border-radius: 0px 10px 10px 0px;
+    width: 80%;
+    padding: 7px 3px;
+}
+
+.ltli-font
+{
+    font-size: 1.1rem;
+    font-family: poppis-medium;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.cnt-listed-user
+{
+    margin: 0px auto;
+    width: 90%;
+}
+
+li.link-li-sub
+{
+    font-family: poppis-light;
+    font-size: 0.9rem;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.link-req
+{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 4px 10px;
+    display: inline;
+}
+
+.input
+{
+    background-color: #0a0812;
+    border: 1px solid #333;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-family: poppis-light;
+
+    width: 100%;
+/*    margin-top: 10px;*/
+    padding: 4px 20px;
+}
+
+.listed-users
+{
+    padding: 20px;
+    width: 90%;
+}
+
+
+#mak-input
+{
+    background-color: #0a0812;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#textar-input
+{
+    background-color: #54545444;
+    border: 1px solid #0d0a15;
+    border-radius: 5px;
+    border: none;
+
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 3px 5px;
+
+    font-size: 0.8rem;
+    font-family: poppis-light;
+    letter-spacing: 1.5px;
+}
+
+#upload-img
+{
+    background-color: #54545444;
+    border: 1px solid #0d0a15;
+    border-radius: 5px;
+    border: none;
+
+    display: none;
+    width: 100%;
+    height: 200px;
+    padding: 3px 5px;
+
+    font-size: 0.8rem;
+    font-family: poppis-light;
+    letter-spacing: 1.5px;
+}
+
+#upload-vid
+{
+    background-color: #54545444;
+    border: 1px solid #0d0a15;
+    border-radius: 5px;
+    border: none;
+
+    display: none;
+    width: 100%;
+    height: 200px;
+    padding: 3px 5px;
+
+    font-size: 0.8rem;
+    font-family: poppis-light;
+    letter-spacing: 1.5px;
+}
+
+#btn-post-post
+{
+    display: none;
+}
+
+#btn-post-post.post-class
+{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.res-post-tlt
+{
+    display: flex;
+    height: 30px;
+    position: relative;
+}
+
+.res-post-tlt span
+{
+    font-family: poppis-light;
+    font-size: 0.9rem;
+
+    padding: 2px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+
+}
+
+.disc-vid-phot ul
+{
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    height: 30px;
+}
+
+.disc-vid-phot ul li
+{
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.ecapsul
+{
+    background-color: transparent;
+    width: 60%;
+}
+
+.sry-ecapsul
+{
+    display: flex;
+    justify-content: space-between;
+    
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    padding: 5px;
+
+    width: 130px;
+}
+
+.add-non-lk
+{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.rest-set button
+{
+    border: 1px solid #333;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.desf_find
+{
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+#find_user_name
+{
+    width: 65%;
+}
+
+#find_user_req
+{
+    width: 35%;
+    border: 1px solid #222;
+    text-align: center;
+}
+
+.find_user_result
+{
+    font-family: poppis-light;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+}
+
+.has_no_test
+{
+
+    border: 1px solid #333;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/*
+=======================================
+================== 27 . 01 . 2025======
+=======================================
+*/
+.cnt-oth-info
+{
+    /*background-color: blue;*/
+    border-bottom: 2px solid #3333;
+    width: 100vw;
+}
+
+.cnt-oth-info ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+.cnt-cnn-itm
+{
+    display: flex;
+    gap: 40px;
+}
+
+.ic-stp-sell
+{
+    border: 1px solid #2225;
+    border-radius: 10px;
+    background-color: transparent;
+/*    width: 70px;*/
+    padding: 3px 10px;
+    text-align: center;
+}
+
+
+/*
+===========================================================================================================
+===========================================================================================================
+===========================================================================================================
+===========================================================================================================
+*/
+.est-cnt-item
+{
+    border: 1px solid #ff00004c;
+    border-radius: 10px;
+    width: 99%;
+    height: 98.5%;
+}
+
+
+/*
+==================================
+========USER CONFIG STYLE=========
+==================================
+*/
+.esc-inc-cnt
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cnt-fles-itm
+{
+    display: block;
+    width: 100%;
+    height: 90%;
+}
+
+.rest-ft-fall
+{
+    width: 100%;
+    height: 10%;
+}
+
+/*
+=============================================
+===CONFIGURAÇÃO DA JANELA ESQUERDO / CIMA====
+=============================================
+*/
+
+#fecharcnt
+{
+    display: none;
+}
+
+/* .cnt-esc-lef
+{
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 10%;
+} */
+
+.cnt-lef-username
+{
+    width: 120px;
+    padding: 0px 10px;
+    overflow: hidden hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cnt-user-icon
+{
+    display: block;
+    width: 30px;
+    height: 30%;
+}
+
+.cnt-user-txt
+{
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 100%;
+
+    padding: 2px 3px;
+    display: block;
+}
+
+
+.cnt-lef-quick-view
+{
+    width: 50px;
+    height: 60%;
+    overflow: hidden hidden;
+}
+
+.icon-sml-img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.btn-menu-navbar
+{
+    display: block;
+    width: 40px;
+    height: 18px;
+    background: transparent;
+    position: relative;
+}
+
+.btn-menu-navbar::before,
+.btn-menu-navbar::after
+{
+    content: " ";
+    background: #a9a9c3;
+    border-radius: 100px;
+    position: absolute;
+    height: 5px;
+}
+
+.btn-menu-navbar::after
+{
+    width: 80%;
+    right: 0;
+    top: 0;
+}
+
+.btn-menu-navbar::before
+{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-menu-navbar
+{
+    display: block;
+}
+/*Configuracao da NAVBAR*/
+.ass-spa
+{
+    background-color: #0c0c16;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    height: 5%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ass-spa-cnt
+{
+    background-color: #0c0c16;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: none;
+}
+
+.ass-spa-cnt button
+{
+    background-color: transparent;
+}
+
+.btn-cnt-close
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 13%;
+    height: 100%;
+}
+
+.nav-cnt-home
+{
+    background-color: #0a0812;
+    display: none;
+
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#btnCloseNavBar
+{
+    background-color: #00000f1e;
+    position: absolute;
+    font-size: 1.3rem;
+    right: 0;
+
+    height: 90%;
+    width: 15%;
+}
+
+.nav-cnt-home.openNavBar
+{
+    display: block;
+}
+
+.cnt-lk
+{
+    border: .1px solid #333;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.cnt-lk a
+{ 
+    display: block;
+    font-size: 1rem;
+    font-family: poppis-light;
+    letter-spacing: 1.2px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 7px 10px;}
+
+/*
+=============================================
+=======CONFIGURAÇÃO DA JANELA DE CETRO=======
+=============================================
+*/
+.cnt-esc-cet
+{
+    background-color: #050a0e9c;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    padding: 20px;
+}
+
+.btn-lef-tgg
+{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+    left: 10px;
+
+    border: 1px solid #a9a9c3;
+    border-radius: 10px;
+    width: 50px;
+    height: 25px;
+}
+
+.btn-lef-tgg.btnForm
+{
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+/*
+=============================================
+===CONFIGURAÇÃO DA JANELA DIREITO / BAIXO====
+=============================================
+*/
+.cnt-esc-rgh
+{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.cnt-tr-itm
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.acn-ac-nav, .cnt-act-hed
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acn-ac-nav
+{
+    width: 60%;
+}
+
+.cnt-act-hed
+{
+    width: 100%;
+}
+
+.item-cnt-rgh
+{
+    border: 1px solid #333;
+    border-radius: 1000px;
+    padding: 5px;
+    width: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.port-wrk-ins
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.port-wrk-ins .cnt-ddw-rgh 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.port-wrk-ins img
+{
+    display: block;
+    width: 55%;
+    /* height: 50%; */
+}
+
+/*
+==================================
+===========SCREEN 450PX===========
+==================================
+*/
+@media (min-width: 450px) {
+
+    .btn-lef-tgg
+    {
+        display: block;
+    }
+
+    .cnt-esc-cet
+    {
+        height: 100%;
+    }
+
+    .cnt-lk
+    {
+        border: .1px solid #333;
+        border-radius: 10px;
+        width: 80%;
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+    
+    .cnt-lk a
+    { 
+        font-size: 0.8rem;
+        font-family: poppis-light;
+        letter-spacing: 1.2px;
+    }
+
+    .cnt-esc-lef
+    {
+        background-color: #1b1c1db5;
+        display: none;
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 1;
+        width: 50%;
+        height: 90%;
+    }
+    .cnt-esc-lef.opencnt
+    {
+        display: block;
+    }
+
+    #cnt-lef-itm
+    {
+        display: block;
+    }
+
+    .cnt-tr-itm
+    {
+        background-color: #050a0efc;
+        width: 100%;
+        height: 100%;
+        padding: 0px 5px;
+    }
+
+    #cnt-lef-itm 
+    {
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 13;
+    }
+
+    .nav-cnt-home
+    {
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    .acn-ac-nav
+    {
+        background-color: rgb(4, 6, 15);
+        border-bottom: 1px solid #333;
+        display: block;
+        width: 100%;
+    }
+    
+    .cnt-act-hed
+    {
+        padding: 30px 20px;
+    }
+
+    .btn-lef-tgg
+    {
+        cursor: pointer;
+        display: block;
+    }
+
+    .cnt-esc-cet
+    {
+        height: 100%;
+    }
+
+    #fecharcnt
+    {
+        display: block;
+        
+    }
+
+    .cnt-lef-username
+    {
+        border: none;
+    }
+
+    .cnt-lef-quick-view
+    {
+        border: none;
+    }
+
+    .btn-menu-navbar
+    {
+        display: none;
+    }
+
+    .nav-cnt-home
+    {
+        display: block;
+        position: relative;
+    }
+
+    .ass-spa
+    {
+        display: none;
+    }
+
+    .ass-spa-cnt
+    {
+        display: flex;
+    }
+
+    .cnt-new-asp, .art-friend
+    {
+        width: 70%;
+        margin: 0px auto;
+    }
+}
+
+
+
+/*
+==================================
+===========SCREEN 661PX===========
+==================================
+*/
+@media (min-width: 661px) {
+    
+    .btn-lef-tgg
+    {
+        display: none;
+    }
+
+    #fecharcnt
+    {
+        display: none;
+    }
+
+    .cnt-esc-lef
+    {
+        display: block;
+        position: relative;
+        width: 35%;
+        height: 100%;
+    }
+    
+    #cnt-lef-itm 
+    {
+        width: 35%;
+        height: 90%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .cnt-fles-itm
+    {
+        display: flex;
+        width: 100%;
+        height: 90%;
+    }
+
+    .cnt-esc-cet
+    {
+        width: 65%;
+        height: 100%;
+    }
+
+    .ass-spa-cnt
+    {
+        display: none;
+    }
+}
+
+
+/*
+==================================
+==========SCREEN 1020PX===========
+==================================
+*/
+@media (min-width: 1020px) {
+    .esc-inc-cnt
+    {
+        display: flex;
+    }
+
+    .cnt-fles-itm
+    {
+        width: 80%;
+        height: 100%;
+    }
+
+    .cnt-esc-lef
+    {
+        display: block;
+        width: 30%;
+    }
+    
+    #cnt-lef-itm 
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 14;
+    }
+
+    .cnt-esc-cet
+    {
+        width: 70%;
+        height: 100%;
+    }
+
+    .rest-ft-fall
+    {
+        width: 20%;
+        height: 100%;
+    }
+
+    #cnt-rgh-itm
+    {
+        display: block;
+    }
+
+    .nav-cnt-home
+    {
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+
+    .cnt-lk
+    {
+        border: 1px solid #333;
+        border-radius: 10px;
+        width: 80%;
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+    
+    .cnt-lk a
+    { 
+        font-size: 0.8rem;
+        font-family: poppis-light;
+        letter-spacing: 1.2px;
+    }
+
+
+    .cnt-new-asp, .art-friend
+    {
+        width: 40%;
+    }
+
+    /*.rest-ft-fall
+    {
+        display: none;
+    }*/
+}

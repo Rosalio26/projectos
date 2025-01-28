@@ -1,0 +1,244 @@
+
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+
+button
+{
+	background-color: transparent;
+}
+
+.break_info_user
+{
+	border-bottom: 1px solid #333;
+	height: 20%;
+
+	display: flex;
+}
+
+.photo_img_profile
+{
+	border-right: 1px solid #333;
+	width: 35%;
+	height: 100%;
+}
+
+.oth_info_profile
+{
+	width: 65%;
+	height: 100%;
+}
+
+.oth_info
+{
+	height: 33.333333333333333333333333333333%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	padding: 0px 10px;
+}
+
+.user_name
+{
+	border-bottom: 1px solid #333;
+}
+
+.unkw_stg_1
+{
+	border-bottom: 1px solid #333;
+}
+
+.unkw_stg_2
+{
+}
+
+
+
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+.btns_inc_state
+{
+	border-bottom: 1px solid #333;
+	height: 6%;
+	display: flex;
+	align-items: center;
+}
+
+.esc_cnt
+{
+	display: flex;
+	align-items: center;
+
+}
+
+.flet_itm
+{
+	height: max-content;
+}
+
+.lk_btn_ril
+{
+	font-size: 0.8rem;
+	text-align: center;
+	text-transform: lowercase;
+
+	display: block;
+	border: 1px solid #333;
+	border-radius: 10px;
+	margin: 0px 3px;
+	padding: 3px 10px;
+	width: 60px;
+}
+
+.find_friend
+{
+	border: 1px solid #333;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.bnt-sub-icons-back
+{
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #333;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+}
+
+.img-icon
+{
+	width: 30px;
+	height: 30px;
+}
+
+.find_friend input
+{
+	font-size: 1rem;
+	background-color: transparent;
+	width: 80%;
+	height: 100%;
+	padding: 0px 5px;
+}
+
+.oth-cls
+{
+	border: 1px solid #3333;
+	border-radius: 10px;
+
+	margin: 25px 0px;
+	padding: 10px;
+}
+
+.oth-cls ul
+{
+	display: flex;
+	gap: 10px;
+
+	width: 100%;
+	height: 100%;
+}
+
+.itm-link-ven
+{
+	text-transform: lowercase;
+	font-size: 1rem;
+	font-family: poppis-light;
+	border: 1px solid #333;
+
+	padding: 3px 10px;
+	border-radius: 10px;
+}
+
+.my-friend-sub
+{
+	padding: 25px 15px;
+}
+
+.text-tlt-ccp
+{
+	font-family: poppis-light;
+	font-size: 1.4rem;
+}
+
+.arm-list
+{
+	border: 1px solid #3333;
+	border-radius: 10px;
+	width: 85%;
+	margin: 10px auto;
+	padding: 0px 10px;
+}
+
+.cnt-inf-list
+{
+	border: 1px solid #333;
+	border-radius: 10px;
+	margin: 10px 0px;
+	font-size: 1rem;
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+	padding: 5px 30px 5px 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.link-couv-inc
+{
+	font-size: 0.9rem;
+	font-family: poppis-light;
+	border: 1px solid #333;
+	border-radius: 10px;
+	padding: 3px 20px;
+}
+
+
+
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+.rec_inc_state
+{
+	height: 70%;
+	overflow-y: auto;
+}
+
+.asp_profile
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+} 
+
+@media (min-width: 1024px) {
+	.asp_profile
+    {
+        width: 70%;
+        height: 100%;
+        margin: 0px auto;
+    } 
+}
+
+
+/*
+====================================================================================================
+================= DETALHES DO USUARIO===============================================================
+====================================================================================================
+*/
+
+.header-view-details-friend
+{}
