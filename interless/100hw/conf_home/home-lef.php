@@ -2,24 +2,56 @@
 
 <div id="cnt-lef-itm" class="cnt-tr-itm cnt-lef-itm">
     <div class="acn-ac-nav">
-        <div class="ass-spa-cnt"><button id="fecharcnt" class="btn btn-close-nav btn-cnt-close">x</button></div>
+
+        <div class="ass-spa-cnt">
+            <button 
+                id="fecharcnt" 
+                class="btn btn-close-nav btn-cnt-close">x</button>
+        </div>
+
         <div class="cnt-act-hed">
-            <div class="item-cnt-lef cnt-lef-username">
+
+            <div id="cnt-image-inf" onclick="infImage()" class="item-cnt-lef cnt-lef-username">
                 <?php if ($user['profile_image']): ?>
-                    <a href="?pagesStamen=uploadImagem" class="cnt-user-icon">
+                    <button class="cnt-user-icon">
                         <img class="icon-sml-img" src="conf_home/profile_conf/uploads/<?php echo $user['profile_image'];?>" alt="user icon">
-                    </a>
+                    </button>
                 <?php else: ?>
-                    <a href="?pagesStamen=uploadImagem" class="cnt-user-icon">
+                    <button class="cnt-user-icon">
                         <img class="icon-sml-img" src="./static/midia/img/user.png" alt="user icon">
-                    </a>
+                    </button>
                 <?php endif; ?>
-                <span class="cnt-user-txt"><?php echo $_SESSION['username_hw'];?></span>
             </div>
+
+            <div class="cnt-inf-imagem">
+                <div class="cnt-close-btn">
+                    <button id="btn-close" class="btn btn-close">x</button>
+                </div>
+                <nav class="cnt-list-inf">
+                    <ul class="itm-ms-inf">
+                        <li class="cnt-user"><?php echo $_SESSION['username_hw'];?></li>
+                        <li><a class="cnt-lk-inf">edit</a></li>
+                        <li><a href="includes/logount.php" class="cnt-lk-inf dangerous-act"><img class="icon-img" src="./static/style/icon/turn-off.png">logout</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+
             <div class="item-cnt-lef cnt-lef-quick-view">
-                <span class=" icon-ls itm-icon-qui"><img class="icon-sml-img" src="./static/midia/img/rapid.png" alt="quick settings icon"></span>
-                <span class="icon-txt itm-icon-qui"></span>
+
+                <button class="icon-ls itm-icon-qui">
+                    <img 
+                        class="icon-sml-img" 
+                        src="./static/midia/img/refresh-888.png" 
+                        alt="quick settings icon">
+                </button>
+
+                <span class="icon-txt itm-icon-qui">
+                    <ul></ul>
+                </span>
             </div>
+            <span class="cnt-user-txt"><?php echo $_SESSION['username_hw'];?></span>
+
         </div>
     </div>
 
@@ -29,13 +61,20 @@
             <ul id="home-nav-cnt" class="cnt-nav nav-cnt-home">
                 <div class="ass-spa"><button id="btnCloseNavBar" class="btn btn-close-nav">x</button></div>
                 <div class="conf conf-sit itm-sit">
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="pass_conf.php?confPages=newOfficcePage">New</a></li>
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="user/profile.php">Profile</a></li>
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=platform">Plataformas</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm">
+                        <a href="pass_conf.php?confPages=newOfficcePage"><img class="icon-img" src="./static/style/icon/more.png">New</a>
+                    </li>
+
+                    <li class="cnt-lk lk-esc-fr-itm"><a href="user/profile.php"><img class="icon-img" src="./static/style/icon/user.png">Profile</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=ficheiros"><img class="icon-img" src="./static/style/icon/turn-off.png">Ficheiros</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=platform"><img class="icon-img" src="./static/style/icon/turn-off.png">Plataformas</a></li>
                 </div>
                 <div class="conf conf-sst">
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=settings">Definições</a></li>
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="includes/logount.php">Logout</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm">
+                        <a href="?pagesCenter=settings"><img class="icon-img" src="./static/style/icon/settings-2.png">Definições</a>
+                    </li>
+
+                    <li class="cnt-lk lk-esc-fr-itm dangerous-act"><a href="includes/logount.php"><img class="icon-img" src="./static/style/icon/logout.png">Logout</a></li>
                 </div>
             </ul>
         </nav>

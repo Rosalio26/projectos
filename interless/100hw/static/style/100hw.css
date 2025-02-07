@@ -9,7 +9,8 @@
 
     font-family: poppis-medium;
     font-weight: 100;
-    font-size: 1.1rem;
+    font-size: 12pt;
+    letter-spacing: 1px;
     text-decoration: none;
     list-style-type: none;
 
@@ -37,10 +38,64 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden hidden;
+}
+
+#body-home-hw-user
+{
+}
+
+.esc-inc-cnt
+{
+    padding: 0px;
+    height: 100%;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+/*
+=========================Inicio Lado Direito // Baixo
+*/
+
+.cnt-esc-rgh
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 10px 5px;
+    z-index: 1000;
+}
+
+
+
+.item-cnt-rgh
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 5px 5px;
+}
+/*
+=========================Fim Lado Direito // Baixo
+*/
+
+/*
+=========================Inicio Lado Centro
+*/
+.cent-cnt
+{
+    background-color: #6895b50e;
+    border-radius: 10px;
+    padding: 5px;
+    height: 100%;
+    z-index: 10;
 }
 
 
@@ -102,15 +157,6 @@
     margin: 20px auto;
 }
 
-.find-friend div.cnt-input
-{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    /*padding: 5px;*/
-}
-
 .cnt-search-icon
 {
     display: flex;
@@ -146,13 +192,6 @@
     padding: 7px 3px;
 }
 
-.ltli-font
-{
-    font-size: 1.1rem;
-    font-family: poppis-medium;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-}
 
 .cnt-listed-user
 {
@@ -182,156 +221,11 @@ li.link-li-sub
     display: inline;
 }
 
-.input
-{
-    background-color: #0a0812;
-    border: 1px solid #333;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-family: poppis-light;
-
-    width: 100%;
-/*    margin-top: 10px;*/
-    padding: 4px 20px;
-}
 
 .listed-users
 {
     padding: 20px;
     width: 90%;
-}
-
-
-#mak-input
-{
-    background-color: #0a0812;
-    border: 1px solid #333;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-#textar-input
-{
-    background-color: #54545444;
-    border: 1px solid #0d0a15;
-    border-radius: 5px;
-    border: none;
-
-    display: block;
-    width: 100%;
-    height: 200px;
-    padding: 3px 5px;
-
-    font-size: 0.8rem;
-    font-family: poppis-light;
-    letter-spacing: 1.5px;
-}
-
-#upload-img
-{
-    background-color: #54545444;
-    border: 1px solid #0d0a15;
-    border-radius: 5px;
-    border: none;
-
-    display: none;
-    width: 100%;
-    height: 200px;
-    padding: 3px 5px;
-
-    font-size: 0.8rem;
-    font-family: poppis-light;
-    letter-spacing: 1.5px;
-}
-
-#upload-vid
-{
-    background-color: #54545444;
-    border: 1px solid #0d0a15;
-    border-radius: 5px;
-    border: none;
-
-    display: none;
-    width: 100%;
-    height: 200px;
-    padding: 3px 5px;
-
-    font-size: 0.8rem;
-    font-family: poppis-light;
-    letter-spacing: 1.5px;
-}
-
-#btn-post-post
-{
-    display: none;
-}
-
-#btn-post-post.post-class
-{
-    font-size: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.res-post-tlt
-{
-    display: flex;
-    height: 30px;
-    position: relative;
-}
-
-.res-post-tlt span
-{
-    font-family: poppis-light;
-    font-size: 0.9rem;
-
-    padding: 2px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-
-}
-
-.disc-vid-phot ul
-{
-    background-color: transparent;
-    display: flex;
-    position: relative;
-    height: 30px;
-}
-
-.disc-vid-phot ul li
-{
-    border: 1px solid #333;
-    border-radius: 5px;
-    width: 50px;
-    height: 30px;
-    margin-left: 5px;
-    position: relative;
-}
-
-.ecapsul
-{
-    background-color: transparent;
-    width: 60%;
-}
-
-.sry-ecapsul
-{
-    display: flex;
-    justify-content: space-between;
-    
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    padding: 5px;
-
-    width: 130px;
 }
 
 .add-non-lk
@@ -343,17 +237,6 @@ li.link-li-sub
     margin-left: 10px;
 }
 
-.rest-set button
-{
-    border: 1px solid #333;
-    background-color: transparent;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    padding: 5px 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
-}
 
 .desf_find
 {
@@ -450,27 +333,14 @@ li.link-li-sub
 ========USER CONFIG STYLE=========
 ==================================
 */
-.esc-inc-cnt
-{
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-
 .cnt-fles-itm
 {
     display: block;
     width: 100%;
-    height: 90%;
+    height: 92%;
+    overflow: hidden;
 }
 
-.rest-ft-fall
-{
-    width: 100%;
-    height: 10%;
-}
 
 /*
 =============================================
@@ -478,23 +348,21 @@ li.link-li-sub
 =============================================
 */
 
+#cnt-lef-itm
+{
+    border-bottom: 1px solid #3335;
+    z-index: 1000;
+}
+
 #fecharcnt
 {
     display: none;
 }
 
-/* .cnt-esc-lef
-{
-    display: block;
-    background-color: transparent;
-    width: 100%;
-    height: 10%;
-} */
-
 .cnt-lef-username
 {
-    width: 120px;
-    padding: 0px 10px;
+    border-radius: 1000px;
+    padding: 0px 0px;
     overflow: hidden hidden;
     display: flex;
     flex-direction: column;
@@ -503,9 +371,11 @@ li.link-li-sub
 
 .cnt-user-icon
 {
+    border-radius: 1000px;
     display: block;
-    width: 30px;
-    height: 30%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
 }
 
 .cnt-user-txt
@@ -515,19 +385,26 @@ li.link-li-sub
     text-align: center;
     font-size: 0.85rem;
     letter-spacing: 1px;
-    width: 100%;
-    height: 100%;
+    width: 100px;
 
     padding: 2px 3px;
     display: block;
 }
 
 
-.cnt-lef-quick-view
+/*.cnt-lef-quick-view
 {
     width: 50px;
     height: 60%;
     overflow: hidden hidden;
+}*/
+
+.icon-ls
+{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
 }
 
 .icon-sml-img
@@ -622,7 +499,7 @@ li.link-li-sub
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 1010;
 }
 
 #btnCloseNavBar
@@ -652,13 +529,16 @@ li.link-li-sub
 
 .cnt-lk a
 { 
-    display: block;
-    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 12pt;
     font-family: poppis-light;
     letter-spacing: 1.2px;
     width: 100%;
     border-radius: 10px;
-    padding: 7px 10px;}
+    padding: 2px 10px;}
 
 /*
 =============================================
@@ -667,11 +547,11 @@ li.link-li-sub
 */
 .cnt-esc-cet
 {
-    background-color: #050a0e9c;
-    width: 100%;
-    height: 90%;
+    width: 99%;
+    height: 86%;
+    margin: auto;
     position: relative;
-    padding: 20px;
+    z-index: -1;
 }
 
 .btn-lef-tgg
@@ -700,72 +580,51 @@ li.link-li-sub
 ===CONFIGURAÇÃO DA JANELA DIREITO / BAIXO====
 =============================================
 */
-.cnt-esc-rgh
-{
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-}
 
 .cnt-tr-itm
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+/*    border-bottom: 1px solid #3336;*/
 
     width: 100%;
-    height: 100%;
-    padding: 0px 10px;
+/*    height: 100%;*/
+    padding: 10px;
+}
+
+
+.icon-sml
+{
+    width: 22px;
+}
+
+.text-inc-less
+{
+    font-family: poppis-light;
+    font-size: 10pt;
 }
 
 .acn-ac-nav, .cnt-act-hed
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+/*    justify-content: space-between;*/
 }
 
 .acn-ac-nav
 {
-    width: 60%;
+    background-color: #2222;
+    border-radius: 5px;
+    padding: 0px 5px;
+    width: 87%;
+    z-index: 10;
 }
 
 .cnt-act-hed
 {
     width: 100%;
-}
-
-.item-cnt-rgh
-{
-    border: 1px solid #333;
-    border-radius: 1000px;
-    padding: 5px;
-    width: 70px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.port-wrk-ins
-{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.port-wrk-ins .cnt-ddw-rgh 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.port-wrk-ins img
-{
-    display: block;
-    width: 55%;
-    /* height: 50%; */
 }
 
 /*
@@ -818,6 +677,7 @@ li.link-li-sub
 
     #cnt-lef-itm
     {
+        border-bottom: none;
         display: block;
     }
 
@@ -1012,10 +872,6 @@ li.link-li-sub
         height: 100%;
     }
 
-    #cnt-rgh-itm
-    {
-        display: block;
-    }
 
     .nav-cnt-home
     {
@@ -1045,9 +901,93 @@ li.link-li-sub
     {
         width: 40%;
     }
+}
 
-    /*.rest-ft-fall
-    {
-        display: none;
-    }*/
+/*
+==================================================================
+==================================================================
+==================================================================
+*/
+
+.cnt-inf-imagem
+{
+    background-color: #3332;
+    backdrop-filter: blur(50px);
+    border: 1px solid #4448;
+    border-radius: 10px;
+    position: fixed;
+    width: 250px;
+    height: 200px;
+    top: 9%; left: 2%;
+    z-index: 100;
+
+    display: none;
+}
+
+.cnt-inf-imagem > div.cnt-close-btn
+{
+    position: relative;
+    height: 30px;
+    margin: 5px 10px;
+}
+
+.cnt-inf-imagem > div.cnt-close-btn > button
+{
+    background-color: #4446;
+    border: 1px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0px 20px;
+}
+
+.cnt-user
+{
+    text-transform: uppercase;
+    padding: 0px 10px 5px 10px;
+    border-bottom: 1px solid #999;
+}
+
+.cnt-lk-inf
+{
+    cursor: pointer;
+    font-family: poppis-light;
+    font-weight: 100;
+    display: block;
+    width: 95%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img.icon-img {
+    width: 20px;
+}
+
+.cnt-lk-inf:hover img.icon-img
+{
+    width: 28px;
+}
+
+.cnt-lk-inf:hover
+{
+    background-color: #5559;
+}
+
+.dangerous-act
+{
+    background-color: #c800002b;
+    border: 1px solid red;
+}
+
+.dangerous-act:hover
+{
+    background-color: #c8000080;
 }

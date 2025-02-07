@@ -1,6 +1,6 @@
 
 <button type="button" id="btn-tgg" class="toggle-btn btn-lef-tgg">-></button>
-<div>
+<div class="cent-cnt">
     <?php
         switch(@$_REQUEST["pagesCenter"]){
             case "mensagem":
@@ -15,19 +15,14 @@
             case "platform":
                 include("store_fun/platform.php");
             break;
+            case "ficheiros":
+                include("store_fun/ficheiros.php");
+            break;
             case "settings":
                 include("store_fun/settings.html");
             break;
             default:
-                echo "";;
-        }
-
-        switch(@$_REQUEST["pagesStamen"]){
-            case "uploadImagem":
-                include("conf_home/profile_conf/upload_image.php");
-            break;
-            default:
-                echo "";
+                include("./user/posts/allposts.php");
         }
     ?>
 </div>

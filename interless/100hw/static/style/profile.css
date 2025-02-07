@@ -5,6 +5,11 @@
 ====================================================================================================
 */
 
+.body_profile
+{
+	padding-top: 20px;
+}
+
 button
 {
 	background-color: transparent;
@@ -20,8 +25,32 @@ button
 
 .photo_img_profile
 {
-	border-right: 1px solid #333;
+	border-right: 1px solid #3333;
 	width: 35%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.cnt-user-icon
+{
+	border-radius: 2000px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+}
+
+.icon-sml-img
+{
+	width: 100%;
 	height: 100%;
 }
 
@@ -43,18 +72,33 @@ button
 
 .user_name
 {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #3333;
 }
 
 .unkw_stg_1
 {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #3331;
 }
 
 .unkw_stg_2
 {
 }
 
+
+.tlt-span-jub
+{
+	font-family: poppis-medium;
+	font-size: 12pt;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.cnt-span-jub
+{
+	font-family: poppis-light;
+	font-size: 11pt;
+	font-weight: 100;
+}
 
 
 /*
@@ -74,7 +118,83 @@ button
 {
 	display: flex;
 	align-items: center;
+	width: 93%;
+}
 
+.flet-setting-btn
+{
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	border-radius: 5px 0px 0px 5px;
+	width: 7%;
+	height: 80%;
+	padding: 3px 0px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cnt-set-bool
+{
+	display: block;
+	background-color: #666;
+	border-radius: 1000px;
+	width: 7px;
+	height: 7px;
+}
+
+.block-flet
+{
+	display: none;
+    background-color: #0c0c16;
+	border: 1px solid #333;
+	border-radius: 10px;
+	position: fixed;
+	top: 25%; right: 1%;
+	width: 65%;
+	height: 250px;
+	padding: 10px;
+	z-index: 1px;
+}
+
+.block-flet > ul > li > a
+{
+	display: block;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-family: poppis-light;
+	font-size: 11pt;
+	font-weight: 100;
+	text-transform: capitalize;
+	letter-spacing: 0.7px;
+
+	margin: 10px 0px;
+	padding: 5px 10px;
+} 
+
+.close-flet-block
+{
+	width: 100%;
+	height: 13%;
+	position: relative;
+}
+
+.close-flet-block span
+{
+	border: 1px solid #3332;
+	border-radius: 5px;
+	font-size: 12pt;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 5px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .flet_itm
@@ -94,6 +214,14 @@ button
 	margin: 0px 3px;
 	padding: 3px 10px;
 	width: 60px;
+}
+
+.home-lk-ps
+{
+	background-color: #4445;
+	text-transform: uppercase;
+	border-radius: 0px;
+	padding: 10px 0px;
 }
 
 .find_friend
@@ -131,24 +259,6 @@ button
 	padding: 0px 5px;
 }
 
-.oth-cls
-{
-	border: 1px solid #3333;
-	border-radius: 10px;
-
-	margin: 25px 0px;
-	padding: 10px;
-}
-
-.oth-cls ul
-{
-	display: flex;
-	gap: 10px;
-
-	width: 100%;
-	height: 100%;
-}
-
 .itm-link-ven
 {
 	text-transform: lowercase;
@@ -160,24 +270,9 @@ button
 	border-radius: 10px;
 }
 
-.my-friend-sub
+.my-col-post
 {
 	padding: 25px 15px;
-}
-
-.text-tlt-ccp
-{
-	font-family: poppis-light;
-	font-size: 1.4rem;
-}
-
-.arm-list
-{
-	border: 1px solid #3333;
-	border-radius: 10px;
-	width: 85%;
-	margin: 10px auto;
-	padding: 0px 10px;
 }
 
 .cnt-inf-list
@@ -234,6 +329,144 @@ button
 }
 
 
+.nav-post
+{
+	padding: 10px 0px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.tlt-post
+{
+	font-size: 16pt;
+	font-family: poppis-medium;
+	letter-spacing: 1px;
+	padding: 10px 0px;
+}
+
+.cnt-itm-post
+{
+	background-color: #3338;
+	border-radius: 15px;
+	display: flex;
+	gap: 10px;
+	padding: 10px 15px;
+	overflow-x: auto;
+}
+
+.cnt-link-post-btn-et
+{}
+
+.link-post-btn-et
+{
+	font-size: 12pt;
+	font-family: poppis-light;
+	letter-spacing: 1.5px;
+	display: block;
+
+	background-color: #333;
+	border-radius: 10px;
+	padding: 2px 7px;
+}
+
+.cnt-info-hidden
+{
+	background-color: #3332;
+	border: 1px solid #4448;
+	border-radius: 5px;
+	text-align: center;
+	padding: 30px;
+	width: 100%;
+	margin: 30px auto;
+}
+
+.no-post
+{
+	font-family: poppis-light;
+	padding: 10px 0px;
+}
+
+.nothing-et
+{
+
+}
+
+.create-et
+{
+	background-color: #4446;
+	border-radius: 10px;
+	display: inline-block;
+	width: max-content;
+	margin: 0px auto;
+	padding: 10px 15px;
+}
+
+.cnt-info-posts
+{
+	background-color: #3332;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	margin: 30px auto;
+}
+
+.tlt-content-post{
+	font-size: 14pt;
+	font-family: poppis-medium;
+	letter-spacing: 1.2px;
+	text-align: left;
+	text-transform: capitalize;
+	padding: 5px 0px;
+}
+
+.cnt-item-content-post
+{
+	background-color: #4442;
+	border-radius: 5px;
+	width: 100%;
+	height: 300px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.lk_btn_nw
+{
+	display: inline-block;
+	border: 1px solid #4448;
+	border-radius: 10px;
+	margin: 10px 0px;
+	margin-top: 30px;
+	padding: 5px 10px;
+}
+
+.cnt-btn-back
+{
+	background-color: #4444;
+	border: 1px solid #4448;
+	border-radius: 7px;
+	position: fixed;
+	left: 5%;
+	bottom: 3%;
+}
+
+.btn-back
+{
+	width: 100%;
+	height: 100%;
+	padding: 3px 10px;
+}
+
+.tlt-nm-post
+{
+	font-size: 12pt;
+	font-family: poppis-light;
+	border-bottom: 2px solid #4443;
+	padding: 5px 0px;
+}
+
 /*
 ====================================================================================================
 ================= DETALHES DO USUARIO===============================================================
@@ -242,3 +475,4 @@ button
 
 .header-view-details-friend
 {}
+

@@ -1,1 +1,4 @@
-<h1 style=" color: red;">Negocio</h1>
+
+<div class="cnt-grl-itm-fun">
+	
+</div>

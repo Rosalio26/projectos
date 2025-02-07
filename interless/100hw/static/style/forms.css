@@ -1,132 +1,167 @@
 
-label, input, button
-{
-}
-
-
 .body-forms
 {
-    /* background-image: linear-gradient(#0a0a11, rgb(196, 52, 0)); */
-    background-image: url('../midia/img/backForm.png');
-    background-size: cover;
+    /*background-color: #081324;*/
+    /*background-color: #081319; #240E13 */
+    /*background-color: #060E20;*/
+    background-image: linear-gradient(55deg,#211924 5%, #060E20);
+    background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden hidden;
-}
 
-.cnt-form-reg-hw
-{
-    background-color: #00000077;
-    backdrop-filter: blur(20px);
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    width: 99vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #cnt-itm-form
 {
-    background: #00000077;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 40px 20px;
-    width: 95%;
-    position: relative;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-@media (min-width: 561px) {
-    #cnt-itm-form
-    {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1224px) {
-    #cnt-itm-form
-    {
-        padding: 10px 20px;
-        width: 25%;
-    }
+    width: 350px;
+    height: 80%;
+    margin: 0px auto;
+    overflow: hidden;
 }
 
 .itm-inp-lab
 {
-    margin-top: 15px;
-    letter-spacing: 2px;
-    font-weight: 100;
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 10px ;
+    margin: 10px auto;
+
+    padding: 5px;
 }
 
-.lab-form
-{
-    color: #eee;
-    font-size: 0.9rem;
-}
+.spn-act-res {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-.input-forms
-{
-    border: 2px solid transparent;
-    border-image-source: url('../midia/img/border.png');
-    border-image-slice: 10;
-    border-image-repeat: repeat;
-
-    color: #eee;
-    background-color: #00000065;
-    font-size: 0.8rem;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    
     width: 100%;
-    margin-top: 2px;
-    padding: 8px 10px;
-    /* border-radius: 1000px; */
-
+    height: 100%;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button
+.itm-inp-lab > .spn-act-res > img
 {
-    -webkit-appearance: none;
-    margin: 0;
+    width: 25px;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
+/*
+inputs
+*/
+
+.cnt-inp-lab
+{
+    background-color: #081319a7;
+    border: 2px solid #0F232E;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .btn-step
 {
-    color: #eee;
     background-color: transparent;
-    border: 1px solid red;
-    border-image-source: url('../midia/img/border.png');
-    border-image-slice: 10;
-    border-image-repeat: repeat;
-    
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    border: 1px solid #0F232f;
+    border-radius: 5px;
+    font-family: poppis-light;
+    font-size: 11pt;
+    padding: 5px 7px;
+}
 
-    cursor: pointer;
-    border-radius: 1000px;
-    margin: 15px 0px 0px 0px;
-    padding: 5px 15px;
+.input-forms
+{
+    background-color: #0F232E;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 11pt;
+    font-family: poppis-light;
+    padding: 5px 10px;
+    width: 230px;
+}
+
+.input-forms.input-act
+{
+    border: 1px solid #A8311F;
+}
+
+.number-phone
+{
+    width: 230px;
+    display: flex;
+}
+
+.disabled-input
+{
+    color: #666;
+    background-color: #0F2329;
+    border-right: 1px solid #5555;
+    border-radius: 5px 0px 0px 5px;
+    width: 20px;
+    padding: 0px 5px;
+}
+
+#numberInc
+{
+    border-radius: 0px 5px 5px 0px;
+    width: 210px;
+}
+
+.username
+{
+    text-transform: lowercase;
+}
+
+/*
+end inputs
+*/
+
+.error-msg
+{
+    color: #A8311F;
+    background-color: #c800002b;
+    border-radius: 10px;
+    font-size: 11pt;
+    display: block;
+    width: 230px;
+    margin: 10px auto 0px auto;
+    padding: 5px;
 }
 
 .arm-reg-log
 {
-    font-size: 0.7rem;
+    font-size: 11pt;
+    font-family: poppis-light;
+    letter-spacing: 1.3px;
+    background-color: #0F232Ea7;
     margin-top: 20px;
-    padding: 10px;
-    letter-spacing: 2px;
+    padding: 20px 10px;
+    border-radius: 5px;
 }
 
 .login-inc-form
 {
-    font-family: poppis-light;
-    font-size: 0.7rem;
-    display: inline-block;
-    background-color: rgba(12, 19, 55, 0.484);
-    padding: 2px;
+    font-size: 11pt;
+    background-color: #081319;
+    padding: 0px 5px;
+    text-transform: uppercase;
+}
+
+#personalDate
+{
+    display: block;
+}
+
+.cnt-btn-bc-nx
+{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
 }

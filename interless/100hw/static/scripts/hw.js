@@ -110,3 +110,18 @@ function postBlockPost() {
         btnPost.classList.remove('post-class');
         btnImagem.style.display = 'flex';
 }
+
+
+function infImage() {
+    var btnNavBar = document.querySelector('.cnt-image-inf');
+    var navItm = document.querySelector('.cnt-inf-imagem');
+    var btnCloseNav = document.querySelector('.btn-close');
+
+    navItm.style.display = 'block';
+
+    navItm.addEventListener('click', function(event) {
+        if(event.target.id == 'btn-close'){
+            navItm.style.display = 'none';
+        }
+    });
+}
