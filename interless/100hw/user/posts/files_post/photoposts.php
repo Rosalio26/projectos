@@ -1,20 +1,19 @@
 
 <div>
-	<?php
-		echo "<p class='tlt-nm-post'>Fotos</p>";
-	    if ($result->num_rows > 0) {
-	        while ($row = $result->fetch_assoc()) {
-        		echo "<div class='post-content-block cnt-info-posts'>";
-	            echo "<h4 class='tlt-content-post'>" . $row['title_photo_post'] . "</h4>";
-	            echo "<p class='cnt-item-content-post'>" . $row['photo_post'] . "</p>";
-        		echo "</div>";
-	        }
-	    } else {
-	    	echo "<div class='cnt-info-hidden'>";
-	        echo "<p class='no-post nothing-et'>Ainda não tens nenhum post disponivel.</p>";
-	        echo "<a href='../pass_conf.php?confPages=new_post' class='no-post create-et'>Criar novo post.</a>";
-	        echo "</div>";
-	    }
-
-	?>
+<?php if (!empty($posts_photo)): ?>
+		<?php foreach ($posts_photo as $post): ?>
+			<div class="post">
+				<div class="post-title"><?php echo htmlspecialchars($post['title_post']); ?></div>
+				<div class="post-date"><?php echo htmlspecialchars($post['created_at']); ?></div>
+				<div class="post-content"><?php echo nl2br(htmlspecialchars($post['content_post'])); ?></div>
+				<?php if (!empty($post['media_url'])): ?>
+					<div class="post-media">
+						<img src="<?php echo htmlspecialchars($post['media_url']); ?>" alt="Foto">
+					</div>
+				<?php endif; ?>
+			</div>
+		<?php endforeach; ?>
+	<?php else: ?>
+		<p>Nenhum post de fotos encontrado.</p>
+	<?php endif; ?>
 </div>

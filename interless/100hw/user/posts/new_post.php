@@ -7,36 +7,29 @@
             <span class="cnt-user-txt"><?php echo $_SESSION['username_hw'];?></span>
     </div>
 
-    <div class="form-search find-alies">
-        <form action="user/save_post.php" method="POST" enctype="multipart/form-data">
-            <div class="cnt-input">
-                <h3 class="ltli-font">Titulo</h3>
-                <input class="input input-text" type="text" name="title_post">
-            </div>
-            <div id="mak-input" class="cnt-input">
-                <div class="res-post-tlt">
-                    <h3 class="ltli-font">#Post</h3>
-                    <span>Result Title</span>
-                </div>
-                <div class="esc-post-itm">
-                    <textarea name="content_post"  id="textar-input"></textarea> <br>
-                    <input type="file" name="image_post" id="upload-img" class="upload-img" placeholder="image"> <br>
-                    <input type="file" name="video_post" id="upload-vid" class="upload-vid" placeholder="video">
-                </div>
-                 <div class="disc-vid-phot">
-                    <ul>
-                        <div class="ecapsul"></div>
-                        <div class="sry-ecapsul">
-                            <li id="btn-post-post" class="add-non-lk" onclick="postBlockPost()">Post</li>
-                            <li id="btn-img-post" class="add-non-lk" onclick="imagemBlockPost()">Image</li>
-                            <li id="btn-vid-post" class="add-non-lk" onclick="videoBLockPost()">Video</li>
-                        </div>
-                    </ul>
-                 </div>
-            </div>
-            <div class="rest-set">
-                <button type="submit">Post</button>
-            </div>
-        </form>
-    </div>
+    <h1>Adicionar Post</h1>
+    <form action="?confPages=save_post" method="POST" enctype="multipart/form-data">
+        <label for="title">Título:</label><br>
+        <input type="text" id="title" name="title_post" required><br>
+        
+        <label for="media_type">Tipo de Mídia:</label><br>
+        <select id="media_type" name="media_type" onchange="toggleInputs()" required>
+            <option value="text_post">Texto</option>
+            <option value="video_post">Vídeo</option>
+            <option value="music_post">Música</option>
+            <option value="photo_post">Foto</option>
+        </select><br>
+
+        <div id="content_div">
+            <label for="content">Conteúdo:</label><br>
+            <textarea id="content" name="content_post"></textarea><br>
+        </div>
+        
+        <div id="file_input_div" style="display: none;">
+            <label for="media_file">Arquivo de Mídia:</label><br>
+            <input type="file" id="media_file" name="media_file"><br>
+        </div>
+        
+        <input type="submit" value="Adicionar Post">
+    </form>
 </div>

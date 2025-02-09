@@ -8,10 +8,13 @@
 			<input type="text" name="">
 		</form>
 	</div>
+	
+    <div class="cnt_new_post">
+        <a class="lk_btn_nw" href="../pass_conf.php?confPages=new_post">New</a>
+    </div>
 
 	<nav class="nav-post cnt-post-itm">
 		<ul class="cnt-itm-post">
-			<li class="inv-itm-link"><a class="itm-link-ven" href="http://localhost/projectos/interless/100hw/pass_conf.php?confPages=new_friend">New</a></li>
 			<li class="inv-itm-link"><a class="itm-link-ven" href="?confProfilePages=my_friend&postPagesContentFriends=my_friends_accepted">Amigos</a></li>
 			<li class="inv-itm-link"><a class="itm-link-ven" href="?confProfilePages=my_friend&postPagesContentFriends=my_friends_pedding">pedentes</a></li>
 			<li class="inv-itm-link"><a class="itm-link-ven" href="?confProfilePages=my_friend&postPagesContentFriends=my_friends_accepted">Aceitos</a></li>

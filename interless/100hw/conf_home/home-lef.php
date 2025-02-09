@@ -12,9 +12,9 @@
         <div class="cnt-act-hed">
 
             <div id="cnt-image-inf" onclick="infImage()" class="item-cnt-lef cnt-lef-username">
-                <?php if ($user['profile_image']): ?>
+                <?php if ($user_details['profile_image']): ?>
                     <button class="cnt-user-icon">
-                        <img class="icon-sml-img" src="conf_home/profile_conf/uploads/<?php echo $user['profile_image'];?>" alt="user icon">
+                        <img class="icon-sml-img" src="conf_home/profile_conf/uploads/<?php echo $user_details['profile_image'];?>" alt="user icon">
                     </button>
                 <?php else: ?>
                     <button class="cnt-user-icon">
@@ -65,7 +65,7 @@
                         <a href="pass_conf.php?confPages=newOfficcePage"><img class="icon-img" src="./static/style/icon/more.png">New</a>
                     </li>
 
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="user/profile.php"><img class="icon-img" src="./static/style/icon/user.png">Profile</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm"><a href="profile.php"><img class="icon-img" src="./static/style/icon/user.png">Profile</a></li>
                     <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=ficheiros"><img class="icon-img" src="./static/style/icon/turn-off.png">Ficheiros</a></li>
                     <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=platform"><img class="icon-img" src="./static/style/icon/turn-off.png">Plataformas</a></li>
                 </div>
@@ -74,7 +74,7 @@
                         <a href="?pagesCenter=settings"><img class="icon-img" src="./static/style/icon/settings-2.png">Definições</a>
                     </li>
 
-                    <li class="cnt-lk lk-esc-fr-itm dangerous-act"><a href="includes/logount.php"><img class="icon-img" src="./static/style/icon/logout.png">Logout</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm dangerous-act"><a href="form_reg_log/logount.php"><img class="icon-img" src="./static/style/icon/logout.png">Logout</a></li>
                 </div>
             </ul>
         </nav>

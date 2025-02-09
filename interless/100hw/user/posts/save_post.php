@@ -1,32 +1,63 @@
 <?php
-    session_start();
-    if (!isset($_SESSION['username_hw'])) {
-        header("Location: ../includes/login.php");
-        exit();
-    }
-
-    if (!isset($_SESSION['user_id'])) {
-    	die("ERRO: user_id nao esta definido na sessao");
-    }
-
-	include ('../../instance/dbinterless.php');
-
-	$user_id = $_SESSION['user_id'];
-
+	
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		$user_id = $_SESSION['user_id'];
 		$title = $_POST['title_post'];
 		$content = $_POST['content_post'];
-
-		//Inserir o Post ao banco de dados
-		$sql = "INSERT INTO posts (user_id, title_post, content_post) VALUES ('$user_id', '$title', '$content')";
-		if ($conn->query($sql) === TRUE) {
-			echo "Post adicionado com sucesso";
-		} else {
-			echo "Erro ao adicionar o post";
+		$media_type = $_POST['media_type'];
+		$upload_dir = '';
+	
+		// Verificação do tipo de arquivo e definição do diretório de upload
+		switch ($media_type) {
+			case 'video_post':
+				$upload_dir = 'user/posts/files_post/uploads/videos/';
+				break;
+			case 'music_post':
+				$upload_dir = 'user/posts/files_post/uploads/music/';
+				break;
+			case 'photo_post':
+				$upload_dir = 'user/posts/files_post/uploads/photos/';
+				break;
+			case 'text_post':
+			default:
+				$upload_dir = 'user/posts/files_post/uploads/text/';
+				break;
 		}
+	
+		// Criar diretório se não existir
+		if (!is_dir($upload_dir)) {
+			mkdir($upload_dir, 0777, true);
+		}
+	
+		// Verificação e upload do arquivo
+		$media_url = '';
+		if ($_FILES['media_file']['error'] == UPLOAD_ERR_OK) {
+			$tmp_name = $_FILES['media_file']['tmp_name'];
+			$filename = basename($_FILES['media_file']['name']);
+			$target_file = $upload_dir . $filename;
+	
+			// Mover arquivo para o diretório de upload
+			if (move_uploaded_file($tmp_name, $target_file)) {
+				$media_url = $target_file;
+			} else {
+				echo "Erro ao mover o arquivo.";
+				exit();
+			}
+		}
+	
+		$stmt = $conn->prepare("INSERT INTO posts (user_id, title_post, content_post, media_type, media_url) VALUES (?, ?, ?, ?, ?)");
+		$stmt->bind_param("issss", $user_id, $title, $content, $media_type, $media_url);
+	
+		if ($stmt->execute()) {
+			echo "Post adicionado com sucesso!";
+			header("Location: ./profile.php?confProfilePages=new_post");
+			exit();
+		} else {
+			echo "Erro: " . $stmt->error;
+		}
+	
+		$stmt->close();
+		$conn->close();
 	}
 
-	$conn->close();
-	header("Location: ./profile.php?confProfilePages=new_post");
-	exit();
 ?>

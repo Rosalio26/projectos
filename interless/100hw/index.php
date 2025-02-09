@@ -1,24 +1,6 @@
 
 <?php
-    session_start();
-    if (!isset($_SESSION['username_hw'])) {
-        header("Location: includes/login.php");
-        exit();
-    }
-
-    include('../instance/dbinterless.php');
-
-    $user_id = $_SESSION['user_id'];
-
-    //Obter os detalhes do usuario
-    $sql = "SELECT * FROM register_gch WHERE user_hw_id='$user_id'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-    } else {
-        die("Usuario nao encotrado");
-    }
+    include("conf/post_friend_processes.php");
 ?>
 
 <!DOCTYPE html>

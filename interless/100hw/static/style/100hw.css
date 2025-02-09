@@ -99,6 +99,64 @@
 }
 
 
+.add-conf-link,
+.add-conf-link a,
+.cnt-asc-temp-link a
+{
+    font-size: 11pt;
+    font-family: poppis-light;
+}
+
+.add-conf-link a img {
+    width: 15px;
+}
+
+.add-conf-link a,
+.cnt-asc-temp-link a
+{
+    align-items: center;
+    display: flex;
+    gap: 3px;
+}
+
+.add-conf-link
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+}
+
+.add-conf-link a{
+    border: 1px solid #333;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+.cnt-asc-temp-link
+{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.link-new
+{
+    display: block;
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+
+.cnt-link-request
+{
+    background-color: #50a2ff08;
+    height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+}
 /*
 ===========================================================================================================
 ===========================================================================================================
