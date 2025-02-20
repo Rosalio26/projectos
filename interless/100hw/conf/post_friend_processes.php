@@ -66,6 +66,18 @@
     }
 
     
+    
+    // Aceitar pedido de amizade
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['aceitar_id'])) {
+        $aceitar_id = $_POST['aceitar_id'];
+        $sql_accept_request = "UPDATE friend_requests SET status='accepted' WHERE request_id='$aceitar_id' AND receiver_id='$user_id'";
+        if ($conn->query($sql_accept_request) === TRUE) {
+            echo "Pedido de amizade aceito!";
+        } else {
+            echo "Erro: " . $sql_accept_request . "<br>" . $conn->error;
+        }
+    }
+
     //============================
     // Remover pedido de amizade
     //============================
@@ -103,16 +115,43 @@
         ORDER BY u.username_hw ASC";
 
         $stmt_accepted_friend = $conn->prepare($sql_accepted_friend);
-        $stmt_accepted_friend->bind_param("iii", $user_id, $user_id, $user_id);
-        $stmt_accepted_friend->execute();
-        $result_accepted_friend = $stmt_accepted_friend->get_result();
+        // Verificar se a preparação da consulta foi bem-sucedida
+        if ($stmt_accepted_friend) {
+            $stmt_accepted_friend->bind_param("iii", $user_id, $user_id, $user_id);
+            $stmt_accepted_friend->execute();
+            $result_accepted_friend = $stmt_accepted_friend->get_result();
 
-        $friends_accepted = [];
-        if ($result_accepted_friend->num_rows > 0) {
-            while ($row_accepted = $result_accepted_friend->fetch_assoc()) {
-                $friends_accepted[] = $row_accepted;
+            $friends_accepted = [];
+            // Verificar se o resultado não é nulo
+            if ($result_accepted_friend && $result_accepted_friend->num_rows > 0) {
+                while ($row_accepted = $result_accepted_friend->fetch_assoc()) {
+                    // $friends_accepted[] = $row_accepted;
+                    $friends_accepted[$row_accepted['user_hw_id']] = $row_accepted;
+                }
             }
+            // Liberar os recursos do resultado
+            $result_accepted_friend->free();
+        } else {
+            echo "Erro na preparação da consulta: " . $conn->error;
         }
+        // Fechar a declaração
+        $stmt_accepted_friend->close();
+    //     $stmt_accepted_friend = $conn->prepare($sql_accepted_friend);
+    //     $stmt_accepted_friend->bind_param("iii", $user_id, $user_id, $user_id);
+    //     $stmt_accepted_friend->execute();
+    //     $result_accepted_friend = $stmt_accepted_friend->get_result();
+
+    //     $friends_accepted = [];
+    //     if ($result_accepted_friend->num_rows > 0) {
+    //         while ($row_accepted = $result_accepted_friend->fetch_assoc()) {
+    //             $friends_accepted[] = $row_accepted;
+    //         }
+    //     }
+    //     // Liberar os recursos do resultado
+    //     $result_accepted_friend->free();
+    // } else {
+    //     echo "Erro na preparação da consulta: " . $conn->error;
+    // }
 
         
         //====================================

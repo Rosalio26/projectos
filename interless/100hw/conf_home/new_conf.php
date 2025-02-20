@@ -2,6 +2,8 @@
     .logic-new-forum
     {
         overflow: hidden;
+        overflow-y: auto;
+        height: 400px;
     }
 
     .cnt-uss

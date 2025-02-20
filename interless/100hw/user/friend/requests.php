@@ -9,17 +9,6 @@
 
 $user_id = $_SESSION['user_id'];
 
-// Aceitar pedido de amizade
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['aceitar_id'])) {
-    $aceitar_id = $_POST['aceitar_id'];
-    $sql = "UPDATE friend_requests SET status='accepted' WHERE request_id='$aceitar_id' AND receiver_id='$user_id'";
-    if ($conn->query($sql) === TRUE) {
-        echo "Pedido de amizade aceito!";
-    } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
-    }
-}
-
 // Recusar pedido de amizade
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['recusar_id'])) {
     $recusar_id = $_POST['recusar_id'];
@@ -47,7 +36,7 @@ $result = $conn->query($sql);
     <?php
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "<li>" . $row['username_hw'] . " <form method='post' action='requests.php' style='display:inline;'><input type='hidden' name='aceitar_id' value='" . $row['request_id'] . "'><input type='submit' value='Aceitar'></form> <form method='post' action='requests.php' style='display:inline;'><input type='hidden' name='recusar_id' value='" . $row['request_id'] . "'><input type='submit' value='Recusar'></form></li>";
+            echo "<li>" . $row['username_hw'] . " <form method='post' action='?confPages=requestFiles' style='display:inline;'><input type='hidden' name='aceitar_id' value='" . $row['request_id'] . "'><input type='submit' value='Aceitar'></form> <form method='post' action='requests.php' style='display:inline;'><input type='hidden' name='recusar_id' value='" . $row['request_id'] . "'><input type='submit' value='Recusar'></form></li>";
         }
     } else {
         echo "<li>Nenhum pedido de amizade recebido.</li>";

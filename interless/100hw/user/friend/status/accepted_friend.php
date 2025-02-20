@@ -10,7 +10,7 @@
                 <div class="friend-info">
                     <div class="cnt-user-mini-info">
 						<?php if (!empty($friend['profile_image'])): ?>
-							<img class="cnt-image-profile" src="./conf_home/profile_conf/uploads/<?php echo $user_details['profile_image'];?>" alt="...">
+							<img class="cnt-image-profile" src="./conf_home/profile_conf/uploads/<?php echo $friend['profile_image'];?>" alt="...">
 						<?php else: ?>
 							<img class="cnt-image-profile" src="static/style/icon/user.png" alt="...">
 						<?php endif; ?>

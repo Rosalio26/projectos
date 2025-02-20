@@ -18,12 +18,10 @@
                 switch(@$_REQUEST["confPages"]) {
                     case 'newOfficcePage':
                         include("conf_home/new_conf.php");
-                        $conn->close();
                     break;
                     
                     case 'new_friend':
                         include("user/friend/new_friend.php");
-                        $conn->close();
                     break;
 
                     case 'new_post':
@@ -48,6 +46,10 @@
 
                     case 'save_post_music':
                         include("user/posts/save_post_music.php");
+                    break;
+
+                    case 'requestFiles':
+                        include("user/friend/requests.php");
                     break;
 
                     default:

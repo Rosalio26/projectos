@@ -38,18 +38,21 @@ $friend = $result_friend_accepted_details->fetch_assoc();
 ?>
 
 <h1>Detalhes do Amigo</h1>
-<?php if ($friend): ?>
-    <div class="friend">
-        <?php if (!empty($friend['profile_image'])): ?>
-            <img src="./conf_home/profile_conf/uploads/<?php echo $user_details['profile_image'];?>" alt="Foto do Perfil">
-        <?php else: ?>
-            <img src="default_profile_picture.jpg" alt="Foto do Perfil">
-        <?php endif; ?>
-        <div>
-            <div class="friend-name"><?php echo htmlspecialchars($friend['personalname_hw']); ?></div>
-            <div class="friend-email"><?php echo htmlspecialchars($friend['email_hw']); ?></div>
+
+<div class="cnt-details-friends">
+    <?php if ($friend): ?>
+        <div class="friend">
+            <?php if (!empty($friend['profile_image'])): ?>
+                <img src="./conf_home/profile_conf/uploads/<?php echo $friend['profile_image'];?>" alt="Foto do Perfil">
+            <?php else: ?>
+                <img src="static/style/icon/user.png" alt="Foto do Perfil">
+            <?php endif; ?>
+            <div>
+                <div class="friend-name"><?php echo htmlspecialchars($friend['personalname_hw']); ?></div>
+                <div class="friend-email"><?php echo htmlspecialchars($friend['email_hw']); ?></div>
+            </div>
         </div>
-    </div>
-<?php else: ?>
-    <p>Amigo não encontrado.</p>
-<?php endif; ?>
+    <?php else: ?>
+        <p>Amigo não encontrado.</p>
+    <?php endif; ?>
+</div>
