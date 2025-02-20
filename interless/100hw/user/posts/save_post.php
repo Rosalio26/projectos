@@ -3,6 +3,9 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$user_id = $_SESSION['user_id'];
 		$title = $_POST['title_post'];
+		$title_photo = $_POST['title_post_photo'];
+		$title_video = $_POST['title_post_video'];
+		$title_music = $_POST['title_post_music'];
 		$content = $_POST['content_post'];
 		$media_type = $_POST['media_type'];
 		$upload_dir = '';
@@ -45,8 +48,8 @@
 			}
 		}
 	
-		$stmt = $conn->prepare("INSERT INTO posts (user_id, title_post, content_post, media_type, media_url) VALUES (?, ?, ?, ?, ?)");
-		$stmt->bind_param("issss", $user_id, $title, $content, $media_type, $media_url);
+		$stmt = $conn->prepare("INSERT INTO posts (user_id, title_post, title_post_photo, title_post_video, title_post_music, content_post, media_type, media_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+		$stmt->bind_param("isssssss", $user_id, $title, $title_photo, $title_video, $title_music, $content, $media_type, $media_url);
 	
 		if ($stmt->execute()) {
 			echo "Post adicionado com sucesso!";
@@ -56,8 +59,6 @@
 			echo "Erro: " . $stmt->error;
 		}
 	
-		$stmt->close();
-		$conn->close();
 	}
 
 ?>

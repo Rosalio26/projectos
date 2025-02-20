@@ -46,8 +46,8 @@
             <ul class="cnt-listed-user list-itm">
                 <?php
 
-                    if ($result->num_rows > 0) {
-                        while($row = $result->fetch_assoc()) {
+                    if ($result_register_user->num_rows > 0) {
+                        while($row = $result_register_user->fetch_assoc()) {
                             // Verificar se o pedido de amizade já foi enviado
                             $sql_check = "SELECT * FROM friend_requests WHERE (sender_id='$user_id' AND receiver_id='" . $row['user_hw_id'] . "') OR (sender_id='" . $row['user_hw_id'] . "' AND receiver_id='$user_id')";
                             $result_check = $conn->query($sql_check);

@@ -9,7 +9,7 @@ function startLogoutTimer() {
     window.onkeypress = resetTimer; // capturar teclas pressionadas
 
     function logout() {
-        window.location.href = 'http://localhost/projectos/interless/100hw/includes/logount.php';
+        window.location.href = 'http://localhost/projectos/interless/100hw/form_reg_log/logount.php';
     }
 
     function resetTimer() {

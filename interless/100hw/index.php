@@ -1,6 +1,7 @@
 
 <?php
     include("conf/post_friend_processes.php");
+    include("user/comments/get_comment.php");
 ?>
 
 <!DOCTYPE html>
@@ -21,11 +22,7 @@
         </div>
         <div class="cnt-esc-rgh"><?php include("conf_home/home-rgh.php");?></div
     </div>
-    <script src="./static/scripts/hw.js"></script>
-    <script src="./static/scripts/logout_time.js"></script>
+    <script defer src="./static/scripts/hw.js"></script>
+    <script defer src="./static/scripts/logout_time.js"></script>
 </body>
 </html>
-
-<?php
-    $conn->close();
-?>

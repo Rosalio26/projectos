@@ -1,6 +1,5 @@
 
-<?php
-    session_start();
+<?php                   
     $error = isset($_SESSION['error']) ? $_SESSION['error'] : null;
     unset($_SESSION['error']);
 ?>

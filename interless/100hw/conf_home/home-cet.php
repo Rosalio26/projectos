@@ -1,6 +1,13 @@
 
 <button type="button" id="btn-tgg" class="toggle-btn btn-lef-tgg">-></button>
 <div class="cent-cnt">
+    <div>
+        <button>
+            <span class="cnt-adot-btn">-</span>
+            <span class="cnt-adot-btn">-</span>
+            <span class="cnt-adot-btn">-</span>
+        </button>
+    </div>
     <?php
         switch(@$_REQUEST["pagesCenter"]){
             case "mensagem":
@@ -21,8 +28,20 @@
             case "settings":
                 include("store_fun/settings.html");
             break;
+
+            case "send_comment":
+                include("user/comments/send_comment.php");
+            break;
+
+            case "share_comment":
+                include("user/comments/share_comment.php");
+            break;
+            case "like_comment":
+                include("user/comments/like_comment.php");
+            break;
+
             default:
-                include("./user/posts/allposts.php");
+                include("./user/posts/post_of_friends.php");
         }
     ?>
 </div>

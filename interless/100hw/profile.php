@@ -91,7 +91,7 @@
             <button class="btn-back"><- Voltar</button>
         </div>
     </div>
-    <script src="../static/scripts/profile.js"></script>
-    <script src="../static/scripts/logout_time.js"></script>
+    <script src="./static/scripts/profile.js"></script>
+    <script src="./static/scripts/logout_time.js"></script>
 </body>
 </html>

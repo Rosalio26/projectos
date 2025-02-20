@@ -9,21 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New </title>
     <link rel="stylesheet" href="static/style/100hw.css">
-    <script>
-        function toggleInputs() {
-            var mediaType = document.getElementById("media_type").value;
-            var contentDiv = document.getElementById("content_div");
-            var fileInputDiv = document.getElementById("file_input_div");
-
-            if (mediaType !== 'text') {
-                contentDiv.style.display = 'none';
-                fileInputDiv.style.display = 'block';
-            } else {
-                contentDiv.style.display = 'block';
-                fileInputDiv.style.display = 'none';
-            }
-        }
-    </script>
+    <!-- <link rel="stylesheet" href="static/style/profile.css"> -->
 </head>
 <body id="body_new" class="body-gr body_new">    
     <div class="ac-sp">
@@ -36,7 +22,7 @@
                     break;
                     
                     case 'new_friend':
-                        include("user/new_friend.php");
+                        include("user/friend/new_friend.php");
                         $conn->close();
                     break;
 
@@ -47,7 +33,23 @@
                     case 'save_post':
                         include("user/posts/save_post.php");
                     break;
-            
+                    
+                    case 'save_post_content':
+                        include("user/posts/save_post_content.php");
+                    break;
+                    
+                    case 'save_post_photo':
+                        include("user/posts/save_post_photo.php");
+                    break;
+
+                    case 'save_post_video':
+                        include("user/posts/save_post_video.php");
+                    break;
+
+                    case 'save_post_music':
+                        include("user/posts/save_post_music.php");
+                    break;
+
                     default:
                         echo "";
                 }
@@ -78,5 +80,6 @@
         <!-- <div class="cnt-esc-rgh"><?php include("conf_home/home-rgh-set.php");?></div> -->
     </div>
     <script src="static/scripts/hw.js"></script>
+    <script src="static/scripts/logout_time.js"></script>
 </body>
 </html>

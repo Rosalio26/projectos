@@ -17,24 +17,6 @@ btnToggle.addEventListener('click', function() {
 
 
 
-var btnNavBar = document.querySelector('.btn-menu-navbar');
-var navItm = document.querySelector('.nav-cnt-home');
-var btnCloseNav = document.querySelector('.btn-close-nav');
-
-btnNavBar.addEventListener('click', function() {
-    navItm.classList.add('openNavBar');
-    btnNavBar.style.display = 'none';
-    
-
-    navItm.addEventListener('click', function(event) {
-        if(event.target.id == 'btnCloseNavBar'){
-            navItm.classList.remove('openNavBar');
-            btnNavBar.style.display = 'block';
-        }
-    });
-
-});
-
 
 
 //Posts Status
@@ -56,72 +38,43 @@ function search_user() {
 }
 
 
-//POST BUTTOn Video && Imagem
-function imagemBlockPost() {
-    var textareaCam = document.querySelector('#textar-input');
-    var uploadImagem = document.querySelector('#upload-img');
-    var uploadVideo = document.querySelector('#upload-vid');
+function openReplyModal(commentId, username) {
+    alert('wait')
+    // document.getElementById('parent_id').value = commentId;
+    // document.getElementById('reply_to_username').innerText = username;
+    // document.getElementById('replyModal').style.display = "block";
+    }
 
-    var btnImagem = document.querySelector('#btn-img-post');
-    var btnVideo = document.querySelector('#btn-vid-post');
-    var btnPost = document.querySelector('#btn-post-post');
+    function closeReplyModal() {
+        document.getElementById('replyModal').style.display = "none";
+    }
 
-    textareaCam.style.display = 'none'; 
-    uploadVideo.style.display = 'none';
-    uploadImagem.style.display = 'block';
-
-    btnImagem.style.display = 'none';
-    btnPost.classList.add('post-class');
-    btnVideo.style.display = 'flex';
-}
-
-function videoBLockPost() {
-        var textareaCam = document.querySelector('#textar-input');
-        var uploadImagem = document.querySelector('#upload-img');
-        var uploadVideo = document.querySelector('#upload-vid');
-
-        var btnImagem = document.querySelector('#btn-img-post');
-        var btnVideo = document.querySelector('#btn-vid-post');
-        var btnPost = document.querySelector('#btn-post-post');
-
-        textareaCam.style.display = 'none'; 
-        uploadImagem.style.display = 'none';
-        uploadVideo.style.display = 'flex';
-        
-        btnVideo.style.display = 'none';
-        btnPost.classList.add('post-class');
-        btnImagem.style.display = 'flex';
-}
-
-function postBlockPost() {
-        var textareaCam = document.querySelector('#textar-input');
-        var uploadImagem = document.querySelector('#upload-img');
-        var uploadVideo = document.querySelector('#upload-vid');
-
-        var btnImagem = document.querySelector('#btn-img-post');
-        var btnVideo = document.querySelector('#btn-vid-post');
-        var btnPost = document.querySelector('#btn-post-post');
-
-        textareaCam.style.display = 'block'; 
-        uploadImagem.style.display = 'none';
-        uploadVideo.style.display = 'none';
-
-        btnVideo.style.display = 'flex';
-        btnPost.classList.remove('post-class');
-        btnImagem.style.display = 'flex';
-}
-
-
-function infImage() {
-    var btnNavBar = document.querySelector('.cnt-image-inf');
-    var navItm = document.querySelector('.cnt-inf-imagem');
-    var btnCloseNav = document.querySelector('.btn-close');
-
-    navItm.style.display = 'block';
-
-    navItm.addEventListener('click', function(event) {
-        if(event.target.id == 'btn-close'){
-            navItm.style.display = 'none';
+        function likeComment(commentId) {
+            fetch('?pagesCenter=like_comment', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'comment_id=' + commentId
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data);
+                // Atualize a interface do usuário conforme necessário
+            });
         }
-    });
-}
+
+        function shareComment(commentId) {
+            fetch('?pagesCenter=share_comment', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'comment_id=' + commentId
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data);
+                // Atualize a interface do usuário conforme necessário
+            });
+        }

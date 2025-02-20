@@ -4,13 +4,12 @@
 		<?php if (!empty($posts_video)): ?>
 			<?php foreach ($posts_video as $post): ?>
 				<div class="post">
-					<div class="post-title"><?php echo htmlspecialchars($post['title_post']); ?></div>
+					<div class="post-title"><?php echo htmlspecialchars($post['video_title']); ?></div>
 					<div class="post-date"><?php echo htmlspecialchars($post['created_at']); ?></div>
-					<div class="post-content"><?php echo nl2br(htmlspecialchars($post['content_post'])); ?></div>
-					<?php if (!empty($post['media_url'])): ?>
+					<?php if (!empty($post['post_type'] == 'video')): ?>
 						<div class="post-media">
 							<video controls>
-								<source src="<?php echo htmlspecialchars($post['media_url']); ?>" type="video/mp4">
+								<source src="<?php echo htmlspecialchars($post['video_url']); ?>" type="video/mp4">
 								Seu navegador não suporta a tag de vídeo.
 							</video>
 						</div>

@@ -3,9 +3,9 @@
 		<?php if (!empty($posts_content)): ?>
 			<?php foreach ($posts_content as $post): ?>
 				<div class='post-content-block cnt-info-posts'>
-					<h4 class="tlt-content-post"><?php echo htmlspecialchars($post['title_post']); ?></h4>
+					<h4 class="tlt-content-post"><?php echo htmlspecialchars($post['text_title']); ?></h4>
 					<div class="post-date"><?php echo htmlspecialchars($post['created_at']); ?></div>
-					<div class="cnt-item-content-post"><?php echo nl2br(htmlspecialchars($post['content_post'])); ?></div>
+					<div class="cnt-item-content-post"><?php echo nl2br(htmlspecialchars($post['text_content'])); ?></div>
 				</div>
 			<?php endforeach; ?>
 		<?php else: ?>

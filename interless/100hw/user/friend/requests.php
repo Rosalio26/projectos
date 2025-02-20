@@ -1,11 +1,11 @@
 <?php
-session_start();
-if (!isset($_SESSION['username_hw'])) {
-    header("Location: ../includes/login.php");
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['username_hw'])) {
+//     header("Location: ../includes/login.php");
+//     exit();
+// }
 
-include('../../../instance/dbinterless.php');
+// include('../../../instance/dbinterless.php');
 
 $user_id = $_SESSION['user_id'];
 
@@ -54,10 +54,6 @@ $result = $conn->query($sql);
     }
     ?>
     </ul>
-    <a href="home.php">Voltar para Home</a>
 </body>
 </html>
 
-<?php
-$conn->close();
-?>

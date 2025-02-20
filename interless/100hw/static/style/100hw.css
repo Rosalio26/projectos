@@ -96,6 +96,10 @@
     padding: 5px;
     height: 100%;
     z-index: 10;
+
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 
@@ -136,26 +140,36 @@
 
 .cnt-asc-temp-link
 {
+    border-bottom: 1px solid #333;
     display: flex;
     gap: 10px;
+
+    position: relative;
     padding: 10px;
-    border-bottom: 1px solid #333;
+    overflow-x: auto;
 }
 
 .link-new
 {
+    text-wrap: nowrap;
     display: block;
+    width: max-content;
     border: 1px solid #333;
     border-radius: 7px;
     padding: 5px 10px;
 }
 
+.link-new img
+{
+    width: 20px;
+}
+
 .cnt-link-request
 {
     background-color: #50a2ff08;
-    height: 400px;
+    /* height: 400px; */
     padding: 10px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 /*
 ===========================================================================================================
@@ -166,7 +180,7 @@
 #body_new
 {
     flex-direction: column;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 #body_new .ac-sp
@@ -180,8 +194,13 @@
     border: 1PX solid #333;
     border-radius: 10PX;
     width: 90%;
-    margin: 40PX auto;
+    margin-top: 50px;
     padding: 20px;
+}
+
+#asp-new
+{
+    margin: 40px auto;
 }
 
 .post-friend
@@ -191,6 +210,15 @@
     margin-top: 15px;
 }
 
+.adv-oth
+{
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* padding-bottom: 40px; */
+}
+
 .lk-oct
 {
     font-size: 0.9rem;
@@ -198,6 +226,15 @@
     width: 100%;
     height: 100%;
     padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lk-oct img 
+{
+    width: 25px;
 }
 
 .my-find
@@ -480,6 +517,7 @@ li.link-li-sub
     height: 18px;
     background: transparent;
     position: relative;
+    z-index: 100;
 }
 
 .btn-menu-navbar::before,
@@ -609,7 +647,8 @@ li.link-li-sub
     height: 86%;
     margin: auto;
     position: relative;
-    z-index: -1;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .btn-lef-tgg
@@ -824,7 +863,13 @@ li.link-li-sub
         display: flex;
     }
 
-    .cnt-new-asp, .art-friend
+    .cnt-new-asp
+    {
+        width: 400px;
+        margin: 0px auto;
+    }
+
+    .art-friend
     {
         width: 70%;
         margin: 0px auto;
@@ -957,10 +1002,100 @@ li.link-li-sub
 
     .cnt-new-asp, .art-friend
     {
-        width: 40%;
+        width: 400px;
     }
+
+    
+    .logic-new-forum
+    {
+        border: 1px solid #333;
+        width: 900px;
+        margin: 20px auto;
+    }
+
+    .adv-oth
+    {
+        margin-top: 20px;
+    }
+
+    #provisouly-new-header
+    {
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #333;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    
 }
 
+.user-info
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px 15px 30px;
+}
+
+.logic-new-forum
+{
+    padding: 10px 0px;
+}
+
+.adan-li-previu
+{
+    text-align: right;
+}
+
+
+.file-input-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #6661;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cascading, 
+.cascading-music-file-input,
+.cascading-photo-file-input,
+.cascading-video-file-input
+{
+    background-color: transparent;
+    width: 30%;
+    height: 30%;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px; 
+}
+
+
+.image-background {
+    background-image: url('./icon/media_files/creator.png'); /* Caminho para a imagem */
+}
+
+.cascading-video-file-input {
+    background-image: url('./icon/media_files/add-video.png'); /* Caminho para o vídeo */
+}
+
+.cascading-music-file-input {
+    background-image: url('./icon/media_files/add-to-playlist.png'); /* Caminho para a música */
+}
+
+.cascading-photo-file-input {
+    background-image: url('./icon/media_files/image.png'); /* Caminho para a foto */
+}
 /*
 ==================================================================
 ==================================================================
@@ -977,7 +1112,7 @@ li.link-li-sub
     width: 250px;
     height: 200px;
     top: 9%; left: 2%;
-    z-index: 100;
+    z-index: 1001;
 
     display: none;
 }
@@ -1048,4 +1183,328 @@ img.icon-img {
 .dangerous-act:hover
 {
     background-color: #c8000080;
+}
+
+
+
+/*
++++++++++++++++++++++++++++++
++++++++++++++Posts OF Friends
++++++++++++++++++++++++++++++
+*/
+
+.cnt-post-grl
+{
+    background-color: #0f192aa2;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 380px;
+    margin: 20px auto;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-username, .title-post-conf
+{
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    padding-left: 7px;
+    overflow: hidden;
+
+    font-family: poppis-light;
+    font-size: 11pt;
+}
+
+
+/* form.details-form
+{
+    background-color: red;
+    width: 100%;
+    height: 10%;
+} */
+
+input
+{
+    font-family: poppis-light;
+    font-size: 11pt;
+
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+}
+
+.title-post-conf
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.nav-cnt-toogle-title-cnt
+{
+    background-color: transparent;
+    width: 50px;
+    height: 100%;
+}
+
+.toogle-title-cnt
+{
+    background-color: transparent;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.btn-bool
+{
+    background-color: #666;
+    border-radius: 100%;
+    width: 8.5px;
+    height: 8.5px;
+}
+
+
+.cnt-tst
+{
+    background-color: #0002433e;
+    border-bottom: 1px solid #333;
+    border-radius: 5px;
+    height: 250px;
+    width: 100%;
+}
+
+    /* .cometarios-cnt
+    {
+        height: 200px;
+    } */
+
+.arm-cnt-post
+{
+    background-color: #23343e72;
+    border-radius: 5px 5px 7px 7px;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-post
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cnt-btn-lks
+{
+    background-color: transparent;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding-top: 3px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itm-btn-lks
+{
+    border-radius: 5px;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-item
+{
+    border: 1px solid #333;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.cnt-comment-cmp
+{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textarea-comment
+{
+    background-color: #6664;
+    border-radius: 10px 0px 0px 10px;
+    width: 65%;
+    height: 75%;
+    padding: 5px 10px;
+}
+
+.sub-comm-btn, .reply-btn
+{
+    background-color: transparent;
+    border: 1px solid #6664;
+    border-radius: 0px 10px 10px 0px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    position: relative;
+}
+
+.reply-btn
+{
+    width: 40px;
+}
+
+.reply-btn img
+{
+    width: 20px;
+}
+
+.sub-comm-btn img
+{
+    width: 26px;
+}
+
+.comments-show
+{
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.comments
+{
+    width: 100%;
+}
+
+.comment 
+{
+    background: #f9f9f900;
+    padding: 5px 0px 5px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    /* border: 1px solid #ddd; */
+
+    width: 100%;
+}
+
+.comment_replays
+{
+    border: 1px solid #333;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.comment_replays p
+{
+    background-color: #3332;
+    border-radius: 100px 0px 0px 100px;
+    padding: 3px 10px;
+    width: 200px;
+}
+
+.img-cnt-post
+{
+    width: 100%;
+    height: 100%;
+}
+
+.my-friend-cmp, .cnt-user-mini-info
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.tlt-post
+{
+    padding: 10px;
+    font-family: poppis-medium;
+    font-size: 14pt;
+}
+
+.cnt-itm-list
+{
+    width: 370px;
+    background-color: rgba(27, 36, 55, 0.256);
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px 0px;
+}
+
+.my-friend-cmp
+{
+    background-color: rgba(19, 21, 33, 0.862);
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding-left: 10px;
+    width: 80%;
+    height: 50px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.cnt-user-mini-info
+{
+    gap: 10px;
+}
+
+.cnt-image-profile
+{
+    background-color: rgba(30, 33, 51, 0.6);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.details-button
+{
+    background-color: #0a0812;
+    width: 70px;
+    height: 100px;
+}
+
+.ls-count
+{
+    font-size: 9pt;
+    position: absolute;
+    display: block;
+    background-color:  #333;
+    border-radius: 100%;
+
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
 }

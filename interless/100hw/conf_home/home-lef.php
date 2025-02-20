@@ -65,9 +65,13 @@
                         <a href="pass_conf.php?confPages=newOfficcePage"><img class="icon-img" src="./static/style/icon/more.png">New</a>
                     </li>
 
+                    <li class="cnt-lk lk-esc-fr-itm">
+                        <a href="index.php"><img class="icon-img" src="./static/style/icon/casa-1.png">Home</a>
+                    </li>
+
                     <li class="cnt-lk lk-esc-fr-itm"><a href="profile.php"><img class="icon-img" src="./static/style/icon/user.png">Profile</a></li>
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=ficheiros"><img class="icon-img" src="./static/style/icon/turn-off.png">Ficheiros</a></li>
-                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=platform"><img class="icon-img" src="./static/style/icon/turn-off.png">Plataformas</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=ficheiros"><img class="icon-img" src="./static/style/icon/folder.png">Ficheiros</a></li>
+                    <li class="cnt-lk lk-esc-fr-itm"><a href="?pagesCenter=platform"><img class="icon-img" src="./static/style/icon/responsive.png">Plataformas</a></li>
                 </div>
                 <div class="conf conf-sst">
                     <li class="cnt-lk lk-esc-fr-itm">
@@ -80,3 +84,43 @@
         </nav>
     </div>
 </div>
+
+<script>
+    
+    // function toogleNavLef() {
+    //     console.log(toogleNavLef())
+    // }
+    var btnNavBar = document.querySelector('.btn-menu-navbar');
+    var navItm = document.querySelector('.nav-cnt-home');
+    var btnCloseNav = document.querySelector('.btn-close-nav');
+
+    btnNavBar.addEventListener('click', function() {
+        navItm.classList.add('openNavBar');
+        btnNavBar.style.display = 'none';
+        
+
+        navItm.addEventListener('click', function(event) {
+            if(event.target.id == 'btnCloseNavBar'){
+                navItm.classList.remove('openNavBar');
+                btnNavBar.style.display = 'block';
+            }
+        });
+
+    });
+
+    
+
+    function infImage() {
+        var btnNavBar = document.querySelector('.cnt-image-inf');
+        var navItm = document.querySelector('.cnt-inf-imagem');
+        var btnCloseNav = document.querySelector('.btn-close');
+
+        navItm.style.display = 'block';
+
+        navItm.addEventListener('click', function(event) {
+            if(event.target.id == 'btn-close'){
+                navItm.style.display = 'none';
+            }
+        });
+    }
+</script>

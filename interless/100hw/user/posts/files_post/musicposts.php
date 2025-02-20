@@ -3,13 +3,12 @@
 	<?php if (!empty($posts_music)): ?>
 		<?php foreach ($posts_music as $post): ?>
 			<div class="post">
-				<div class="post-title"><?php echo htmlspecialchars($post['title_post']); ?></div>
+				<div class="post-title"><?php echo htmlspecialchars($post['music_title']); ?></div>
 				<div class="post-date"><?php echo htmlspecialchars($post['created_at']); ?></div>
-				<div class="post-content"><?php echo nl2br(htmlspecialchars($post['content_post'])); ?></div>
-				<?php if (!empty($post['media_url'])): ?>
+				<?php if (!empty($post['post_type'] == 'music')): ?>
 					<div class="post-media">
 						<audio controls>
-							<source src="<?php echo htmlspecialchars($post['media_url']); ?>" type="audio/mpeg">
+							<source src="<?php echo htmlspecialchars($post['music_url']); ?>" type="audio/mpeg">
 							Seu navegador não suporta a tag de Musicas.
 						</audio>
 					</div>

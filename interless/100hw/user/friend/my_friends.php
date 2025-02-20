@@ -27,19 +27,19 @@
             switch (@$_REQUEST["postPagesContentFriends"]) {
 
                 case 'my_friends_accepted':
-                    include('friend/accepted_friend.php');
+                    include('user/friend/status/accepted_friend.php');
                     break;
 
                 case 'my_friends_pedding':
-                    include('friend/peding_friend.php');
+                    include('user/friend/status/peding_friend.php');
                     break;
 
                 case 'my_friends_rejected':
-                    include('friend/rejected_friend.php');
+                    include('user/friend/status/rejected_friend.php');
                     break;
 
                 default:
-                    include('friend/accepted_friend.php');
+                    include('user/friend/status/accepted_friend.php');
                     break;
             }
         ?>
